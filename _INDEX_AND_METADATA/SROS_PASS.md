@@ -9,11 +9,11 @@ The **State Resolutions Operation Solver (SROS)** is now the primary program bei
 
 ## Evidence used
 
-Repository search found existing material related to stationary/non-stationary engineering and several relevant systems. In particular, the Atlas Shadow Unified recursive optimizer explicitly describes a champion/challenger architecture with deterministic checks, stationary verification, non-regression, and guarded promotion. fileciteturn44file0L2-L5
+Repository inspection found existing material related to stationary/non-stationary engineering and several relevant systems. In particular, `02_SYSTEMS/Atlas_Shadow_Unified/Atlas_Shadow_Unified_Clean/recursive_optimizer.py` describes champion/challenger evaluation with deterministic checks, stationary verification, non-regression, and guarded promotion.
 
-The repository also contains world-model material in both the UAIR system and knowledge/data areas, indicating that dynamic state modeling exists as a candidate dependency but is duplicated across system/data layers and therefore requires provenance/integration analysis before migration. fileciteturn43file0L2-L5 fileciteturn43file2L12-L15
+The repository also contains world-model material in both the UAIR system and knowledge/data areas. This makes dynamic state modeling a candidate dependency, but duplication across system/data layers means provenance and integration must be established before migration.
 
-Search also surfaced a stationary planning artifact and engineer-related training artifacts. These are treated as knowledge/evidence, not executable engineer implementations, until code-level integration is established. fileciteturn45file0L2-L5 fileciteturn42file8L42-L45
+Search also surfaced a stationary planning artifact and engineer-related training artifacts. These are treated as knowledge/evidence, not executable engineer implementations, until code-level integration is established.
 
 ## What was created
 
