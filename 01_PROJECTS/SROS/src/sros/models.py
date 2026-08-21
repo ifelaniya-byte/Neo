@@ -1,9 +1,4 @@
-"""Domain objects for the State Resolutions Operation Solver.
-
-These objects intentionally contain no model/provider-specific logic. They are
-stable contracts between state analysis, the two engineering regimes, and the
-resolution evaluator.
-"""
+"""Domain contracts for the State Resolutions Operation Solver."""
 from __future__ import annotations
 
 from dataclasses import dataclass, field
@@ -13,7 +8,6 @@ from typing import Any, Dict, List, Mapping, Optional
 @dataclass(frozen=True)
 class OperationState:
     """A snapshot of the problem being solved."""
-
     state: Mapping[str, Any]
     objective: str
     constraints: Mapping[str, Any] = field(default_factory=dict)
@@ -26,7 +20,6 @@ class OperationState:
 @dataclass(frozen=True)
 class Resolution:
     """A proposed operation or sequence of operations."""
-
     operations: List[str]
     rationale: str = ""
     assumptions: List[str] = field(default_factory=list)
@@ -37,18 +30,17 @@ class Resolution:
 @dataclass(frozen=True)
 class ValidationReport:
     """Evidence produced by a validation stage."""
-
     passed: bool
     checks: Mapping[str, bool] = field(default_factory=dict)
     risks: List[str] = field(default_factory=list)
     metrics: Mapping[str, float] = field(default_factory=dict)
     notes: List[str] = field(default_factory=list)
+    metadata: Mapping[str, Any] = field(default_factory=dict)
 
 
 @dataclass(frozen=True)
 class ResolutionResult:
     """Complete SROS decision record."""
-
     regime: str
     resolution: Resolution
     validation: ValidationReport
@@ -71,6 +63,7 @@ class ResolutionResult:
                 "risks": list(self.validation.risks),
                 "metrics": dict(self.validation.metrics),
                 "notes": list(self.validation.notes),
+                "metadata": dict(self.validation.metadata),
             },
             "confidence": self.confidence,
             "status": self.status,

@@ -1,4 +1,6 @@
-from sros import OperationState, SROS
+from math import isfinite
+
+from sros import OperationState, ResolutionPolicy, SROS
 
 
 def test_stationary_default_resolution():
@@ -11,6 +13,9 @@ def test_stationary_default_resolution():
     assert result.regime == "stationary"
     assert result.status == "resolved"
     assert result.resolution.engineer == "stationary"
+    assert isfinite(result.confidence)
+    assert 0.0 <= result.confidence <= 1.0
+    assert "accepted_by_sros_contract" in result.validation.notes
 
 
 def test_non_stationary_requires_transition_validation():
@@ -24,6 +29,32 @@ def test_non_stationary_requires_transition_validation():
     assert result.regime == "non_stationary"
     assert result.status == "unresolved"
     assert "transition_probe_not_bound" in result.validation.risks
+    assert "not_accepted_by_sros_contract" in result.validation.notes
+
+
+def test_non_stationary_does_not_fallback_by_default():
+    problem = OperationState(
+        state={"temperature": 20},
+        objective="maintain operation while conditions change",
+        available_operations=["hold", "inspect"],
+        transition_model="temperature_drift",
+    )
+    result = SROS().solve(problem)
+    assert result.regime == "non_stationary"
+    assert result.resolution.engineer == "non_stationary"
+    assert result.status == "unresolved"
+
+
+def test_fallback_is_explicitly_opt_in():
+    problem = OperationState(
+        state={"temperature": 20},
+        objective="maintain operation while conditions change",
+        available_operations=["hold", "inspect"],
+        transition_model="temperature_drift",
+    )
+    result = SROS(policy=ResolutionPolicy(allow_fallback=True)).solve(problem)
+    assert result.regime == "stationary"
+    assert result.status == "resolved"
 
 
 def test_classifier_can_select_regime():
