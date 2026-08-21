@@ -19,12 +19,13 @@ class OperationState:
 
 @dataclass(frozen=True)
 class Resolution:
-    """A proposed operation or sequence of operations."""
+    """A proposed operation sequence plus auditable capability provenance."""
     operations: List[str]
     rationale: str = ""
     assumptions: List[str] = field(default_factory=list)
     predicted_state: Mapping[str, Any] = field(default_factory=dict)
     engineer: str = "unknown"
+    metadata: Mapping[str, Any] = field(default_factory=dict)
 
 
 @dataclass(frozen=True)
@@ -56,6 +57,7 @@ class ResolutionResult:
                 "assumptions": self.resolution.assumptions,
                 "predicted_state": dict(self.resolution.predicted_state),
                 "engineer": self.resolution.engineer,
+                "metadata": dict(self.resolution.metadata),
             },
             "validation": {
                 "passed": self.validation.passed,
