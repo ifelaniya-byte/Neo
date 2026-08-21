@@ -1,9 +1,4 @@
-"""Verification infrastructure admitted from the engineer upgrade roadmap.
-
-The implementations are intentionally dependency-free. Optional integrations
-(SymPy, external RAG, persistence) are capability hooks, not hidden runtime
-requirements.
-"""
+"""Verification infrastructure admitted from the engineer upgrade roadmap."""
 from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor
@@ -11,12 +6,11 @@ from dataclasses import dataclass, field
 from hashlib import sha256
 import json
 from math import isfinite
-from typing import Any, Callable, Iterable, Mapping, Optional, Sequence
+from typing import Any, Callable, Iterable, Mapping, Sequence
 
 
 class SchemaRegistry:
-    """Small runtime schema registry for SROS boundary objects."""
-
+    """Runtime schema registry for SROS boundary objects."""
     def __init__(self) -> None:
         self._schemas: dict[str, Callable[[Any], bool]] = {}
 
@@ -32,8 +26,7 @@ class SchemaRegistry:
 
 @dataclass(frozen=True)
 class ConstantsDB:
-    """Named dimensional metadata. It does not invent conversions."""
-
+    """Named dimensional metadata. It never invents conversions."""
     dimensions: Mapping[str, str] = field(default_factory=dict)
 
     def require_same_dimension(self, *names: str) -> bool:
@@ -60,7 +53,7 @@ def optional_sympy_identity(expression: str) -> FormalCheckResult:
         if not isinstance(parsed, sympy.Equality):
             return FormalCheckResult(False, False, expression, "not_an_equality")
         return FormalCheckResult(True, bool(sympy.simplify(parsed.lhs - parsed.rhs) == 0), expression)
-    except Exception as exc:  # formal input is untrusted data
+    except Exception as exc:
         return FormalCheckResult(True, False, expression, f"parse_error:{type(exc).__name__}")
 
 
@@ -73,7 +66,6 @@ class FailureRecord:
 
 class FailureLedger:
     """In-memory ledger query for repeated failure patterns."""
-
     def __init__(self, records: Iterable[FailureRecord] = ()) -> None:
         self.records = list(records)
 
@@ -93,17 +85,14 @@ class AdversarialFinding:
 
 
 def adversarial_suite(proposal: Any) -> list[AdversarialFinding]:
-    """Cheap mandatory baseline attacks against a proposal-like object."""
+    """Baseline adversarial checks for a proposal-like object."""
     findings: list[AdversarialFinding] = []
     operations = getattr(proposal, "operations", None)
     findings.append(AdversarialFinding("operations_is_sequence", isinstance(operations, (list, tuple)), ""))
     if isinstance(operations, (list, tuple)):
         findings.append(AdversarialFinding("operations_are_strings", all(isinstance(x, str) for x in operations), ""))
     payload = getattr(proposal, "predicted_state", {})
-    finite = True
-    for value in payload.values() if isinstance(payload, Mapping) else ():
-        if isinstance(value, float) and not isfinite(value):
-            finite = False
+    finite = isinstance(payload, Mapping) and all(not isinstance(v, float) or isfinite(v) for v in payload.values())
     findings.append(AdversarialFinding("predicted_state_finite", finite, ""))
     return findings
 
@@ -114,11 +103,11 @@ class CalibrationPolicy:
 
     def accepts(self, regime: str, confidence: float) -> bool:
         threshold = self.minimum_confidence.get(regime, 1.0)
-        return isfinite(confidence) and confidence >= threshold
+        return isfinite(confidence) and 0.0 <= confidence <= 1.0 and confidence >= threshold
 
 
 def parallel_double_pass(items: Sequence[Any], check: Callable[[Any], Any], workers: int = 2) -> list[tuple[Any, Any]]:
-    """Run two independent verification passes per item in bounded parallelism."""
+    """Run two verification passes per item with bounded parallelism."""
     def run(item: Any) -> tuple[Any, Any]:
         return check(item), check(item)
     with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
@@ -139,8 +128,7 @@ class PromotionCandidate:
 
 
 class PromotionQueue:
-    """Queue repeated human-confirmed patterns; never auto-deploys them."""
-
+    """Queue repeated human-confirmed patterns; never auto-deploy them."""
     def __init__(self) -> None:
         self._items: list[PromotionCandidate] = []
 
@@ -160,16 +148,9 @@ def decision_fingerprint(decision_id: str, payload: Mapping[str, Any]) -> str:
     return sha256(f"{decision_id}|{canonical}".encode()).hexdigest()
 
 
-def differential_check(decision_id: str, first: Mapping[str, Any], second: Mapping[str, Any]) -> bool:
-    """Return true only when identical decision IDs produce identical canonical payloads."""
-    if decision_id != decision_id:
-        return False
-    return decision_fingerprint(decision_id, first) == decision_fingerprint(decision_id, second)
+def differential_check(first_decision_id: str, first: Mapping[str, Any], second_decision_id: str, second: Mapping[str, Any]) -> bool:
+    """Require identical decision IDs and canonical payloads across runs."""
+    return first_decision_id == second_decision_id and decision_fingerprint(first_decision_id, first) == decision_fingerprint(second_decision_id, second)
 
 
-__all__ = [
-    "SchemaRegistry", "ConstantsDB", "FormalCheckResult", "optional_sympy_identity",
-    "FailureRecord", "FailureLedger", "AdversarialFinding", "adversarial_suite",
-    "CalibrationPolicy", "parallel_double_pass", "attach_evidence", "PromotionCandidate",
-    "PromotionQueue", "decision_fingerprint", "differential_check",
-]
+__all__ = ["SchemaRegistry", "ConstantsDB", "FormalCheckResult", "optional_sympy_identity", "FailureRecord", "FailureLedger", "AdversarialFinding", "adversarial_suite", "CalibrationPolicy", "parallel_double_pass", "attach_evidence", "PromotionCandidate", "PromotionQueue", "decision_fingerprint", "differential_check"]
