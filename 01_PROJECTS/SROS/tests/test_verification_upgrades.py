@@ -1,17 +1,6 @@
 from sros import OperationState, SROS
 from sros.models import Resolution
-from sros.verification import (
-    CalibrationPolicy,
-    ConstantsDB,
-    FailureLedger,
-    FailureRecord,
-    PromotionCandidate,
-    PromotionQueue,
-    SchemaRegistry,
-    adversarial_suite,
-    differential_check,
-    parallel_double_pass,
-)
+from sros.verification import CalibrationPolicy, ConstantsDB, FailureLedger, FailureRecord, PromotionCandidate, PromotionQueue, SchemaRegistry, adversarial_suite, differential_check, parallel_double_pass
 
 
 def test_schema_registry_enforces_boundaries():
@@ -59,9 +48,10 @@ def test_rag_evidence_is_attached_to_result_metadata():
 
 def test_promotion_queue_requires_human_confirmations():
     queue = PromotionQueue()
-    candidate = PromotionCandidate("pattern", confirmations=3, evidence_ids=("e1", "e2", "e3"))
+    candidate = PromotionCandidate("pattern", confirmations=3, evidence_ids=("e1", "e2", "e3"), human_confirmed=True)
     assert queue.consider(candidate)
     assert queue.items == (candidate,)
+    assert not queue.consider(PromotionCandidate("unconfirmed", 3, human_confirmed=False))
 
 
 def test_differential_audit_detects_divergence():
