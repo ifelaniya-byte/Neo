@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from math import isfinite
 from typing import Callable, Optional
 
 from .engineers import Engineer, NonStationaryEngineer, StationaryEngineer
@@ -14,7 +15,10 @@ class ResolutionPolicy:
 
     default_regime: str = "auto"
     require_validation: bool = True
-    allow_fallback: bool = True
+    # Fallback is opt-in. A failed regime must not silently become a
+    # different problem class merely because the alternate reference
+    # engineer can produce a proposal.
+    allow_fallback: bool = False
 
 
 class SROS:
@@ -43,8 +47,6 @@ class SROS:
             regime = self.regime_classifier(problem)
             if regime in {"stationary", "non_stationary"}:
                 return regime
-        # Explicit transition modeling is the strongest local signal that the
-        # problem should use the dynamic regime.
         return "non_stationary" if problem.transition_model else "stationary"
 
     def _engineer(self, regime: str) -> Engineer:
@@ -63,11 +65,14 @@ class SROS:
             alternate_validation = alternate.validate(problem, alternate_resolution)
             if alternate_validation.passed:
                 regime = alternate_regime
+                engineer = alternate
                 resolution = alternate_resolution
                 validation = alternate_validation
 
         confidence = self._confidence(validation)
-        status = "resolved" if validation.passed else "unresolved"
+        accepted = validation.passed and isfinite(confidence) and 0.0 <= confidence <= 1.0
+        status = "resolved" if accepted else "unresolved"
+        validation = self._with_acceptance_note(validation, accepted)
         return ResolutionResult(regime, resolution, validation, confidence, status)
 
     @staticmethod
@@ -80,6 +85,17 @@ class SROS:
         if validation.risks:
             base *= max(0.0, 1.0 - min(0.5, 0.1 * len(validation.risks)))
         return round(base, 4)
+
+    @staticmethod
+    def _with_acceptance_note(validation: ValidationReport, accepted: bool) -> ValidationReport:
+        note = "accepted_by_sros_contract" if accepted else "not_accepted_by_sros_contract"
+        return ValidationReport(
+            passed=validation.passed,
+            checks=validation.checks,
+            risks=validation.risks,
+            metrics=validation.metrics,
+            notes=[*validation.notes, note],
+        )
 
 
 __all__ = ["SROS", "ResolutionPolicy"]
