@@ -93,19 +93,22 @@ class SROS:
             if self.ledger.repeated(signature):
                 risks.append("repeated_failure_pattern")
 
-        formal_results = []
-        for expression in problem.metadata.get("formal_expressions", ()):
-            formal_results.append(optional_sympy_identity(str(expression)).__dict__)
-        if formal_results:
-            checks["formal_identity_checks"] = all(item["checked"] and item["passed"] for item in formal_results)
+        formal_results = [optional_sympy_identity(str(expression)).__dict__ for expression in problem.metadata.get("formal_expressions", ())]
+        checked_formal = [item for item in formal_results if item["checked"]]
+        if checked_formal:
+            checks["formal_identity_checks"] = all(item["passed"] for item in checked_formal)
             if not checks["formal_identity_checks"]:
-                risks.append("formal_identity_unverified")
+                risks.append("formal_identity_failed")
+        elif formal_results:
+            checks["formal_identity_checks"] = True
+            risks.append("formal_identity_abstained")
 
         metadata = attach_evidence(problem.metadata, problem.metadata.get("rag_settled", []))
         metadata.update({"regime": regime, "engineer": resolution.engineer, "adversarial_findings": [f.__dict__ for f in findings]})
         if formal_results:
             metadata["formal_identity_results"] = formal_results
-        return ValidationReport(validation.passed and adversarial_ok and not any(r == "formal_identity_unverified" for r in risks), checks, risks, validation.metrics, validation.notes, metadata)
+        failed_formal = "formal_identity_failed" in risks
+        return ValidationReport(validation.passed and adversarial_ok and not failed_formal, checks, risks, validation.metrics, validation.notes, metadata)
 
     @staticmethod
     def _confidence(validation: ValidationReport) -> float:
@@ -120,8 +123,7 @@ class SROS:
     @staticmethod
     def _with_acceptance_note(validation: ValidationReport, accepted: bool) -> ValidationReport:
         return ValidationReport(validation.passed, validation.checks, validation.risks, validation.metrics,
-                                [*validation.notes, "accepted_by_sros_contract" if accepted else "not_accepted_by_sros_contract"],
-                                validation.metadata)
+                                [*validation.notes, "accepted_by_sros_contract" if accepted else "not_accepted_by_sros_contract"], validation.metadata)
 
 
 __all__ = ["SROS", "ResolutionPolicy"]
