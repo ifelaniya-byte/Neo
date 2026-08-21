@@ -1,0 +1,29 @@
+name: SROS verification
+
+on:
+  push:
+    paths:
+      - '01_PROJECTS/SROS/**'
+      - '.github/workflows/sros-verification.yml'
+  pull_request:
+    paths:
+      - '01_PROJECTS/SROS/**'
+      - '.github/workflows/sros-verification.yml'
+
+jobs:
+  sros:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 01_PROJECTS/SROS
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install test runner
+        run: python -m pip install --upgrade pip pytest
+      - name: Run stationary and non-stationary tests
+        run: python -m pytest -q
+      - name: Mandatory adversarial baseline
+        run: python -c "from sros.verification import adversarial_suite; from sros.models import Resolution; r=adversarial_suite(Resolution(operations=['hold'], predicted_state={'x': 1.0})); assert all(x.passed for x in r)"
