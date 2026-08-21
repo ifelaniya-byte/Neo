@@ -125,6 +125,7 @@ class PromotionCandidate:
     signature: str
     confirmations: int
     evidence_ids: tuple[str, ...] = ()
+    human_confirmed: bool = False
 
 
 class PromotionQueue:
@@ -133,7 +134,7 @@ class PromotionQueue:
         self._items: list[PromotionCandidate] = []
 
     def consider(self, candidate: PromotionCandidate, minimum_confirmations: int = 3) -> bool:
-        if candidate.confirmations < minimum_confirmations:
+        if not candidate.human_confirmed or candidate.confirmations < minimum_confirmations:
             return False
         self._items.append(candidate)
         return True
