@@ -1,0 +1,10 @@
+[project]
+name = "neo-sros"
+version = "0.1.0"
+description = "State Resolutions Operation Solver"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
