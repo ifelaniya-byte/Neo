@@ -1,0 +1,298 @@
+﻿[
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\20_export_gguf.ipynb",
+        "Length":  5734
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\gguf_manifest.json",
+        "Length":  642
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\llama_cpp_local_smoke.py",
+        "Length":  10020
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\qwen15_project.zip",
+        "Length":  964901109
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\qwen15_project_files.zip",
+        "Length":  9162
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\qwen2.5-0.5b-instruct-Q4_K_M.gguf",
+        "Length":  397807936
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\qwen2.5-1.5b-instruct-Q4_K_M.gguf",
+        "Length":  986048512
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\council_extracted\\old_session_files\\kaggle_30_train_qlora.ipynb",
+        "Length":  1471
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\council_extracted\\old_session_files\\mini_llm.py",
+        "Length":  9183
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\council_extracted\\old_session_files\\kaggle_pack\\registry\\qwen25_05b_manifest.json",
+        "Length":  1830
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\council_extracted\\old_session_files\\registry\\qwen25_05b_manifest.json",
+        "Length":  1830
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\council_extracted\\old_session_files\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\config.json",
+        "Length":  4308
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\council_extracted\\old_session_files\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\generation_config.json",
+        "Length":  202
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\council_extracted\\old_session_files\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\LICENSE",
+        "Length":  11343
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\gguf_extract\\council-20260813-r003-patched-v2.zip",
+        "Length":  1102663
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\gguf_extract\\llama_cpp_local_smoke.py",
+        "Length":  10020
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\gguf_extract2\\20_export_gguf.ipynb",
+        "Length":  5734
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\gguf_extract2\\llama_cpp_local_smoke.py",
+        "Length":  5400
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\hft_engine\\CODEX_QWEN_COMPARISON.md",
+        "Length":  4780
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\20_export_gguf.ipynb",
+        "Length":  5734
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\llama_cpp_local_smoke.py",
+        "Length":  10020
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\council\\kaggle_30_train_qlora.ipynb",
+        "Length":  1471
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\council\\mini_llm.py",
+        "Length":  9183
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\council\\kaggle_pack\\20_export_gguf.ipynb",
+        "Length":  5734
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\council\\kaggle_pack\\registry\\qwen25_05b_manifest.json",
+        "Length":  1830
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\council\\registry\\qwen25_05b_manifest.json",
+        "Length":  1830
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\council\\tools\\llama_cpp_local_smoke.py",
+        "Length":  10020
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\council\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\config.json",
+        "Length":  4308
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\council\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\generation_config.json",
+        "Length":  202
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\council\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\LICENSE",
+        "Length":  11343
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\files1\\20_export_gguf.ipynb",
+        "Length":  5734
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\files1\\llama_cpp_local_smoke.py",
+        "Length":  5400
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\files2\\llama_cpp_local_smoke.py",
+        "Length":  10020
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\files3\\20_export_gguf.ipynb",
+        "Length":  5734
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace1\\old_session_files\\kaggle_30_train_qlora.ipynb",
+        "Length":  1471
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace1\\old_session_files\\mini_llm.py",
+        "Length":  9183
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace1\\old_session_files\\kaggle_pack\\registry\\qwen25_05b_manifest.json",
+        "Length":  1830
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace1\\old_session_files\\registry\\qwen25_05b_manifest.json",
+        "Length":  1830
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace1\\old_session_files\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\config.json",
+        "Length":  4308
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace1\\old_session_files\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\generation_config.json",
+        "Length":  202
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace1\\old_session_files\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\LICENSE",
+        "Length":  11343
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace2\\old_session_files\\kaggle_30_train_qlora.ipynb",
+        "Length":  1471
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace2\\old_session_files\\mini_llm.py",
+        "Length":  9183
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace2\\old_session_files\\kaggle_pack\\registry\\qwen25_05b_manifest.json",
+        "Length":  1830
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace2\\old_session_files\\registry\\qwen25_05b_manifest.json",
+        "Length":  1830
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace2\\old_session_files\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\config.json",
+        "Length":  4308
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace2\\old_session_files\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\generation_config.json",
+        "Length":  202
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace2\\old_session_files\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\LICENSE",
+        "Length":  11343
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace3\\kaggle_30_train_qlora.ipynb",
+        "Length":  1471
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace3\\mini_llm.py",
+        "Length":  9183
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace3\\kaggle_pack\\registry\\qwen25_05b_manifest.json",
+        "Length":  1830
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace3\\registry\\qwen25_05b_manifest.json",
+        "Length":  1830
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace3\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\config.json",
+        "Length":  4308
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace3\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\generation_config.json",
+        "Length":  202
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_downloads_latest\\workspace3\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\LICENSE",
+        "Length":  11343
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_files\\20_export_gguf.ipynb",
+        "Length":  5329
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\kaggle_pack\\20_export_gguf.ipynb",
+        "Length":  5734
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\models\\smollm2-1.7b-instruct-q4_k_m.gguf",
+        "Length":  1055609536
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\qwen2.5-0.5b-instruct-Q4_K_M.gguf",
+        "Length":  397807936
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\qwen2.5-1.5b-instruct-Q4_K_M.gguf",
+        "Length":  986048512
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\council\\council\\kaggle_30_train_qlora.ipynb",
+        "Length":  1471
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\council\\council\\mini_llm.py",
+        "Length":  9183
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\council\\council\\kaggle_pack\\20_export_gguf.ipynb",
+        "Length":  5734
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\council\\council\\kaggle_pack\\registry\\qwen25_05b_manifest.json",
+        "Length":  1830
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\council\\council\\registry\\qwen25_05b_manifest.json",
+        "Length":  1830
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\council\\council\\tools\\llama_cpp_local_smoke.py",
+        "Length":  10020
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\council\\council\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\config.json",
+        "Length":  4308
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\council\\council\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\generation_config.json",
+        "Length":  202
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\council\\council\\weights_offline\\modelscope\\Qwen__Qwen3.6-27B\\LICENSE",
+        "Length":  11343
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\kaggle_files\\20_export_gguf.ipynb",
+        "Length":  5329
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\models\\smollm2-1.7b-instruct-q4_k_m.gguf",
+        "Length":  1055609536
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\project_archive\\tools\\llama_cpp_local_smoke.py",
+        "Length":  10383
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\test_gate\\model.safetensors",
+        "Length":  14
+    },
+    {
+        "FullName":  "C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\tools\\llama_cpp_local_smoke.py",
+        "Length":  10383
+    }
+]

@@ -1,0 +1,11 @@
+{
+  "protocol_name": "Basic_Logic_Reconstruction",
+  "starting_requirements": "None - can start from scratch",
+  "step_by_step_procedure": "1. Introduce propositional logic | 2. Add inference rules | 3. Create basic theorems | 4. Extend to predicate logic",
+  "verification_checkpoints": "After each step, verify logical consistency",
+  "failure_recovery": "Backtrack to last consistent state and retry",
+  "estimated_steps": 10,
+  "success_probability": 0.95,
+  "required_resources": "None - abstract reasoning only",
+  "generated_at": "2026-08-18T01:35:30.988028+00:00"
+}

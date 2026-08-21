@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "media_type": "Digital",
+    "capacity_terabytes": 1000.0,
+    "durability_years": 10,
+    "access_time": "milliseconds",
+    "environmental_requirements": "Electricity, hardware",
+    "recovery_complexity": 1,
+    "cost_per_gb": 0.05,
+    "geographical_distribution": "Data centers globally",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 2,
+    "media_type": "DNA",
+    "capacity_terabytes": 215.0,
+    "durability_years": 1000,
+    "access_time": "weeks",
+    "environmental_requirements": "Lab equipment, sequencing",
+    "recovery_complexity": 5,
+    "cost_per_gb": 1000.0,
+    "geographical_distribution": "Secure storage facilities",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 3,
+    "media_type": "Analog",
+    "capacity_terabytes": 10.0,
+    "durability_years": 5000,
+    "access_time": "hours",
+    "environmental_requirements": "None",
+    "recovery_complexity": 2,
+    "cost_per_gb": 500.0,
+    "geographical_distribution": "Geographically distributed archives",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 4,
+    "media_type": "Quantum",
+    "capacity_terabytes": 1.0,
+    "durability_years": 50,
+    "access_time": "microseconds",
+    "environmental_requirements": "Cryogenic systems",
+    "recovery_complexity": 5,
+    "cost_per_gb": 10000.0,
+    "geographical_distribution": "Specialized facilities",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 5,
+    "media_type": "Artifact",
+    "capacity_terabytes": 0.001,
+    "durability_years": 10000,
+    "access_time": "days",
+    "environmental_requirements": "None",
+    "recovery_complexity": 1,
+    "cost_per_gb": 100.0,
+    "geographical_distribution": "Museums, libraries worldwide",
+    "created_at": "2026-08-18 01:35:31"
+  }
+]

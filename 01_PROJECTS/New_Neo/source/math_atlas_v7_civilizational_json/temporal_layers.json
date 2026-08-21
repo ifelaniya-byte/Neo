@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "era": "2020s",
+    "selection_criteria": "Current mathematical knowledge",
+    "preservation_priority": 1,
+    "estimated_accessible_until": "2100",
+    "storage_media": "digital",
+    "recovery_instructions": "Standard digital recovery methods",
+    "layer_description": "Contemporary mathematical knowledge as currently understood",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 2,
+    "era": "2050s",
+    "selection_criteria": "Foundational knowledge + computational approaches",
+    "preservation_priority": 2,
+    "estimated_accessible_until": "2500",
+    "storage_media": "dna",
+    "recovery_instructions": "DNA sequencing and decoding protocols",
+    "layer_description": "Mid-21st century mathematical synthesis with biological storage",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 3,
+    "era": "2100s",
+    "selection_criteria": "Universal mathematical principles",
+    "preservation_priority": 1,
+    "estimated_accessible_until": "5000",
+    "storage_media": "analog",
+    "recovery_instructions": "Physical decoding of engraved materials",
+    "layer_description": "Universally fundamental mathematical principles in durable media",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 4,
+    "era": "post-catastrophe",
+    "selection_criteria": "Axiomatic seeds + reconstruction protocols",
+    "preservation_priority": 1,
+    "estimated_accessible_until": "permanent",
+    "storage_media": "artifact",
+    "recovery_instructions": "Minimal reconstruction from axiomatic seeds",
+    "layer_description": "Complete civilization reboot capability from minimal starting conditions",
+    "created_at": "2026-08-18 01:35:31"
+  }
+]

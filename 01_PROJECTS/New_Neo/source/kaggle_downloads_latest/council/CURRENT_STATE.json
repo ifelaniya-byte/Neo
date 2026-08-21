@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "project_state": "recovered-control-plane",
+  "release_id": "council-20260813-r003",
+  "previous_release_id": "council-20260813-r002",
+  "source_commit": null,
+  "source_commit_record": "external release manifest is authoritative to avoid a self-referential Git commit hash",
+  "release_metadata_commit": null,
+  "logical_seats": 56,
+  "runtime_verified_models": 0,
+  "benchmarked_models": 0,
+  "trained_adapters": 0,
+  "promoted_adapters": 0,
+  "model_artifact": {
+    "id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "authenticity": "expected-official-artifact",
+    "local_state": "absent",
+    "external_location": null,
+    "official_revision": null,
+    "official_revision_pinned": false,
+    "expected_tensor_bytes": 988097824,
+    "expected_tensor_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "complete_manifest_present": false,
+    "license_reviewed_for_kaggle_storage": false
+  },
+  "benchmark": {
+    "name": "smoke-v2",
+    "records": 60,
+    "sha256": "d880d026bbc799847774506043cfb44c6c0ce4846384393412e6f6e273d34bee",
+    "executed": false
+  },
+  "runtime": {
+    "gpu_attempted": false,
+    "worker_result_present": false,
+    "predictions_present": false,
+    "evaluation_present": false,
+    "run_report_present": false,
+    "reproduction_runs": 0
+  },
+  "tests": {
+    "unit": {
+      "run": 18,
+      "passed": 18,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "artifact_integration": {
+      "run": 2,
+      "passed": 0,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 2,
+      "status": "blocked-external-artifact-absent"
+    }
+  },
+  "security": {
+    "custom_scan_files": 82,
+    "custom_scan_findings": 0,
+    "gitleaks_run": false,
+    "overall_status": "partial"
+  },
+  "next_gate": "restore and independently verify the external Qwen artifact",
+  "blocking_items": [
+    "external model artifact absent",
+    "official immutable model revision not pinned",
+    "artifact integration tests blocked",
+    "no Kaggle GPU attempt",
+    "no worker result",
+    "no predictions",
+    "no evaluation",
+    "no run report"
+  ]
+}

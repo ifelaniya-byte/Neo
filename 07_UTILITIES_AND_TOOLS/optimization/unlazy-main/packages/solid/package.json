@@ -1,0 +1,63 @@
+{
+  "name": "@unlazy/solid",
+  "type": "module",
+  "version": "2.0.1",
+  "packageManager": "pnpm@10.33.0",
+  "description": "Solid lazy loading library for placeholder images",
+  "author": "Johann Schopplich <hello@johannschopplich.com>",
+  "license": "MIT",
+  "homepage": "https://unlazy.byjohann.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johannschopplich/unlazy.git",
+    "directory": "packages/solid"
+  },
+  "bugs": {
+    "url": "https://github.com/johannschopplich/unlazy/issues"
+  },
+  "keywords": [
+    "blurhash",
+    "lazy",
+    "loading",
+    "lozad",
+    "placeholder",
+    "responsive",
+    "thumbhash",
+    "solid"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "pnpm -C playground run dev",
+    "dev:build": "pnpm -C playground run build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test:types": "tsc --noEmit",
+    "test:build": "publint --strict"
+  },
+  "peerDependencies": {
+    "solid-js": "^1"
+  },
+  "dependencies": {
+    "unlazy": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.2",
+    "solid-js": "^1.9.12",
+    "unplugin-solid": "^1.0.0",
+    "vite-plugin-solid": "^2.11.12"
+  }
+}

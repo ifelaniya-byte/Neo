@@ -1,0 +1,164 @@
+# `@unlazy/react`
+
+The React integration provides an `UnLazyImage` component for your React 19+ application.
+
+## Installation
+
+Install the `@unlazy/react` package using your favorite package manager:
+
+::: code-group
+  ```bash [pnpm]
+  pnpm add -D @unlazy/react
+  ```
+  ```bash [yarn]
+  yarn add -D @unlazy/react
+  ```
+  ```bash [npm]
+  npm install -D @unlazy/react
+  ```
+:::
+
+Import the `UnLazyImage` component in your component file:
+
+```tsx
+import { UnLazyImage } from '@unlazy/react'
+
+export default function MyComponent() {
+  return (
+    <UnLazyImage
+      blurhash="LKO2:N%2Tw=w]~RBVZRi};RPxuwH"
+      srcSet="image-320w.jpg 320w, image-640w.jpg 640w"
+      autoSizes
+    />
+  )
+}
+```
+
+## `UnLazyImage` Component
+
+The `UnLazyImage` component allows you to easily implement unlazy in your React application, providing a smoother image loading experience.
+
+The component supports automatic calculation of the `sizes` attribute with the `autoSizes` prop. It also enables you to specify a `blurhash` for the blurry placeholder image.
+
+### Props
+
+The `UnLazyImage` component accepts the following props:
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| `src` | String | - | Image source URL to be lazy-loaded. |
+| `srcSet` | String | - | Image source set to be lazy-loaded. |
+| `sources` | Array | - | Array of `UnLazySource` objects to render a `<picture>` element. |
+| `autoSizes` | Boolean | `false` | Whether the sizes attribute should be automatically calculated. |
+| `blurhash` | String | - | A BlurHash string representing the blurry placeholder image. |
+| `thumbhash` | String | - | A ThumbHash string representing the blurry placeholder image. If both are provided, `thumbhash` takes precedence. |
+| `placeholderSrc` | String | - | Optional image source URL for a custom placeholder image. Ignored if a hash is provided. |
+| `placeholderSize` | Number | `32` | The size of the longer edge for BlurHash decoding. Ignored for ThumbHash. |
+| `preload` | Boolean | `false` | Whether the image should be preloaded immediately, bypassing lazy loading. |
+| `loading` | String | `'lazy'` | Loading strategy for the image (`'lazy'` or `'eager'`). |
+| `onImageLoad` | Function | - | Callback function invoked when the image has been successfully loaded. Receives the `HTMLImageElement` as an argument. |
+| `onImageError` | Function | - | Callback function invoked when an error occurs during image loading. Receives the `HTMLImageElement` and `Event` as arguments. |
+
+The component also accepts all standard `<img>` HTML attributes (e.g., `alt`, `className`, `style`).
+
+### Lifecycle
+
+The component uses React's `useEffect` hook to initialize lazy loading when mounted:
+
+1. Renders with placeholder image or hash-generated placeholder.
+2. Sets up lazy loading via `lazyLoad()` from the core library.
+3. Decodes BlurHash/ThumbHash if provided (thumbhash takes precedence).
+4. Swaps `data-src` to `src` when image enters viewport.
+5. Cleans up event listeners on unmount or when props change.
+
+## Examples
+
+::: code-group
+  ```tsx [BlurHash]
+  return (
+    <UnLazyImage
+      width={800}
+      height={600}
+      blurhash="LKO2:N%2Tw=w]~RBVZRi};RPxuwH"
+      srcSet="image-320w.jpg 320w, image-640w.jpg 640w"
+      autoSizes
+    />
+  )
+  ```
+  ```tsx [ThumbHash]
+  return (
+    <UnLazyImage
+      width={800}
+      height={600}
+      thumbhash="1QcSHQRnh493V4dIh4eXh1h4kJUI"
+      srcSet="image-320w.jpg 320w, image-640w.jpg 640w"
+      autoSizes
+    />
+  )
+  ```
+  ```tsx [Inlined placeholder image]
+  return (
+    <UnLazyImage
+      width={800}
+      height={600}
+      placeholderSrc="data:image/svg+xml, ..."
+      srcSet="image-320w.jpg 320w, image-640w.jpg 640w"
+      autoSizes
+    />
+  )
+  ```
+:::
+
+::: tip
+In each example, the `sizes` attribute is automatically calculated given the `auto-sizes` prop.
+:::
+
+::: info
+When using BlurHash, set explicit `width` and `height` props. See [Hash-Based Placeholders](/guide/placeholders#using-data-attributes) for why.
+:::
+
+### Multiple Image Sources
+
+Pass `sources` to render a `<picture>` element with format negotiation and art direction. Each entry becomes a `<source>` child:
+
+```tsx
+import type { UnLazySource } from 'unlazy'
+
+const sources: UnLazySource[] = [
+  { type: 'image/avif', srcSet: 'hero.avif 1x, hero@2x.avif 2x' },
+  {
+    media: '(max-width: 600px)',
+    srcSet: 'hero-mobile.jpg',
+    width: 480,
+    height: 640,
+  },
+]
+
+return (
+  <UnLazyImage
+    src="/hero.jpg"
+    sources={sources}
+    width={640}
+    height={427}
+  />
+)
+```
+
+::: tip
+Set `width` and `height` per source to prevent layout shift when the breakpoint changes. Modern browsers use the matched `<source>`'s dimensions for the rendered `<img>`'s aspect ratio.
+:::
+
+### Preload Image
+
+Useful if the `UnLazyImage` is part of e.g. a slider, and you want to preload the next image.
+
+```tsx
+return (
+  <UnLazyImage
+    blurhash="LKO2:N%2Tw=w]~RBVZRi};RPxuwH"
+    srcSet="image-320w.jpg 320w, image-640w.jpg 640w"
+    autoSizes
+    preload
+  />
+)
+```

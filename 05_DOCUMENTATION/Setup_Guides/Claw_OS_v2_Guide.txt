@@ -1,0 +1,82 @@
+**Download is ready.**
+
+**File:** 
+
+---
+
+### Full package contents
+
+```
+Claw_OS_v2_Complete.zip
+└── claw_os/
+    ├── claw_os.py                 ← GUI (Obsidian Luxury dark mode + multi-image)
+    ├── claw_os_headless.py        ← Pure CLI / server version
+    ├── requirements.txt
+    ├── .env.example
+    ├── README.md
+    ├── run_claw_os.sh
+    ├── docker/
+    │   ├── Dockerfile
+    │   └── docker-compose.yml
+    ├── systemd/
+    │   └── claw-os.service
+    └── docs/
+        ├── MANUAL.md              ← Complete user manual
+        ├── AI_HELP_GUIDE.md       ← Help guide written for AI assistants
+        └── RECURSIVE_AI_HELP.md   ← Recursive recovery guide for when AIs get stuck
+```
+
+---
+
+### What the GUI looks like / does
+
+- Deep **Obsidian** background (`#0a0a0c`) with muted gold accents — glossy, quiet, expensive look.
+- Header: **CLAW OS** in gold + “Obsidian Edition • Media → X”.
+- One **Browse…** button → select any folder on your computer.
+- **▶ Start Pipeline** (gold accent button) starts live watching.
+- **⏹ Stop** and **Process existing files** buttons.
+- Live Activity Log panel with dark console styling.
+- Drop images/videos → AI writes caption → chunked upload → posts to X → moves files into `processed/`.
+- Multi-image support: drop several images within ~8 seconds and they are grouped into a single album tweet (max 4 images). Videos stay individual.
+
+---
+
+### Important notes
+
+- X/Twitter free tier is almost never enough for media posting. You need a paid plan.
+- Keep the GUI window open while the pipeline is running.
+- Never commit your real `.env` file.
+- All credentials live in `.env` (copy from `.env.example`).
+
+---
+
+### Plans & extras that are already included
+
+| Feature | Status |
+|---------|--------|
+| **Obsidian Luxury dark mode** (glossy, glittering, shiny, expensive) | ✅ Built into `claw_os.py` |
+| **Multi-image / album posting** (up to 4 images) | ✅ Built into both GUI & headless |
+| **Completely headless version** (takes folder path) | ✅ `claw_os_headless.py` |
+| **Docker** | ✅ `docker/Dockerfile` + `docker-compose.yml` |
+| **Systemd service** | ✅ `systemd/claw-os.service` |
+| **Full complete manual** | ✅ `docs/MANUAL.md` |
+| **Help guide for AI** | ✅ `docs/AI_HELP_GUIDE.md` |
+| **Recursive help guide for AI** | ✅ `docs/RECURSIVE_AI_HELP.md` |
+
+---
+
+### How to use after download
+
+1. Unzip `Claw_OS_v2_Complete.zip`
+2. `cd claw_os`
+3. `python -m venv venv && source venv/bin/activate` (Windows: `venv\Scripts\activate`)
+4. `pip install -r requirements.txt`
+5. `cp .env.example .env` → fill in your real X keys + OpenAI or Ollama settings
+6. `python claw_os.py` → Browse → Start
+
+Headless example:
+```bash
+python claw_os_headless.py --folder /path/to/your/folder --watch
+```
+
+Everything you requested is inside the ZIP, including the full manuals and both AI help guides so future assistants (or you) can recover even when context is lost.

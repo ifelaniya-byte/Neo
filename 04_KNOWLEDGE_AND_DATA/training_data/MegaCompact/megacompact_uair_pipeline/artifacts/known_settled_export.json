@@ -1,0 +1,410 @@
+{
+  "version": "1.0.0-settled",
+  "scope": "Settled knowledge only: entries are standard identities / laws that hold under the listed assumptions. Scope is finite and curated. Absence from this DB does not mean false; presence means 'accepted within regime'.",
+  "timestamp": "2026-08-19T22:34:18.899014+00:00",
+  "n_entries": 26,
+  "fields": [
+    "computing",
+    "math",
+    "physics"
+  ],
+  "entries": [
+    {
+      "id": "math.arithmetic.2p2",
+      "field": "math",
+      "statement": "Two plus two equals four in standard integer arithmetic.",
+      "formal": "2 + 2 = 4",
+      "assumptions": [
+        "Peano/integer arithmetic",
+        "standard base-10 numerals"
+      ],
+      "regime": "elementary arithmetic",
+      "confidence": "SETTLED",
+      "tags": [
+        "arithmetic",
+        "identity"
+      ]
+    },
+    {
+      "id": "math.logic.noncontradiction",
+      "field": "math",
+      "statement": "A statement and its negation are not both true (classical logic).",
+      "formal": "\u00ac(A \u2227 \u00acA)",
+      "assumptions": [
+        "classical bivalent logic"
+      ],
+      "regime": "classical logic",
+      "confidence": "SETTLED",
+      "tags": [
+        "logic"
+      ]
+    },
+    {
+      "id": "math.prob.unit_measure",
+      "field": "math",
+      "statement": "Probabilities of a discrete partition sum to 1.",
+      "formal": "\u03a3_i P(i) = 1 for a complete discrete partition",
+      "assumptions": [
+        "probability measure axioms (Kolmogorov)"
+      ],
+      "regime": "probability theory",
+      "confidence": "SETTLED",
+      "tags": [
+        "probability"
+      ]
+    },
+    {
+      "id": "math.prob.bayes",
+      "field": "math",
+      "statement": "Bayes' rule relating conditional probabilities.",
+      "formal": "P(A|B) = P(B|A) P(A) / P(B)  when P(B) > 0",
+      "assumptions": [
+        "Kolmogorov probability",
+        "P(B)>0"
+      ],
+      "regime": "probability theory",
+      "confidence": "SETTLED",
+      "tags": [
+        "probability",
+        "inference"
+      ]
+    },
+    {
+      "id": "math.linalg.matmul_assoc",
+      "field": "math",
+      "statement": "Matrix multiplication is associative where defined.",
+      "formal": "(AB)C = A(BC)",
+      "assumptions": [
+        "compatible dimensions over a ring/field"
+      ],
+      "regime": "linear algebra",
+      "confidence": "SETTLED",
+      "tags": [
+        "linear_algebra"
+      ]
+    },
+    {
+      "id": "math.calc.ftc",
+      "field": "math",
+      "statement": "Fundamental theorem of calculus (standard form).",
+      "formal": "d/dx \u222b_a^x f(t) dt = f(x) for continuous f",
+      "assumptions": [
+        "f continuous on interval"
+      ],
+      "regime": "real calculus",
+      "confidence": "SETTLED",
+      "tags": [
+        "calculus"
+      ]
+    },
+    {
+      "id": "math.info.shannon_nonneg",
+      "field": "math",
+      "statement": "Shannon entropy is nonnegative.",
+      "formal": "H(X) \u2265 0",
+      "assumptions": [
+        "discrete distribution",
+        "Shannon definition"
+      ],
+      "regime": "information theory",
+      "confidence": "SETTLED",
+      "tags": [
+        "information_theory"
+      ]
+    },
+    {
+      "id": "math.info.kl_nonneg",
+      "field": "math",
+      "statement": "KL divergence is nonnegative.",
+      "formal": "D_KL(P||Q) \u2265 0",
+      "assumptions": [
+        "P absolutely continuous w.r.t. Q as required"
+      ],
+      "regime": "information theory",
+      "confidence": "SETTLED",
+      "tags": [
+        "information_theory",
+        "statistics"
+      ]
+    },
+    {
+      "id": "phys.newton.second",
+      "field": "physics",
+      "statement": "Net force equals mass times acceleration (Newtonian).",
+      "formal": "F = m a",
+      "assumptions": [
+        "inertial frame",
+        "non-relativistic",
+        "classical"
+      ],
+      "regime": "classical mechanics v \u226a c",
+      "confidence": "SETTLED",
+      "tags": [
+        "classical_mechanics"
+      ]
+    },
+    {
+      "id": "phys.em.maxwell_div_b",
+      "field": "physics",
+      "statement": "No magnetic monopoles in classical Maxwell theory (div B = 0).",
+      "formal": "\u2207 \u00b7 B = 0",
+      "assumptions": [
+        "classical Maxwell electrodynamics"
+      ],
+      "regime": "classical EM",
+      "confidence": "SETTLED",
+      "tags": [
+        "classical_em"
+      ]
+    },
+    {
+      "id": "phys.sr.c_invariant",
+      "field": "physics",
+      "statement": "Speed of light in vacuum is invariant across inertial frames (SR).",
+      "formal": "c invariant under Lorentz transformations",
+      "assumptions": [
+        "special relativity",
+        "inertial frames",
+        "vacuum"
+      ],
+      "regime": "special relativity",
+      "confidence": "SETTLED",
+      "tags": [
+        "special_relativity"
+      ]
+    },
+    {
+      "id": "phys.sr.mass_energy",
+      "field": "physics",
+      "statement": "Rest energy equals rest mass times c squared.",
+      "formal": "E\u2080 = m c\u00b2",
+      "assumptions": [
+        "SR",
+        "rest frame for rest energy"
+      ],
+      "regime": "relativistic mechanics",
+      "confidence": "SETTLED",
+      "tags": [
+        "special_relativity"
+      ]
+    },
+    {
+      "id": "phys.qm.born",
+      "field": "physics",
+      "statement": "Born rule: outcome probabilities from |amplitude|\u00b2.",
+      "formal": "P(a) = |\u27e8a|\u03c8\u27e9|\u00b2",
+      "assumptions": [
+        "standard quantum measurement postulate"
+      ],
+      "regime": "textbook quantum mechanics",
+      "confidence": "SETTLED",
+      "tags": [
+        "quantum_mechanics"
+      ]
+    },
+    {
+      "id": "phys.qm.uncertainty",
+      "field": "physics",
+      "statement": "Canonical Heisenberg uncertainty relation.",
+      "formal": "\u03c3_x \u03c3_p \u2265 \u210f/2",
+      "assumptions": [
+        "canonical x,p operators",
+        "standard QM"
+      ],
+      "regime": "quantum mechanics",
+      "confidence": "SETTLED",
+      "tags": [
+        "quantum_mechanics"
+      ]
+    },
+    {
+      "id": "phys.thermo.second_isolated",
+      "field": "physics",
+      "statement": "Entropy of an isolated system does not decrease (2nd law, Clausius form summary).",
+      "formal": "\u0394S \u2265 0 for isolated system",
+      "assumptions": [
+        "thermodynamic limit / macroscopic",
+        "isolated"
+      ],
+      "regime": "classical thermodynamics",
+      "confidence": "SETTLED",
+      "tags": [
+        "thermo"
+      ]
+    },
+    {
+      "id": "phys.stat.boltzmann",
+      "field": "physics",
+      "statement": "Boltzmann entropy relates entropy to multiplicity.",
+      "formal": "S = k_B ln \u03a9",
+      "assumptions": [
+        "microcanonical ensemble counting"
+      ],
+      "regime": "equilibrium statistical mechanics",
+      "confidence": "SETTLED",
+      "tags": [
+        "stat_mech"
+      ]
+    },
+    {
+      "id": "comp.hash.sha256_length",
+      "field": "computing",
+      "statement": "SHA-256 digest is 256 bits (64 hex characters).",
+      "formal": "|SHA256(m)| = 256 bits",
+      "assumptions": [
+        "FIPS 180-4 SHA-256"
+      ],
+      "regime": "cryptographic hash standards",
+      "confidence": "SETTLED",
+      "tags": [
+        "hashing",
+        "standards"
+      ]
+    },
+    {
+      "id": "comp.ieee754.note",
+      "field": "computing",
+      "statement": "IEEE-754 binary floating point has finite precision and rounding modes.",
+      "formal": "float arithmetic \u2260 real arithmetic",
+      "assumptions": [
+        "IEEE-754 binary formats"
+      ],
+      "regime": "numerical computing",
+      "confidence": "SETTLED",
+      "tags": [
+        "numerical"
+      ]
+    },
+    {
+      "id": "comp.causality.no_future_read",
+      "field": "computing",
+      "statement": "In a time-causal feature system, features with availability time > decision time must not be used.",
+      "formal": "\u2200 features f: available_time(f) \u2264 decision_time",
+      "assumptions": [
+        "defined timestamps",
+        "enforced access layer"
+      ],
+      "regime": "time-causal ML / trading research systems",
+      "confidence": "SETTLED",
+      "tags": [
+        "causality",
+        "ml_systems"
+      ]
+    },
+    {
+      "id": "ai.abstain.safety",
+      "field": "computing",
+      "statement": "When uncertainty or constraint checks fail, refusing to act (abstain) is a valid control decision.",
+      "formal": "verdict = ABSTAIN if \u00acconstraints_ok \u2228 uncertainty_high",
+      "assumptions": [
+        "explicit constraint and uncertainty thresholds"
+      ],
+      "regime": "safety-aware decision systems",
+      "confidence": "SETTLED",
+      "tags": [
+        "abstention",
+        "safety"
+      ]
+    },
+    {
+      "id": "comp.determinism.seed",
+      "field": "computing",
+      "statement": "Fixed seed and version pins required for reproducible paper runs.",
+      "formal": "same seed + config_hash => same artifacts",
+      "assumptions": [
+        "controlled nondeterminism"
+      ],
+      "regime": "research harness",
+      "confidence": "SETTLED",
+      "tags": [
+        "reproducibility"
+      ]
+    },
+    {
+      "id": "comp.determinism.hash_stable_v3",
+      "field": "computing",
+      "statement": "SHA256 of identical bytes is identical under fixed algorithm",
+      "formal": "forall b, sha256(b) = sha256(b)",
+      "assumptions": [
+        "sha256 definition"
+      ],
+      "regime": "classical computing",
+      "confidence": "SETTLED",
+      "tags": [
+        "determinism",
+        "source:product_test"
+      ]
+    },
+    {
+      "id": "prod.test.identity",
+      "field": "math",
+      "statement": "For all real a, a + 0 = a",
+      "formal": "\u2200 a \u2208 \u211d, a + 0 = a",
+      "assumptions": [
+        "real arithmetic"
+      ],
+      "regime": "classical",
+      "confidence": "SETTLED",
+      "tags": [
+        "math",
+        "identity",
+        "source:product_test"
+      ]
+    },
+    {
+      "id": "prod.test.commutativity",
+      "field": "math",
+      "statement": "For all real a,b: a+b = b+a",
+      "formal": "forall a,b in R: a+b = b+a",
+      "assumptions": [
+        "real arithmetic"
+      ],
+      "regime": "classical",
+      "confidence": "SETTLED",
+      "tags": [
+        "math",
+        "identity",
+        "source:product_test"
+      ]
+    },
+    {
+      "id": "comp.evidence.not_authority",
+      "field": "computing",
+      "statement": "Knowledge evidence packs must not override abstention or constraint gates.",
+      "formal": "evidence does not entail TRADE authority",
+      "assumptions": [
+        "fail-closed decision systems"
+      ],
+      "regime": "process",
+      "confidence": "SETTLED",
+      "tags": [
+        "safety",
+        "knowledge",
+        "source:coverage_expand"
+      ]
+    },
+    {
+      "id": "comp.smt_interval.required_before_trade",
+      "field": "computing",
+      "statement": "TRADE requires SMT allow and interval allow when those modules are part of the product path.",
+      "formal": "TRADE implies smt.allow and interval.allow when modules enabled",
+      "assumptions": [
+        "product path with SMT/interval wired"
+      ],
+      "regime": "process",
+      "confidence": "SETTLED",
+      "tags": [
+        "smt",
+        "interval",
+        "safety",
+        "source:coverage_expand"
+      ]
+    }
+  ],
+  "explicitly_excluded": [
+    "UV-complete quantum gravity",
+    "identity of dark matter",
+    "final measurement interpretation",
+    "any claim of complete human knowledge"
+  ]
+}

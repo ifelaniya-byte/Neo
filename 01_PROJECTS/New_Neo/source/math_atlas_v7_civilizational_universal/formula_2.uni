@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: RSA encryption -> Public-key cryptography",
+  "musical": "MUSICAL: RSA encryption -> Encryption: c = m^e mod n, Decryption: m = c^d mod n.",
+  "tactile": "TACTILE: RSA encryption -> c = m^e \\pmod n,\\ m = c^d \\pmod n",
+  "computational": "COMPUTATIONAL: RSA encryption -> symbolic_computation",
+  "pattern": "PATTERN: RSA encryption -> Cryptography"
+}

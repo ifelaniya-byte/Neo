@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Van Kampen theorem -> Algebraic topology",
+  "musical": "MUSICAL: Van Kampen theorem -> Fundamental group of union via free product with amalgamation.",
+  "tactile": "TACTILE: Van Kampen theorem -> \\pi_1(X) \\cong \\pi_1(U) *_{\\pi_1(U \\cap V)} \\pi_1(V)",
+  "computational": "COMPUTATIONAL: Van Kampen theorem -> symbolic_computation",
+  "pattern": "PATTERN: Van Kampen theorem -> Topology"
+}

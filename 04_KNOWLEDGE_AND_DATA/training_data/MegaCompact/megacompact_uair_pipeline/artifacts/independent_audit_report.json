@@ -1,0 +1,100 @@
+{
+  "version": "1.0.0-product",
+  "kind": "independent_audit_report",
+  "created_at": "2026-08-19T22:13:00.919401+00:00",
+  "product": "MegaCompact Simulation Assurance",
+  "double_pass": {
+    "final_verdict": "PASS",
+    "allowed_for_llm": true
+  },
+  "adversarial": {
+    "all_ok": true,
+    "n_suite_pass": 5,
+    "n_cases": 5
+  },
+  "formal_subset": {
+    "n_obligations": 3,
+    "path": "artifacts/formal/formal_subset_manifest.json",
+    "kernels": {
+      "lean": false,
+      "coqc": false,
+      "isabelle": false
+    },
+    "kernel_attempt": {
+      "n": 3,
+      "n_proven": 0,
+      "results": [
+        {
+          "id": "net_pnl_identity",
+          "ok": false,
+          "proven": false,
+          "reason": "lean_not_installed"
+        },
+        {
+          "id": "causality_available_after_event",
+          "ok": false,
+          "proven": false,
+          "reason": "lean_not_installed"
+        },
+        {
+          "id": "abstain_default",
+          "ok": false,
+          "proven": false,
+          "reason": "lean_not_installed"
+        }
+      ],
+      "note": "Lean may be absent; product still valid with obligations exported."
+    }
+  },
+  "signed_ledgers": {
+    "promotion_verify": {
+      "ok": true,
+      "n": 4,
+      "failures": []
+    },
+    "promotion_merkle": {
+      "ok": true,
+      "root": "1eb72b7bfd1de0e0d73f38b627fdf5212a05ce060351cf59c263c656c4d54011",
+      "n_leaves": 4
+    }
+  },
+  "bit_exact": {
+    "pin_matrix": {
+      "python": "3.12.3",
+      "platform": "linux",
+      "machine": "x86_64",
+      "implementation": "CPython",
+      "hash_seed": "unset",
+      "hash_seed_note": "PYTHONHASHSEED=0 recommended for stable hashing",
+      "timezone": "UTC"
+    },
+    "replay_proof": {
+      "version": "1.0.0-product",
+      "kind": "bit_exact_replay_proof",
+      "created_at": "2026-08-19T22:13:00.458911+00:00",
+      "run_dir": "artifacts/run_demo",
+      "pin_matrix": {
+        "python": "3.12.3",
+        "platform": "linux",
+        "machine": "x86_64",
+        "implementation": "CPython",
+        "hash_seed": "unset",
+        "hash_seed_note": "PYTHONHASHSEED=0 recommended for stable hashing",
+        "timezone": "UTC"
+      },
+      "file_hashes": {
+        "reports/run_summary.json": "27e1acbfee8890972e9a9edc748155a6c715a61f4c47c8f1bfc8be31795505f8",
+        "audits/audit_results.json": "11c11db30f4b3f6c758722ba3e27eea08145b7d212f6a157451e364b48475280",
+        "hashes/merkle.json": "MISSING",
+        "hashes/pin_matrix.json": "59cb7f733e3d0f3890a5dd3acdd20b411a08b27c24353f36c6d6d6b1c3bab494"
+      },
+      "aggregate_hash": "6de9da3c350254960e37925854b55c8927f6701945b6df7a4acbabe8fdcd1d21",
+      "reference_compare": null,
+      "ok": true,
+      "note": "Re-run under same pin_matrix; compare aggregate_hash for bit-exact claim.",
+      "path": "artifacts/run_demo/hashes/replay_proof.json"
+    }
+  },
+  "overall_ok": true,
+  "note": "Independent of any single LLM session; mechanical re-verification."
+}

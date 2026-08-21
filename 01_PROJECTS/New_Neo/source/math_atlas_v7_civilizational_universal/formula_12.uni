@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Peano axiom 1: Zero is natural -> Arithmetic",
+  "musical": "MUSICAL: Peano axiom 1: Zero is natural -> Zero is a natural number.",
+  "tactile": "TACTILE: Peano axiom 1: Zero is natural -> 0 \\in \\mathbb{N}",
+  "computational": "COMPUTATIONAL: Peano axiom 1: Zero is natural -> symbolic_computation",
+  "pattern": "PATTERN: Peano axiom 1: Zero is natural -> Foundations"
+}

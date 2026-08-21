@@ -1,0 +1,887 @@
+{
+  "version": "0.1.0-honest",
+  "disclaimer": "Incomplete by construction. Physics and mathematics are open-ended. This atlas is a research scaffold for engineer verification, not a conclusive world model.",
+  "timestamp": "2026-08-19T20:59:45.436087+00:00",
+  "n_languages": 17,
+  "n_domains": 10,
+  "n_formulas": 19,
+  "languages": [
+    {
+      "id": "arithmetic",
+      "name": "Arithmetic",
+      "purpose": "Counting, rings of integers/rationals",
+      "typical_ops": [
+        "+",
+        "-",
+        "*",
+        "/",
+        "mod"
+      ],
+      "used_by_domains": []
+    },
+    {
+      "id": "algebra",
+      "name": "Elementary & Abstract Algebra",
+      "purpose": "Equations, groups, rings, fields",
+      "typical_ops": [
+        "solve",
+        "factor",
+        "homomorphism"
+      ],
+      "used_by_domains": []
+    },
+    {
+      "id": "linear_algebra",
+      "name": "Linear Algebra",
+      "purpose": "Vector spaces, operators, spectra",
+      "typical_ops": [
+        "matmul",
+        "eigen",
+        "svd",
+        "inner_product"
+      ],
+      "used_by_domains": [
+        "quantum_mechanics",
+        "classical_em"
+      ]
+    },
+    {
+      "id": "calculus",
+      "name": "Calculus",
+      "purpose": "Limits, derivatives, integrals",
+      "typical_ops": [
+        "d/dx",
+        "\u222b",
+        "\u2202",
+        "\u2207"
+      ],
+      "used_by_domains": [
+        "classical_mechanics",
+        "classical_em",
+        "quantum_mechanics"
+      ]
+    },
+    {
+      "id": "vector_calculus",
+      "name": "Vector Calculus",
+      "purpose": "Fields in R^n",
+      "typical_ops": [
+        "grad",
+        "div",
+        "curl",
+        "Stokes"
+      ],
+      "used_by_domains": []
+    },
+    {
+      "id": "differential_equations",
+      "name": "Differential Equations",
+      "purpose": "Dynamical laws",
+      "typical_ops": [
+        "ODE",
+        "PDE",
+        "boundary_value"
+      ],
+      "used_by_domains": [
+        "classical_mechanics",
+        "classical_em",
+        "waves_optics"
+      ]
+    },
+    {
+      "id": "complex_analysis",
+      "name": "Complex Analysis",
+      "purpose": "Holomorphic structure",
+      "typical_ops": [
+        "contour_integral",
+        "residue"
+      ],
+      "used_by_domains": []
+    },
+    {
+      "id": "probability",
+      "name": "Probability",
+      "purpose": "Uncertainty, measures",
+      "typical_ops": [
+        "E",
+        "Var",
+        "P",
+        "conditional"
+      ],
+      "used_by_domains": [
+        "quantum_mechanics",
+        "quantum_stats",
+        "info_physics"
+      ]
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "purpose": "Inference from data",
+      "typical_ops": [
+        "likelihood",
+        "estimator",
+        "hypothesis_test"
+      ],
+      "used_by_domains": []
+    },
+    {
+      "id": "information_theory",
+      "name": "Information Theory",
+      "purpose": "Entropy, coding, channels",
+      "typical_ops": [
+        "H",
+        "D_KL",
+        "I(X;Y)",
+        "rate"
+      ],
+      "used_by_domains": [
+        "info_physics",
+        "quantum_stats"
+      ]
+    },
+    {
+      "id": "optimization",
+      "name": "Optimization",
+      "purpose": "Extrema under constraints",
+      "typical_ops": [
+        "argmin",
+        "Lagrange",
+        "convex"
+      ],
+      "used_by_domains": [
+        "info_physics"
+      ]
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry / Manifolds",
+      "purpose": "Space, metrics, curvature (intro)",
+      "typical_ops": [
+        "metric",
+        "geodesic",
+        "curvature"
+      ],
+      "used_by_domains": [
+        "special_relativity",
+        "general_relativity"
+      ]
+    },
+    {
+      "id": "group_theory",
+      "name": "Group Theory",
+      "purpose": "Symmetry",
+      "typical_ops": [
+        "representation",
+        "generator",
+        "invariant"
+      ],
+      "used_by_domains": [
+        "quantum_mechanics",
+        "classical_em"
+      ]
+    },
+    {
+      "id": "functional_analysis",
+      "name": "Functional Analysis",
+      "purpose": "Infinite-dim spaces (intro)",
+      "typical_ops": [
+        "Hilbert",
+        "operator",
+        "spectrum"
+      ],
+      "used_by_domains": []
+    },
+    {
+      "id": "category_lite",
+      "name": "Category-lite labels",
+      "purpose": "Compositional structure tags only",
+      "typical_ops": [
+        "morphism",
+        "functor_tag"
+      ],
+      "used_by_domains": []
+    },
+    {
+      "id": "numerical",
+      "name": "Numerical Analysis",
+      "purpose": "Stable computation",
+      "typical_ops": [
+        "discretize",
+        "error_bound",
+        "condition_number"
+      ],
+      "used_by_domains": []
+    },
+    {
+      "id": "logic",
+      "name": "Logic",
+      "purpose": "Proof and consistency checks",
+      "typical_ops": [
+        "entailment",
+        "satisfiable",
+        "contradiction"
+      ],
+      "used_by_domains": [
+        "open_fundamental"
+      ]
+    }
+  ],
+  "domains": [
+    {
+      "id": "classical_mechanics",
+      "name": "Classical Mechanics",
+      "status": "core",
+      "summary": "Newtonian / Lagrangian / Hamiltonian dynamics for macroscopic systems.",
+      "key_ideas": [
+        "Newton laws",
+        "energy conservation",
+        "symplectic structure"
+      ],
+      "open_problems": [
+        "n-body chaos detail in specific regimes"
+      ],
+      "formula_ids": [
+        "newton_second",
+        "kinetic_energy",
+        "hamilton_eq"
+      ]
+    },
+    {
+      "id": "classical_em",
+      "name": "Classical Electromagnetism",
+      "status": "core",
+      "summary": "Maxwell fields, Lorentz force; classical continuum EM.",
+      "key_ideas": [
+        "Maxwell equations",
+        "gauge freedom",
+        "Poynting"
+      ],
+      "open_problems": [],
+      "formula_ids": [
+        "maxwell_div_e",
+        "lorentz_force",
+        "coulomb"
+      ]
+    },
+    {
+      "id": "special_relativity",
+      "name": "Special Relativity",
+      "status": "core",
+      "summary": "Minkowski spacetime; Lorentz transformations.",
+      "key_ideas": [
+        "c invariant",
+        "time dilation",
+        "E=mc^2"
+      ],
+      "open_problems": [],
+      "formula_ids": [
+        "einstein_mass_energy",
+        "lorentz_gamma"
+      ]
+    },
+    {
+      "id": "general_relativity",
+      "name": "General Relativity",
+      "status": "effective",
+      "summary": "Gravity as spacetime curvature; classical continuum gravity.",
+      "key_ideas": [
+        "Einstein field equations",
+        "geodesics",
+        "equivalence principle"
+      ],
+      "open_problems": [
+        "singularities",
+        "quantum gravity interface",
+        "dark sector phenomenology"
+      ],
+      "formula_ids": [
+        "einstein_field_eq"
+      ]
+    },
+    {
+      "id": "quantum_mechanics",
+      "name": "Quantum Mechanics",
+      "status": "core",
+      "summary": "Hilbert-space kinematics; unitary evolution; measurement postulates.",
+      "key_ideas": [
+        "state vector",
+        "observables",
+        "Born rule",
+        "uncertainty"
+      ],
+      "open_problems": [
+        "measurement problem interpretations",
+        "quantum \u2192 classical limit details"
+      ],
+      "formula_ids": [
+        "schrodinger",
+        "born_rule",
+        "heisenberg_uncertainty",
+        "commutator"
+      ]
+    },
+    {
+      "id": "quantum_stats",
+      "name": "Quantum & Classical Statistical Mechanics",
+      "status": "core",
+      "summary": "Ensembles, entropy, partition functions.",
+      "key_ideas": [
+        "Boltzmann",
+        "partition function",
+        "free energy"
+      ],
+      "open_problems": [
+        "non-equilibrium steady states in complex systems"
+      ],
+      "formula_ids": [
+        "boltzmann_entropy",
+        "partition_function"
+      ]
+    },
+    {
+      "id": "thermo",
+      "name": "Thermodynamics",
+      "status": "core",
+      "summary": "Laws of thermo; macroscopic energy and entropy.",
+      "key_ideas": [
+        "1st/2nd law",
+        "temperature",
+        "irreversibility"
+      ],
+      "open_problems": [],
+      "formula_ids": [
+        "first_law_thermo"
+      ]
+    },
+    {
+      "id": "waves_optics",
+      "name": "Waves & Optics",
+      "status": "core",
+      "summary": "Wave equation, interference, geometric optics limit.",
+      "key_ideas": [
+        "superposition",
+        "dispersion",
+        "Fourier"
+      ],
+      "open_problems": [],
+      "formula_ids": [
+        "wave_eq_1d"
+      ]
+    },
+    {
+      "id": "info_physics",
+      "name": "Information & Physics interface",
+      "status": "effective",
+      "summary": "Entropy links between information theory and statistical physics.",
+      "key_ideas": [
+        "Shannon entropy",
+        "Landauer bound (regime-limited)",
+        "channel capacity"
+      ],
+      "open_problems": [
+        "precise resource theories in all regimes"
+      ],
+      "formula_ids": [
+        "shannon_entropy",
+        "kl_divergence"
+      ]
+    },
+    {
+      "id": "open_fundamental",
+      "name": "Open Fundamental Questions",
+      "status": "open",
+      "summary": "Areas without a conclusive complete theory.",
+      "key_ideas": [
+        "quantum gravity",
+        "dark matter/energy phenomenology",
+        "measurement problem"
+      ],
+      "open_problems": [
+        "UV-complete quantum gravity",
+        "nature of dark matter",
+        "cosmological constant / dark energy",
+        "hard problem of measurement / interpretations"
+      ],
+      "formula_ids": []
+    }
+  ],
+  "formulas": [
+    {
+      "id": "newton_second",
+      "name": "Newton's second law",
+      "domain": "classical_mechanics",
+      "expression": "F = m a",
+      "symbols": {
+        "F": "force",
+        "m": "mass",
+        "a": "acceleration"
+      },
+      "assumptions": [
+        "inertial frame",
+        "classical speeds << c",
+        "point mass or CM motion"
+      ],
+      "validity_regime": "non-relativistic classical mechanics",
+      "status": "core",
+      "math_languages": [
+        "algebra",
+        "calculus"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "kinetic_energy",
+      "name": "Kinetic energy (classical)",
+      "domain": "classical_mechanics",
+      "expression": "T = (1/2) m v^2",
+      "symbols": {
+        "T": "kinetic energy",
+        "m": "mass",
+        "v": "speed"
+      },
+      "assumptions": [
+        "non-relativistic"
+      ],
+      "validity_regime": "v << c",
+      "status": "core",
+      "math_languages": [
+        "algebra"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "hamilton_eq",
+      "name": "Hamilton's equations",
+      "domain": "classical_mechanics",
+      "expression": "dq/dt = \u2202H/\u2202p ,  dp/dt = -\u2202H/\u2202q",
+      "symbols": {
+        "H": "Hamiltonian",
+        "q": "coordinate",
+        "p": "momentum"
+      },
+      "assumptions": [
+        "standard symplectic phase space"
+      ],
+      "validity_regime": "classical Hamiltonian systems",
+      "status": "core",
+      "math_languages": [
+        "calculus",
+        "geometry"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "coulomb",
+      "name": "Coulomb force",
+      "domain": "classical_em",
+      "expression": "F = k q1 q2 / r^2",
+      "symbols": {
+        "k": "Coulomb constant",
+        "q": "charge",
+        "r": "separation"
+      },
+      "assumptions": [
+        "static point charges",
+        "classical"
+      ],
+      "validity_regime": "electrostatics",
+      "status": "core",
+      "math_languages": [
+        "algebra"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "maxwell_div_e",
+      "name": "Gauss's law (Maxwell)",
+      "domain": "classical_em",
+      "expression": "\u2207 \u00b7 E = \u03c1 / \u03b50",
+      "symbols": {
+        "E": "electric field",
+        "\u03c1": "charge density",
+        "\u03b50": "vacuum permittivity"
+      },
+      "assumptions": [
+        "SI units",
+        "classical fields"
+      ],
+      "validity_regime": "classical EM",
+      "status": "core",
+      "math_languages": [
+        "vector_calculus"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "lorentz_force",
+      "name": "Lorentz force",
+      "domain": "classical_em",
+      "expression": "F = q (E + v \u00d7 B)",
+      "symbols": {
+        "q": "charge",
+        "E": "electric field",
+        "B": "magnetic field",
+        "v": "velocity"
+      },
+      "assumptions": [
+        "classical point charge"
+      ],
+      "validity_regime": "classical EM",
+      "status": "core",
+      "math_languages": [
+        "vector_calculus",
+        "algebra"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "lorentz_gamma",
+      "name": "Lorentz factor",
+      "domain": "special_relativity",
+      "expression": "\u03b3 = 1 / sqrt(1 - v^2/c^2)",
+      "symbols": {
+        "\u03b3": "Lorentz factor",
+        "v": "speed",
+        "c": "speed of light"
+      },
+      "assumptions": [
+        "inertial frames",
+        "SR"
+      ],
+      "validity_regime": "special relativity",
+      "status": "core",
+      "math_languages": [
+        "algebra",
+        "calculus"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "einstein_mass_energy",
+      "name": "Mass\u2013energy equivalence",
+      "domain": "special_relativity",
+      "expression": "E = m c^2",
+      "symbols": {
+        "E": "rest energy",
+        "m": "rest mass",
+        "c": "speed of light"
+      },
+      "assumptions": [
+        "rest frame for rest energy form"
+      ],
+      "validity_regime": "SR / relativistic mechanics",
+      "status": "core",
+      "math_languages": [
+        "algebra"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "einstein_field_eq",
+      "name": "Einstein field equations (schematic)",
+      "domain": "general_relativity",
+      "expression": "G_{\u03bc\u03bd} + \u039b g_{\u03bc\u03bd} = (8\u03c0G/c^4) T_{\u03bc\u03bd}",
+      "symbols": {
+        "G_{\u03bc\u03bd}": "Einstein tensor",
+        "T_{\u03bc\u03bd}": "stress-energy",
+        "\u039b": "cosmological constant"
+      },
+      "assumptions": [
+        "classical continuum spacetime",
+        "GR"
+      ],
+      "validity_regime": "classical gravity; not UV-complete quantum gravity",
+      "status": "effective",
+      "math_languages": [
+        "geometry",
+        "differential_equations",
+        "tensor_calc_tag"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "schrodinger",
+      "name": "Time-dependent Schr\u00f6dinger equation",
+      "domain": "quantum_mechanics",
+      "expression": "i \u210f \u2202\u03c8/\u2202t = H \u03c8",
+      "symbols": {
+        "\u03c8": "state",
+        "H": "Hamiltonian",
+        "\u210f": "reduced Planck constant"
+      },
+      "assumptions": [
+        "closed system unitary evolution between measurements"
+      ],
+      "validity_regime": "non-relativistic QM",
+      "status": "core",
+      "math_languages": [
+        "linear_algebra",
+        "calculus",
+        "complex_analysis"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "born_rule",
+      "name": "Born rule",
+      "domain": "quantum_mechanics",
+      "expression": "P(a) = |\u27e8a|\u03c8\u27e9|^2",
+      "symbols": {
+        "P": "probability",
+        "\u03c8": "state",
+        "a": "eigenstate"
+      },
+      "assumptions": [
+        "standard measurement postulate"
+      ],
+      "validity_regime": "textbook QM",
+      "status": "core",
+      "math_languages": [
+        "linear_algebra",
+        "probability"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "heisenberg_uncertainty",
+      "name": "Heisenberg uncertainty (canonical)",
+      "domain": "quantum_mechanics",
+      "expression": "\u03c3_x \u03c3_p \u2265 \u210f/2",
+      "symbols": {
+        "\u03c3": "std dev",
+        "\u210f": "reduced Planck"
+      },
+      "assumptions": [
+        "canonical x,p"
+      ],
+      "validity_regime": "QM",
+      "status": "core",
+      "math_languages": [
+        "probability",
+        "linear_algebra"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "commutator",
+      "name": "Canonical commutator",
+      "domain": "quantum_mechanics",
+      "expression": "[x, p] = i \u210f",
+      "symbols": {
+        "x": "position op",
+        "p": "momentum op"
+      },
+      "assumptions": [
+        "standard QM"
+      ],
+      "validity_regime": "QM",
+      "status": "core",
+      "math_languages": [
+        "linear_algebra"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "boltzmann_entropy",
+      "name": "Boltzmann entropy",
+      "domain": "quantum_stats",
+      "expression": "S = k_B ln \u03a9",
+      "symbols": {
+        "S": "entropy",
+        "\u03a9": "multiplicity",
+        "k_B": "Boltzmann constant"
+      },
+      "assumptions": [
+        "microcanonical counting"
+      ],
+      "validity_regime": "equilibrium stat mech",
+      "status": "core",
+      "math_languages": [
+        "probability",
+        "algebra"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "partition_function",
+      "name": "Canonical partition function",
+      "domain": "quantum_stats",
+      "expression": "Z = \u03a3_i e^{-\u03b2 E_i}",
+      "symbols": {
+        "Z": "partition function",
+        "\u03b2": "1/kT",
+        "E_i": "energy level"
+      },
+      "assumptions": [
+        "canonical ensemble"
+      ],
+      "validity_regime": "equilibrium",
+      "status": "core",
+      "math_languages": [
+        "probability",
+        "calculus"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "first_law_thermo",
+      "name": "First law of thermodynamics",
+      "domain": "thermo",
+      "expression": "dU = \u0111Q - \u0111W",
+      "symbols": {
+        "U": "internal energy",
+        "Q": "heat",
+        "W": "work"
+      },
+      "assumptions": [
+        "sign convention as stated"
+      ],
+      "validity_regime": "macroscopic thermo",
+      "status": "core",
+      "math_languages": [
+        "calculus"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "wave_eq_1d",
+      "name": "1D wave equation",
+      "domain": "waves_optics",
+      "expression": "\u2202\u00b2u/\u2202t\u00b2 = c\u00b2 \u2202\u00b2u/\u2202x\u00b2",
+      "symbols": {
+        "u": "field",
+        "c": "wave speed"
+      },
+      "assumptions": [
+        "linear non-dispersive medium"
+      ],
+      "validity_regime": "classical waves",
+      "status": "core",
+      "math_languages": [
+        "differential_equations"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "shannon_entropy",
+      "name": "Shannon entropy",
+      "domain": "info_physics",
+      "expression": "H(X) = -\u03a3 p(x) log p(x)",
+      "symbols": {
+        "H": "entropy",
+        "p": "probability mass"
+      },
+      "assumptions": [
+        "discrete distribution"
+      ],
+      "validity_regime": "information theory",
+      "status": "core",
+      "math_languages": [
+        "probability",
+        "information_theory"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    },
+    {
+      "id": "kl_divergence",
+      "name": "Kullback\u2013Leibler divergence",
+      "domain": "info_physics",
+      "expression": "D_KL(P||Q) = \u03a3 p log(p/q)",
+      "symbols": {
+        "P": "true dist",
+        "Q": "approx dist"
+      },
+      "assumptions": [
+        "same support conditions as required"
+      ],
+      "validity_regime": "information theory / stats",
+      "status": "core",
+      "math_languages": [
+        "probability",
+        "information_theory",
+        "statistics"
+      ],
+      "references_note": "standard textbook form; verify against primary sources"
+    }
+  ],
+  "open_problems": [
+    {
+      "domain": "classical_mechanics",
+      "problem": "n-body chaos detail in specific regimes",
+      "status": "OPEN"
+    },
+    {
+      "domain": "general_relativity",
+      "problem": "singularities",
+      "status": "OPEN"
+    },
+    {
+      "domain": "general_relativity",
+      "problem": "quantum gravity interface",
+      "status": "OPEN"
+    },
+    {
+      "domain": "general_relativity",
+      "problem": "dark sector phenomenology",
+      "status": "OPEN"
+    },
+    {
+      "domain": "quantum_mechanics",
+      "problem": "measurement problem interpretations",
+      "status": "OPEN"
+    },
+    {
+      "domain": "quantum_mechanics",
+      "problem": "quantum \u2192 classical limit details",
+      "status": "OPEN"
+    },
+    {
+      "domain": "quantum_stats",
+      "problem": "non-equilibrium steady states in complex systems",
+      "status": "OPEN"
+    },
+    {
+      "domain": "info_physics",
+      "problem": "precise resource theories in all regimes",
+      "status": "OPEN"
+    },
+    {
+      "domain": "open_fundamental",
+      "problem": "UV-complete quantum gravity",
+      "status": "OPEN"
+    },
+    {
+      "domain": "open_fundamental",
+      "problem": "nature of dark matter",
+      "status": "OPEN"
+    },
+    {
+      "domain": "open_fundamental",
+      "problem": "cosmological constant / dark energy",
+      "status": "OPEN"
+    },
+    {
+      "domain": "open_fundamental",
+      "problem": "hard problem of measurement / interpretations",
+      "status": "OPEN"
+    }
+  ],
+  "computing_tags": {
+    "complexity": "Time/space class tags (P, NP-hard as labels only)",
+    "numerical_stability": "Conditioning, roundoff, discretization error",
+    "reproducibility": "Seeds, version pins, artifact hashes",
+    "parallelism": "Data/model parallel patterns as engineering tags",
+    "memory_hierarchy": "Cache/locality awareness in implementations",
+    "verification": "Tests, types, audits, ledgers"
+  },
+  "ai_tags": {
+    "supervised_learning": "Fit maps from labeled data",
+    "uncertainty_quantification": "Epistemic/aleatoric separation",
+    "calibration": "Probability reliability",
+    "ood_detection": "Out-of-distribution flags",
+    "abstention": "Refuse when unsafe/uncertain",
+    "causality_time": "No future feature leakage",
+    "alignment_process": "Process constraints, not claimed value lock-in"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source_payload": {
+    "bytes": 12874337,
+    "includes_git": false,
+    "includes_releases": false
+  },
+  "git_metadata": {
+    "bytes": 1538262
+  },
+  "release_evidence_outside_source": {
+    "bytes": 3113432
+  },
+  "external_model_artifacts": {
+    "bytes_present": 0,
+    "bytes_expected": 988097824
+  },
+  "caches": {
+    "bytes": 0,
+    "scope_complete": false
+  },
+  "total_present_nonoverlapping_bytes": 17526031
+}

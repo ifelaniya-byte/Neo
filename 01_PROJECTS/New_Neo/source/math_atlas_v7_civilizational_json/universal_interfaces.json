@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "interface_name": "Geometric_Pattern_Language",
+    "cognitive_mode": "visual",
+    "representation_format": "2D/3D geometric patterns, fractals, symmetry groups",
+    "cross_species_compatibility": 0.9,
+    "temporal_independence": 0.95,
+    "cultural_independence": 0.85,
+    "encoding_specification": "Coordinate-based pattern encoding",
+    "decoding_protocols": "Pattern recognition algorithms",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 2,
+    "interface_name": "Musical_Harmonic_Language",
+    "cognitive_mode": "auditory",
+    "representation_format": "Harmonic series, rhythmic patterns, tonal relationships",
+    "cross_species_compatibility": 0.75,
+    "temporal_independence": 0.8,
+    "cultural_independence": 0.7,
+    "encoding_specification": "Frequency-based encoding",
+    "decoding_protocols": "Spectral analysis algorithms",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 3,
+    "interface_name": "Tactile_Structure_Language",
+    "cognitive_mode": "tactile",
+    "representation_format": "3D structures, textures, surface patterns",
+    "cross_species_compatibility": 0.85,
+    "temporal_independence": 0.9,
+    "cultural_independence": 0.8,
+    "encoding_specification": "Physical dimension encoding",
+    "decoding_protocols": "Surface scanning and analysis",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 4,
+    "interface_name": "Computational_Algorithm_Language",
+    "cognitive_mode": "computational",
+    "representation_format": "Executable algorithms, code, interactive demonstrations",
+    "cross_species_compatibility": 0.95,
+    "temporal_independence": 0.7,
+    "cultural_independence": 0.6,
+    "encoding_specification": "Universal computational model",
+    "decoding_protocols": "Interpreter/emulator systems",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 5,
+    "interface_name": "Pattern_Recognition_Language",
+    "cognitive_mode": "intuitive",
+    "representation_format": "Universal patterns, fractals, self-similarity",
+    "cross_species_compatibility": 0.88,
+    "temporal_independence": 0.92,
+    "cultural_independence": 0.88,
+    "encoding_specification": "Scale-invariant pattern encoding",
+    "decoding_protocols": "Fractal analysis algorithms",
+    "created_at": "2026-08-18 01:35:31"
+  }
+]

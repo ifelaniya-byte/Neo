@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Snake lemma -> Homological algebra",
+  "musical": "MUSICAL: Snake lemma -> Long exact sequence from commutative diagram with exact rows.",
+  "tactile": "TACTILE: Snake lemma -> \\ker(\\alpha) \\to \\ker(\\beta) \\to \\ker(\\gamma) \\to \\text{coker}(\\alpha)",
+  "computational": "COMPUTATIONAL: Snake lemma -> symbolic_computation",
+  "pattern": "PATTERN: Snake lemma -> Algebra"
+}

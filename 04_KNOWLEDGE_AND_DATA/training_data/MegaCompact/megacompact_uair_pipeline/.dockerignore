@@ -1,0 +1,59 @@
+# Git and cache
+.git/
+.gitignore
+.github/
+.gitattributes
+
+# Python build/cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+*.so
+.Python
+.egg-info/
+dist/
+build/
+eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+.pytest_cache/
+.coverage
+.tox/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build artifacts
+megacompact16/
+artifacts/
+
+# Logs and outputs (not checked in)
+*.log
+kaggle_run_log.txt
+
+# Sensitive
+.env
+.env.local
+*.key
+*.pem
+
+# Documentation
+*.md
+CONTRIBUTING.md
+LICENSE

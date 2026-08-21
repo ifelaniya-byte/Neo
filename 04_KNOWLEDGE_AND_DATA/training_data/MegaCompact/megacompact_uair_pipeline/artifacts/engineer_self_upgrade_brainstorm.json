@@ -1,0 +1,110 @@
+{
+  "stationary_self": "PASS",
+  "n_proposals": 11,
+  "n_accepted_roadmap": 10,
+  "n_rejected": 1,
+  "accepted": [
+    {
+      "id": "upgrade.schema_registry_enforce",
+      "title": "Enforce schema_registry on every event/packet/label",
+      "risk": "low",
+      "engineer_verdict": "PASS",
+      "allowed_for_llm": true,
+      "completeness_ok": true,
+      "accepted_for_roadmap": true
+    },
+    {
+      "id": "upgrade.constants_dimensional",
+      "title": "Dimensional consistency via constants_db",
+      "risk": "medium",
+      "engineer_verdict": "PASS",
+      "allowed_for_llm": true,
+      "completeness_ok": true,
+      "accepted_for_roadmap": true
+    },
+    {
+      "id": "upgrade.sympy_optional",
+      "title": "Optional SymPy identity checks for formal strings in KSKB",
+      "risk": "low",
+      "engineer_verdict": "PASS",
+      "allowed_for_llm": true,
+      "completeness_ok": true,
+      "accepted_for_roadmap": true
+    },
+    {
+      "id": "upgrade.ledger_query_in_gate",
+      "title": "Query ledger_index for repeated failure patterns",
+      "risk": "low",
+      "engineer_verdict": "PASS",
+      "allowed_for_llm": true,
+      "completeness_ok": true,
+      "accepted_for_roadmap": true
+    },
+    {
+      "id": "upgrade.adversarial_ci",
+      "title": "Run adversarial_suite as mandatory CI stage",
+      "risk": "low",
+      "engineer_verdict": "PASS",
+      "allowed_for_llm": true,
+      "completeness_ok": true,
+      "accepted_for_roadmap": true
+    },
+    {
+      "id": "upgrade.calibration_hooks",
+      "title": "Pluggable calibration thresholds per regime",
+      "risk": "medium",
+      "engineer_verdict": "PASS",
+      "allowed_for_llm": true,
+      "completeness_ok": true,
+      "accepted_for_roadmap": true
+    },
+    {
+      "id": "upgrade.parallel_batch",
+      "title": "Parallel double-pass batches",
+      "risk": "medium",
+      "engineer_verdict": "PASS",
+      "allowed_for_llm": true,
+      "completeness_ok": true,
+      "accepted_for_roadmap": true
+    },
+    {
+      "id": "upgrade.rag_evidence_attach",
+      "title": "Attach rag_settled hits to EngineerReport metadata",
+      "risk": "low",
+      "engineer_verdict": "PASS",
+      "allowed_for_llm": true,
+      "completeness_ok": true,
+      "accepted_for_roadmap": true
+    },
+    {
+      "id": "upgrade.promotion_queue",
+      "title": "Automated promotion queue from repeated human-confirmed patterns",
+      "risk": "medium",
+      "engineer_verdict": "PASS",
+      "allowed_for_llm": true,
+      "completeness_ok": true,
+      "accepted_for_roadmap": true
+    },
+    {
+      "id": "upgrade.differential_audit",
+      "title": "Differential check: same decision_id across runs",
+      "risk": "low",
+      "engineer_verdict": "PASS",
+      "allowed_for_llm": true,
+      "completeness_ok": true,
+      "accepted_for_roadmap": true
+    }
+  ],
+  "rejected": [
+    {
+      "id": "upgrade.become_complete_physics",
+      "title": "Absorb complete conclusive world physics",
+      "risk": "critical",
+      "engineer_verdict": "BLOCKED",
+      "allowed_for_llm": false,
+      "completeness_ok": false,
+      "accepted_for_roadmap": false
+    }
+  ],
+  "principle": "Engineers may upgrade functions that strengthen verification, provenance, and abstention. They must not remove the double-pass, claim complete physics, or enable live trading."
+}

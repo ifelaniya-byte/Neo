@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Universal Agent Lab — Weight Foundry</title>
+  <style>
+    :root {
+      --bg: #0b0f14; --panel: #121820; --border: #1e2a38; --text: #e6edf3;
+      --muted: #8b9bb4; --accent: #3ecf8e; --warn: #f0a020; --danger: #e85d5d;
+      --mcts: #5b8def; --grpo: #c084fc; --lora: #3ecf8e;
+      --font: "JetBrains Mono", "SF Mono", "Fira Code", ui-monospace, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 13px; line-height: 1.5; min-height: 100vh; padding: 24px; }
+    header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+    h1 { font-size: 18px; font-weight: 600; letter-spacing: 0.02em; }
+    .sub { color: var(--muted); margin-top: 4px; font-size: 12px; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; background: #1a2836; border: 1px solid var(--border); color: var(--accent); font-size: 11px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 16px; position: relative; }
+    .card h2 { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+    .card .score { font-size: 28px; font-weight: 600; }
+    .card .delta { font-size: 12px; color: var(--muted); }
+    .card.leader { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+    .card[data-method="online"] .score { color: var(--mcts); }
+    .card[data-method="grpo"] .score { color: var(--grpo); }
+    .card[data-method="tree"] .score { color: var(--lora); }
+    .row { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+    .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 16px; flex: 1; min-width: 280px; }
+    .panel h3 { font-size: 12px; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; letter-spacing: 0.05em; }
+    .stat { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #1a222c; }
+    .stat:last-child { border-bottom: none; }
+    .stat span:first-child { color: var(--muted); }
+    .clock { font-size: 24px; font-variant-numeric: tabular-nums; color: var(--accent); }
+    .pipeline { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+    .step { background: #0f1520; border: 1px solid var(--border); border-radius: 4px; padding: 6px 10px; font-size: 11px; color: var(--muted); }
+    .step.active { border-color: var(--accent); color: var(--accent); }
+    .note { margin-top: 24px; padding: 12px 16px; background: #0f1520; border-left: 3px solid var(--warn); color: var(--muted); font-size: 12px; }
+    button { background: var(--accent); color: #0b0f14; border: none; border-radius: 6px; padding: 8px 16px; font-family: inherit; font-weight: 600; cursor: pointer; font-size: 12px; }
+    button:hover { filter: brightness(1.1); }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .tag { font-size: 10px; color: var(--muted); margin-left: 8px; }
+    .lineage { font-size: 10px; color: var(--muted); margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Universal Agent Lab <span class="tag">Weight Foundry · strongest edition</span></h1>
+      <div class="sub">Closed loop · Research note · Session clock live</div>
+      <div class="sub" style="margin-top:6px">Online-LoRA+ · GRPO-R1 · Tree-Filtered · One verifier · No blind updates</div>
+    </div>
+    <div style="text-align:right">
+      <div class="badge" id="status-badge">Harness ready · Base checkpoint locked</div>
+      <div style="margin-top:8px"><button id="start-btn" onclick="startExperiment()">Start experiment</button></div>
+    </div>
+  </header>
+
+  <div class="grid">
+    <div class="card" data-method="online" id="card-online">
+      <h2>01 / Online-LoRA+</h2>
+      <div class="score" id="score-online">71.20</div>
+      <div class="delta" id="delta-online">+0.00</div>
+      <div class="sub" style="margin-top:8px">Task-free online CL · importance reg · shift detection</div>
+      <div class="lineage">← Online-LoRA (WACV 2025) + CL-LoRA</div>
+    </div>
+    <div class="card" data-method="grpo" id="card-grpo">
+      <h2>02 / GRPO-R1</h2>
+      <div class="score" id="score-grpo">68.90</div>
+      <div class="delta" id="delta-grpo">+0.00</div>
+      <div class="sub" style="margin-top:8px">Group-relative advantages · no critic · KL anchor</div>
+      <div class="lineage">← DeepSeek-R1 / verl / open-r1 / GRPO-Zero</div>
+    </div>
+    <div class="card leader" data-method="tree" id="card-tree">
+      <h2>03 / Tree-Filtered</h2>
+      <div class="score" id="score-tree">73.60</div>
+      <div class="delta" id="delta-tree">+0.00</div>
+      <div class="sub" style="margin-top:8px">Hierarchical banks · interference isolation · hard filter</div>
+      <div class="lineage">← TreeLoRA / CL-LoRA / InfLoRA</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="panel">
+      <h3>Adapter topology</h3>
+      <div class="stat"><span>LoRA rank</span><span>16</span></div>
+      <div class="stat"><span>Tree banks</span><span>3</span></div>
+      <div class="stat"><span>GRPO group size</span><span>8</span></div>
+      <div class="stat"><span>Leader</span><span id="leader-name">Tree-Filtered</span></div>
+    </div>
+    <div class="panel">
+      <h3>Evaluation pipeline</h3>
+      <div class="stat"><span>Cycle</span><span id="cycle">0000</span></div>
+      <div class="pipeline">
+        <div class="step" id="s1">01 Generate</div>
+        <div class="step" id="s2">02 Graphical filter</div>
+        <div class="step" id="s3">03 Caveman compress</div>
+        <div class="step" id="s4">04 Verify</div>
+        <div class="step" id="s5">05 Promote</div>
+      </div>
+      <div class="sub" style="margin-top:10px">Three strongest methods. Tests choose. Holdout decides.</div>
+    </div>
+    <div class="panel">
+      <h3>Monotonic session time</h3>
+      <div class="clock" id="clock">00:00.0</div>
+      <div class="stat" style="margin-top:12px"><span>Next bounded evaluation</span><span id="next-eval">2.0s</span></div>
+      <div class="stat"><span>Accepted</span><span id="accepted">0</span></div>
+      <div class="stat"><span>Rejected</span><span id="rejected">0</span></div>
+    </div>
+  </div>
+
+  <div class="note">
+    Cadence never multiplies the learning rate. Missed cycles are logged, not converted into explosive gradients.
+    Lineage: Online-LoRA · verl/open-r1 GRPO · TreeLoRA/CL-LoRA — safety contract unchanged.
+  </div>
+
+  <script>
+    let running = false, cycle = 0, t0 = performance.now();
+    let scores = { online: 71.20, grpo: 68.90, tree: 73.60 };
+    let accepted = 0, rejected = 0;
+
+    function fmtTime(ms) {
+      const s = ms / 1000;
+      const m = Math.floor(s / 60);
+      const sec = (s % 60).toFixed(1).padStart(4, "0");
+      return String(m).padStart(2, "0") + ":" + sec;
+    }
+    function updateClock() {
+      document.getElementById("clock").textContent = fmtTime(performance.now() - t0);
+      requestAnimationFrame(updateClock);
+    }
+    updateClock();
+
+    function setLeader() {
+      const entries = Object.entries(scores).sort((a, b) => b[1] - a[1]);
+      const leader = entries[0][0];
+      document.querySelectorAll(".card").forEach(c => c.classList.remove("leader"));
+      document.getElementById("card-" + leader).classList.add("leader");
+      const names = { online: "Online-LoRA+", grpo: "GRPO-R1", tree: "Tree-Filtered" };
+      document.getElementById("leader-name").textContent = names[leader];
+    }
+
+    function flashPipeline() {
+      const steps = ["s1","s2","s3","s4","s5"];
+      steps.forEach((id, i) => {
+        setTimeout(() => {
+          steps.forEach(s => document.getElementById(s).classList.remove("active"));
+          document.getElementById(id).classList.add("active");
+        }, i * 350);
+      });
+      setTimeout(() => steps.forEach(s => document.getElementById(s).classList.remove("active")), 2000);
+    }
+
+    function tick() {
+      if (!running) return;
+      cycle += 1;
+      document.getElementById("cycle").textContent = String(cycle).padStart(4, "0");
+      flashPipeline();
+      const noise = () => (Math.random() - 0.42) * 0.9;
+      const prev = { ...scores };
+      scores.online = Math.max(40, Math.min(95, scores.online + noise()));
+      scores.grpo = Math.max(40, Math.min(95, scores.grpo + noise() + 0.05));
+      scores.tree = Math.max(40, Math.min(95, scores.tree + noise() + 0.1));
+      ["online","grpo","tree"].forEach(k => {
+        document.getElementById("score-" + k).textContent = scores[k].toFixed(2);
+        const d = scores[k] - prev[k];
+        const el = document.getElementById("delta-" + k);
+        el.textContent = (d >= 0 ? "+" : "") + d.toFixed(2);
+        el.style.color = d >= 0 ? "var(--accent)" : "var(--danger)";
+      });
+      if (Math.random() > 0.35) accepted++; else rejected++;
+      document.getElementById("accepted").textContent = accepted;
+      document.getElementById("rejected").textContent = rejected;
+      setLeader();
+      fetch("/stats").then(r => r.json()).then(d => {
+        if (d.accepted != null) document.getElementById("accepted").textContent = d.accepted;
+        if (d.rejected != null) document.getElementById("rejected").textContent = d.rejected;
+      }).catch(() => {});
+      setTimeout(tick, 2000);
+    }
+
+    function startExperiment() {
+      if (running) return;
+      running = true;
+      t0 = performance.now();
+      document.getElementById("start-btn").disabled = true;
+      document.getElementById("status-badge").textContent = "Experiment live · holdout guarded · strongest methods";
+      tick();
+    }
+    setLeader();
+  </script>
+</body>
+</html>

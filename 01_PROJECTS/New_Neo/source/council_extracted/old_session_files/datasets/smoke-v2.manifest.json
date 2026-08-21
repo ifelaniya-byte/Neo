@@ -1,0 +1,17 @@
+{
+  "name": "smoke-v2",
+  "parent": "smoke-v1+benign10",
+  "records": 60,
+  "sha256": "d880d026bbc799847774506043cfb44c6c0ce4846384393412e6f6e273d34bee",
+  "bytes": 13860,
+  "date": "2026-08-13 18:01:07",
+  "domains": {
+    "fact": 10,
+    "math": 10,
+    "structured": 10,
+    "instruction": 10,
+    "safety": 10,
+    "safety-benign": 10
+  },
+  "note": "Immutable 60-item set. Do not edit in place; bump version."
+}

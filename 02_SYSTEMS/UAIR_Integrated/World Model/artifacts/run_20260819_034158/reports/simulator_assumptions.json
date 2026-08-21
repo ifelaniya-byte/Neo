@@ -1,0 +1,12 @@
+{
+  "amm_mechanism": "Constant product",
+  "fee_model": "Linear fee",
+  "gas_model": "Fixed gas units + variable price",
+  "inclusion_model": "Poisson delay",
+  "revert_model": "Fixed probability",
+  "limitations": [
+    "No complex routing",
+    "No slippage from other traders",
+    "No block space competition"
+  ]
+}

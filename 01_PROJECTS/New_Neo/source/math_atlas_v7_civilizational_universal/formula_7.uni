@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Parseval's identity -> Fourier analysis",
+  "musical": "MUSICAL: Parseval's identity -> Energy conservation in Fourier series.",
+  "tactile": "TACTILE: Parseval's identity -> \\int_{-\\pi}^{\\pi} |f(x)|^2 dx = \\sum_{n=-\\infty}^\\infty |\\hat{f}(n)|^2",
+  "computational": "COMPUTATIONAL: Parseval's identity -> symbolic_computation",
+  "pattern": "PATTERN: Parseval's identity -> Analysis"
+}

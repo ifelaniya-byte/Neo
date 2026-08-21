@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "system_name": "Digital Cloud Replication",
+    "replication_factor": 5,
+    "geographic_distribution": "Global data centers",
+    "synchronization_protocol": "Synchronous",
+    "conflict_resolution": "Version conflict resolution",
+    "integrity_verification": "Hash verification",
+    "recovery_procedures": "Geographic failover",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 2,
+    "system_name": "DNA Archive Network",
+    "replication_factor": 10,
+    "geographic_distribution": "Secure facilities worldwide",
+    "synchronization_protocol": "Periodic",
+    "conflict_resolution": "Sequence verification",
+    "integrity_verification": "DNA sequencing verification",
+    "recovery_procedures": "Cross-referencing",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 3,
+    "system_name": "Analog Archive System",
+    "replication_factor": 3,
+    "geographic_distribution": "Major libraries, museums",
+    "synchronization_protocol": "None",
+    "conflict_resolution": "Physical cross-checking",
+    "integrity_verification": "Manual verification",
+    "recovery_procedures": "Catalog access",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 4,
+    "system_name": "Quantum Memory Network",
+    "replication_factor": 2,
+    "geographic_distribution": "Specialized facilities",
+    "synchronization_protocol": "Near-instant",
+    "conflict_resolution": "Quantum error correction",
+    "integrity_verification": "Quantum verification",
+    "recovery_procedures": "Quantum teleportation",
+    "created_at": "2026-08-18 01:35:31"
+  }
+]

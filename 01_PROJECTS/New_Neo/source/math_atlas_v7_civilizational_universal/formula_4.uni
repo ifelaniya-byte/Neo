@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Compactness theorem -> Model theory",
+  "musical": "MUSICAL: Compactness theorem -> A set of sentences has a model iff every finite subset has a model.",
+  "tactile": "TACTILE: Compactness theorem -> \\text{If } \\Sigma \\text{ is finitely satisfiable, then } \\Sigma \\text{ is satisfiable}",
+  "computational": "COMPUTATIONAL: Compactness theorem -> symbolic_computation",
+  "pattern": "PATTERN: Compactness theorem -> Logic"
+}

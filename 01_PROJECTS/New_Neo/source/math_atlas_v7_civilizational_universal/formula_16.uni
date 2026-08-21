@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Pythagorean theorem -> Euclidean geometry",
+  "musical": "MUSICAL: Pythagorean theorem -> a\u00b2+b\u00b2=c\u00b2 in a right triangle.",
+  "tactile": "TACTILE: Pythagorean theorem -> a^2+b^2=c^2",
+  "computational": "COMPUTATIONAL: Pythagorean theorem -> symbolic_computation",
+  "pattern": "PATTERN: Pythagorean theorem -> Geometry"
+}

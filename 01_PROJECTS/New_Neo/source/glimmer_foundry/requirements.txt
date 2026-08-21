@@ -1,0 +1,17 @@
+# Core (simulation mode works with just these)
+numpy>=1.24
+pyyaml>=6.0
+fastapi>=0.110
+uvicorn>=0.27
+pydantic>=2.0
+
+# Optional — real LoRA mode
+# torch
+# transformers>=4.40
+# peft>=0.10
+# datasets
+# trl
+
+# Optional — web / agent
+# httpx
+# rich

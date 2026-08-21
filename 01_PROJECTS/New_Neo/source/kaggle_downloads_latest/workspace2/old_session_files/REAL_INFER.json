@@ -1,0 +1,81 @@
+{
+  "prompt": "In one short sentence: what is the largest ocean on Earth, and name one thing your own public weights are good at.",
+  "n": 8,
+  "n_ok": 0,
+  "n_fail": 8,
+  "rows": [
+    {
+      "ok": false,
+      "status": 402,
+      "reason": "Payment Required",
+      "body": "{\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "model": "microsoft/phi-4",
+      "key": "phi-4",
+      "hf": "microsoft/phi-4"
+    },
+    {
+      "ok": false,
+      "status": 402,
+      "reason": "Payment Required",
+      "body": "{\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "model": "openai/gpt-oss-20b",
+      "key": "gpt-oss-20b",
+      "hf": "openai/gpt-oss-20b"
+    },
+    {
+      "ok": false,
+      "status": 402,
+      "reason": "Payment Required",
+      "body": "{\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "model": "Qwen/Qwen3.6-27B",
+      "key": "qwen3.6-27b",
+      "hf": "Qwen/Qwen3.6-27B"
+    },
+    {
+      "ok": false,
+      "status": 402,
+      "reason": "Payment Required",
+      "body": "{\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "model": "swiss-ai/Apertus-70B-Instruct-2509",
+      "key": "apertus-70b",
+      "hf": "swiss-ai/Apertus-70B-Instruct-2509"
+    },
+    {
+      "ok": false,
+      "status": 402,
+      "reason": "Payment Required",
+      "body": "{\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "model": "zai-org/GLM-5.2",
+      "key": "glm-5.2",
+      "hf": "zai-org/GLM-5.2"
+    },
+    {
+      "ok": false,
+      "status": 402,
+      "reason": "Payment Required",
+      "body": "{\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "model": "moonshotai/Kimi-K3",
+      "key": "kimi-k3",
+      "hf": "moonshotai/Kimi-K3"
+    },
+    {
+      "ok": false,
+      "status": 402,
+      "reason": "Payment Required",
+      "body": "{\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "model": "deepseek-ai/DeepSeek-V4-Pro",
+      "key": "deepseek-v4-pro",
+      "hf": "deepseek-ai/DeepSeek-V4-Pro"
+    },
+    {
+      "ok": false,
+      "status": 402,
+      "reason": "Payment Required",
+      "body": "{\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "model": "Qwen/Qwen3.8-2.4T-A95B",
+      "key": "qwen-3.8-max",
+      "hf": "Qwen/Qwen3.8-2.4T-A95B"
+    }
+  ],
+  "honest": "0/8 live router completions. Token never written to the ledger."
+}

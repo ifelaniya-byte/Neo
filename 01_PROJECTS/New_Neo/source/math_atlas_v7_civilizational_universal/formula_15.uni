@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Quadratic formula -> Polynomial equations",
+  "musical": "MUSICAL: Quadratic formula -> Solutions to ax\u00b2+bx+c=0.",
+  "tactile": "TACTILE: Quadratic formula -> x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}",
+  "computational": "COMPUTATIONAL: Quadratic formula -> symbolic_computation",
+  "pattern": "PATTERN: Quadratic formula -> Algebra"
+}

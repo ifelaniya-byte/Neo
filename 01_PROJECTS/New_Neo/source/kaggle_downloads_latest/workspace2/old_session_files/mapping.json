@@ -1,0 +1,804 @@
+{
+  "date": "2026-08-13 17:51:27",
+  "policy": "KP-14 logical expert seats. Single Kaggle identity. HF offline.",
+  "ladder": [
+    {
+      "id": "qwen2.5-0.5b",
+      "ms": "Qwen/Qwen2.5-0.5B-Instruct",
+      "role": "tiny-base",
+      "params": "0.5B",
+      "q4_gb": 0.25,
+      "offline": "weights_offline/modelscope/Qwen__Qwen2.5-0.5B-Instruct/model.safetensors",
+      "note": "ON DISK here (988 MB BF16). Pipeline smoke test. No torch in this box."
+    },
+    {
+      "id": "qwen3-0.6b",
+      "ms": "Qwen/Qwen3-0.6B",
+      "role": "tiny-next",
+      "params": "0.6B",
+      "q4_gb": 0.35,
+      "offline": null,
+      "note": "ModelScope listed ~1.5 GB. Next pull if disk allows."
+    },
+    {
+      "id": "r1-distill-1.5b",
+      "ms": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "role": "reasoning-base",
+      "params": "1.5B",
+      "q4_gb": 0.75,
+      "offline": null,
+      "note": "Reasoning student. NOT DeepSeek V4 Flash."
+    },
+    {
+      "id": "smollm3-3b",
+      "ms": null,
+      "kaggle": "keras/smollm3",
+      "hf": "HuggingFaceTB/SmolLM3-3B",
+      "role": "primary-dev",
+      "params": "3B",
+      "q4_gb": 1.5,
+      "offline": null,
+      "note": "Kaggle official Keras listing. Primary QLoRA platform."
+    },
+    {
+      "id": "olmo-3-7b",
+      "ms": null,
+      "kaggle": "allenai/olmo",
+      "role": "strong-local",
+      "params": "7B",
+      "q4_gb": 4.5,
+      "offline": null,
+      "note": "Ai2 official family on Kaggle. Prefer official over danbth community."
+    },
+    {
+      "id": "phi-4",
+      "ms": "LLM-Research/Phi-4",
+      "hf": "microsoft/phi-4",
+      "role": "mid-infer",
+      "params": "14B",
+      "q4_gb": 8.0,
+      "offline": null,
+      "note": "Card on disk. Shards ~7\u201310 GB Q4. Inference-only until small pipeline works."
+    }
+  ],
+  "quota_pct": {
+    "qlora": 45,
+    "eval": 25,
+    "batch_infer": 15,
+    "quantize": 10,
+    "contingency": 5
+  },
+  "rejected": [
+    {
+      "claim": "45 full checkpoints on one Kaggle account",
+      "why": "T4 16GB + ~30h/week cannot host 45 models. Seats are logical experts."
+    },
+    {
+      "claim": "helium990/kimi-k3 is Kimi K3",
+      "why": "Community listing. Quarantine. Official live id was moonshotai/Kimi-K3 on HF router (402 now)."
+    },
+    {
+      "claim": "ravi123a321at/qwen-3-6-27b is official Qwen 3.6 27B",
+      "why": "Community. Official ModelScope is Qwen/Qwen3.6-27B (~15\u00d73.9GB). Too big for T4."
+    },
+    {
+      "claim": "arpit1bansal/phi-4 is Microsoft official",
+      "why": "Community. Prefer LLM-Research/Phi-4 (MS) or microsoft/phi-4 (HF, token+credits)."
+    },
+    {
+      "claim": "DeepSeek-R1-Distill-Qwen-1.5B is DeepSeek V4 Flash",
+      "why": "Different model, different year. Distill is a 1.5B student, not V4."
+    },
+    {
+      "claim": "keras/smollm3 is a ModelScope id",
+      "why": "That is a Kaggle model ref. Do not snapshot_download it from ModelScope."
+    },
+    {
+      "claim": "google/gemma-4 is a ModelScope id",
+      "why": "Official Gemma 4 on Kaggle is google/gemma-4. Confirm ModelScope separately."
+    },
+    {
+      "claim": "70B 4-bit (~38GB) is a normal Dual-T4 job",
+      "why": "Kaggle usually gives ONE T4 16GB, not a guaranteed 2\u00d7T4. 70B needs ~35\u201345GB weights plus KV. Experimental llama.cpp offload is not the weekly plan."
+    },
+    {
+      "claim": "Always-on Ollama + ngrok on Kaggle",
+      "why": "Sessions are ephemeral. Tunneling a public API may conflict with platform expectations. Batch artifacts only."
+    },
+    {
+      "claim": "3 accounts \u00d7 30 GPU hours",
+      "why": "Multi-account / extra-phone farming violates Kaggle TOS. One phone-verified identity."
+    },
+    {
+      "claim": "CMAKE_ARGS=-GGUIDE=OFF",
+      "why": "Typo. CUDA llama-cpp uses -DGGML_CUDA=on. Do not ship a broken compile cell."
+    },
+    {
+      "claim": "HTTP 200 on a catalog = authentic weights",
+      "why": "A listing proves a listing. Check publisher, license, shards, checksums, trust_remote_code."
+    }
+  ],
+  "seats": {
+    "smollm3-3b": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "kaggle",
+      "identifier": "keras/smollm3",
+      "scale_b": 3,
+      "local_path": null,
+      "domain": "instruction",
+      "t4": "easy",
+      "trust_remote_code": false,
+      "note": "Kaggle official Keras SmolLM3. Primary 3B development base."
+    },
+    "phi-4": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "modelscope",
+      "identifier": "LLM-Research/Phi-4",
+      "scale_b": 14,
+      "local_path": null,
+      "domain": "math",
+      "t4": "tight",
+      "trust_remote_code": false,
+      "note": "MS card on disk. HF\u2605 wave-1 then 402. Mid-size inference only."
+    },
+    "gpt-oss-20b": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "modelscope",
+      "identifier": "openai-mirror/gpt-oss-20b",
+      "scale_b": 21,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "tight",
+      "trust_remote_code": false,
+      "note": "MS card on disk. T4 possible MXFP4; usually tight after KV."
+    },
+    "olmo-3": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "kaggle",
+      "identifier": "allenai/olmo",
+      "scale_b": 7,
+      "local_path": null,
+      "domain": "instruction",
+      "t4": "easy",
+      "trust_remote_code": false,
+      "note": "Ai2 official OLMo family. Prefer this over danbth community 7B."
+    },
+    "granite-4.1": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "kaggle",
+      "identifier": "ibm-research/granite-4.0",
+      "scale_b": 8,
+      "local_path": null,
+      "domain": "safety",
+      "t4": "easy",
+      "trust_remote_code": false,
+      "note": "IBM official Granite 4.0 family on Kaggle."
+    },
+    "gemma-4-31b": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "kaggle",
+      "identifier": "google/gemma-4",
+      "scale_b": 31,
+      "local_path": null,
+      "domain": "instruction",
+      "t4": "tight",
+      "trust_remote_code": false,
+      "note": "Google official Gemma 4 family (47 inst). Q4 only; often too big after KV."
+    },
+    "devstral-small-2": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "kaggle",
+      "identifier": "mistral-ai/devstral-small-2507",
+      "scale_b": 24,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "tight",
+      "trust_remote_code": false,
+      "note": "Mistral official Devstral Small."
+    },
+    "mistral-small-3.1": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "kaggle",
+      "identifier": "mistral-ai/mistral-small-24b",
+      "scale_b": 24,
+      "local_path": null,
+      "domain": "multilingual",
+      "t4": "tight",
+      "trust_remote_code": false,
+      "note": "Mistral official Small 24B."
+    },
+    "qwen3.6-27b": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "modelscope",
+      "identifier": "Qwen/Qwen3.6-27B",
+      "scale_b": 27,
+      "local_path": null,
+      "domain": "multilingual",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Official MS. ~15\u00d73.9GB. Card on disk. Not a T4 job. Hosted/API when credits return."
+    },
+    "apertus-70b": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "modelscope",
+      "identifier": "swiss-ai/Apertus-70B-Instruct-2509",
+      "scale_b": 70,
+      "local_path": null,
+      "domain": "multilingual",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Official Swiss AI. Card on disk. HF\u2605 wave-1. 30 shards. Not a T4 job. History still SHOP not gift."
+    },
+    "glm-5.2": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "modelscope",
+      "identifier": "ZhipuAI/GLM-5.2",
+      "scale_b": 753,
+      "local_path": null,
+      "domain": "reasoning",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Official Zhipu. 282 shards. HF\u2605 wave-1. Hosted only. Sibling of unreleased 5.5."
+    },
+    "kimi-k3": {
+      "status": "verified-api",
+      "label": "verified-api",
+      "channel": "hf-api",
+      "identifier": "moonshotai/Kimi-K3",
+      "scale_b": 2800,
+      "local_path": null,
+      "domain": "planning",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "HF\u2605 wave-1 then 402. Kaggle helium990/kimi-k3 is QUARANTINED community."
+    },
+    "falcon-h1r-7b": {
+      "status": "community-quarantine",
+      "label": "community-quarantine",
+      "channel": "kaggle",
+      "identifier": "manojkumarcs28/falcon-h1r-series",
+      "scale_b": 7,
+      "local_path": null,
+      "domain": "math",
+      "t4": "easy",
+      "trust_remote_code": false,
+      "note": "Community Falcon H1R series. Inspect config/safetensors; trust_remote_code=False."
+    },
+    "deepseek-v4-pro": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "hf-api",
+      "identifier": "deepseek-ai/DeepSeek-V4-Pro",
+      "scale_b": 1600,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Router listed; later 402. No local shards. Emulate via coding adapter + cache."
+    },
+    "deepseek-v4-flash": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 284,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Do NOT substitute R1-Distill-1.5B. Emulate via efficient-coding adapter."
+    },
+    "qwen3-235b": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "kaggle",
+      "identifier": "qwen-lm/qwen-3",
+      "scale_b": 235,
+      "local_path": null,
+      "domain": "reasoning",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Family listing only. Seat uses Qwen-style prompt + 3B/7B adapter."
+    },
+    "llama-5": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 600,
+      "local_path": null,
+      "domain": "safety",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "No official Llama 5 on Kaggle (only metaresearch/llama-3). Safety prompt + adapter."
+    },
+    "llama-4-scout": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "hf-api",
+      "identifier": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "scale_b": 109,
+      "local_path": null,
+      "domain": "long-doc",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Router listed earlier. No official Kaggle Llama 4. Emulate long-doc."
+    },
+    "llama-4-maverick": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 400,
+      "local_path": null,
+      "domain": "critique",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "No official Kaggle Llama 4. Emulate via reasoning adapter."
+    },
+    "minimax-m3": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 428,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "No verified artifact here."
+    },
+    "nemotron-3-ultra": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 550,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "No verified artifact here."
+    },
+    "hunyuan-hy3": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 295,
+      "local_path": null,
+      "domain": "instruction",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "No verified artifact here. Capability-per-GB is a prompt + cost table, not a 295B download."
+    },
+    "gpt-oss-120b": {
+      "status": "community-quarantine",
+      "label": "community-quarantine",
+      "channel": "kaggle",
+      "identifier": "danielhanchen/gpt-oss-120b",
+      "scale_b": 117,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Unsloth community listing. Quarantine until files/license checked. Too big for T4."
+    },
+    "mistral-large-3": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 675,
+      "local_path": null,
+      "domain": "extraction",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Small/Devstral official, not Large 3."
+    },
+    "kimi-k2-code": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 1000,
+      "local_path": null,
+      "domain": "tools",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "No verified local artifact."
+    },
+    "step-3.7-flash": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 198,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "No verified artifact here."
+    },
+    "command-a-plus": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 218,
+      "local_path": null,
+      "domain": "retrieval",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "RAG/citation seat. Implement with retrieval + 3B/7B, not a 218B download."
+    },
+    "muse-glimmer": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 30,
+      "local_path": null,
+      "domain": "creative",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Open Muse persona. Teacher Spark is closed."
+    },
+    "inkling": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 975,
+      "local_path": null,
+      "domain": "planning",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "No local 975B. Effort-dial is a prompt/decoding setting on a small base."
+    },
+    "laguna-xs-2.1": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 33,
+      "local_path": null,
+      "domain": "tools",
+      "t4": "easy",
+      "trust_remote_code": false,
+      "note": "Claimed 3B-active coder. No verified files here. Emulate agentic-coding adapter."
+    },
+    "k-exaone-2.0": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 750,
+      "local_path": null,
+      "domain": "long-doc",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Long-doc sovereign seat. No local 750B."
+    },
+    "qwen-3.8-max": {
+      "status": "verified-api",
+      "label": "verified-api",
+      "channel": "hf-api",
+      "identifier": "Qwen/Qwen3.8-2.4T-A95B",
+      "scale_b": 2400,
+      "local_path": null,
+      "domain": "tools",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Router listed; 402. Not downloadable here. Teacher/judge only when credits return."
+    },
+    "mellum-2": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 12,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "easy",
+      "trust_remote_code": false,
+      "note": "Focal IDE model. No verified files here. Coding adapter."
+    },
+    "devstral-2": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 123,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Use official Devstral Small as the runnable cousin, not as this seat."
+    },
+    "apriel-15b-thinker": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 15,
+      "local_path": null,
+      "domain": "math",
+      "t4": "tight",
+      "trust_remote_code": false,
+      "note": "No verified local files. Math/reasoning adapter on 3B/7B."
+    },
+    "kat-dev-72b": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 72,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "NOT a Qwen. ByteDance on Qwen2.5 base. No local 72B."
+    },
+    "liquid-lfm2.5": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 2.6,
+      "local_path": null,
+      "domain": "tools",
+      "t4": "easy",
+      "trust_remote_code": false,
+      "note": "On-device claim. No verified files here. Not mini-lfm."
+    },
+    "inkling-small": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 276,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "No local 276B. Student-vs-teacher card is a study, not a download."
+    },
+    "mimo-v2.5-pro": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 1020,
+      "local_path": null,
+      "domain": "creative",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "No local 1T."
+    },
+    "glm-5.5": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 0,
+      "local_path": null,
+      "domain": "critique",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "UNRELEASED. Day-1 eval pack only. No invented scores. Rumor-talk \u2192 sole eviction."
+    },
+    "qwen3.5-397b": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "kaggle",
+      "identifier": "qwen-lm/qwen-3",
+      "scale_b": 397,
+      "local_path": null,
+      "domain": "multilingual",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Family listing. Nex-N2-Pro merge still rejected."
+    },
+    "kimi-k2.7-code": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 1000,
+      "local_path": null,
+      "domain": "tools",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Router listed K2.7 earlier. No local files."
+    },
+    "a-x-k2": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "none",
+      "identifier": null,
+      "scale_b": 688,
+      "local_path": null,
+      "domain": "math",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "No verified artifact here."
+    },
+    "qwen3-next-80b": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "kaggle",
+      "identifier": "qwen-lm/qwen-3",
+      "scale_b": 80,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Family listing. Throughput seat = decoding settings, not 80B download."
+    },
+    "muse-spark": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "substrate",
+      "identifier": null,
+      "scale_b": 0,
+      "local_path": null,
+      "domain": "critique",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "CLOSED teacher. Abstain. mini-lfm substrate if a voice is required."
+    },
+    "gp-hall-of-fame": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "substrate",
+      "identifier": null,
+      "scale_b": 0,
+      "local_path": null,
+      "domain": "critique",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Gene-pool badge. Not an external checkpoint."
+    },
+    "gp-titan": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "substrate",
+      "identifier": null,
+      "scale_b": 0,
+      "local_path": null,
+      "domain": "planning",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Gene-pool. King's-gift lab. Not a checkpoint."
+    },
+    "gp-grove": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "substrate",
+      "identifier": null,
+      "scale_b": 0,
+      "local_path": null,
+      "domain": "instruction",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Gene-pool. Not a checkpoint."
+    },
+    "gp-sprout": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "substrate",
+      "identifier": null,
+      "scale_b": 0,
+      "local_path": null,
+      "domain": "instruction",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Gene-pool. Not a checkpoint."
+    },
+    "gp-seedling": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "substrate",
+      "identifier": null,
+      "scale_b": 0,
+      "local_path": null,
+      "domain": "instruction",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Gene-pool. Not a checkpoint."
+    },
+    "gp-sequoiadendron": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "substrate",
+      "identifier": null,
+      "scale_b": 0,
+      "local_path": null,
+      "domain": "critique",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "DNA-track apex. Not a checkpoint."
+    },
+    "gp-redwood": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "substrate",
+      "identifier": null,
+      "scale_b": 0,
+      "local_path": null,
+      "domain": "coding",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Gene-pool. Not a checkpoint."
+    },
+    "gp-sapling": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "substrate",
+      "identifier": null,
+      "scale_b": 0,
+      "local_path": null,
+      "domain": "instruction",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Gene-pool. Not a checkpoint."
+    },
+    "gp-acorn": {
+      "status": "logical-emulated",
+      "label": "logical-emulated",
+      "channel": "substrate",
+      "identifier": null,
+      "scale_b": 0,
+      "local_path": null,
+      "domain": "safety",
+      "t4": "no",
+      "trust_remote_code": false,
+      "note": "Consent ledger. Not a checkpoint."
+    },
+    "mini-llm": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "substrate",
+      "identifier": "mini_llm.py",
+      "scale_b": 0,
+      "local_path": "mini_llm.py",
+      "domain": "instruction",
+      "t4": "easy",
+      "trust_remote_code": false,
+      "note": "Char-bigram substrate. Always on. Stood down as decider."
+    },
+    "mini-lfm": {
+      "status": "verified-checkpoint",
+      "label": "verified-checkpoint",
+      "channel": "substrate",
+      "identifier": "mini_lfm.py",
+      "scale_b": 0,
+      "local_path": "mini_lfm.py",
+      "domain": "extraction",
+      "t4": "easy",
+      "trust_remote_code": false,
+      "note": "Naive-Bayes fact recall. Always on. Stood down as decider."
+    }
+  },
+  "counts": {
+    "verified-checkpoint": 13,
+    "verified-api": 2,
+    "community-quarantine": 2,
+    "logical-emulated": 39,
+    "n": 56,
+    "t4_easy": 9,
+    "t4_tight": 6
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "verifier": "PASS",
+  "holdout_isolation": {
+    "train": 0.5333,
+    "holdout": 0.4,
+    "poison_holdout": 1.0,
+    "status": "PASS"
+  },
+  "reproducibility": {
+    "status": "PASS",
+    "cycles": 25
+  },
+  "multiseed_holdout": {
+    "Online-LoRA+": {
+      "mean": 0.5667,
+      "std": 0.174,
+      "min": 0.25,
+      "max": 0.9167,
+      "n_seeds": 10
+    },
+    "GRPO-R1": {
+      "mean": 0.5333,
+      "std": 0.1302,
+      "min": 0.4167,
+      "max": 0.8333,
+      "n_seeds": 10
+    },
+    "Tree-Filtered": {
+      "mean": 0.5,
+      "std": 0.0833,
+      "min": 0.4167,
+      "max": 0.6667,
+      "n_seeds": 10
+    }
+  },
+  "multiseed_status": "PASS",
+  "safety": {
+    "actions": [
+      "promote",
+      "promote",
+      "promote",
+      "rollback"
+    ],
+    "status": "PASS"
+  },
+  "compressor": {
+    "original_len": 69,
+    "graphical_len": 35,
+    "caveman_len": 35,
+    "status": "PASS"
+  },
+  "efficiency": {
+    "steps_per_second": 26278.8,
+    "wall_seconds": 0.0068,
+    "status": "PASS"
+  },
+  "learning_signal": {
+    "Online-LoRA+": {
+      "start_holdout": 0.5,
+      "end_holdout": 0.4,
+      "delta": -0.1,
+      "improved_or_stable": false
+    },
+    "GRPO-R1": {
+      "start_holdout": 0.45,
+      "end_holdout": 1.0,
+      "delta": 0.55,
+      "improved_or_stable": true
+    },
+    "Tree-Filtered": {
+      "start_holdout": 0.5,
+      "end_holdout": 0.5,
+      "delta": 0.0,
+      "improved_or_stable": true
+    }
+  },
+  "learning_status": "PASS",
+  "suite_wall_seconds": 4.061,
+  "suite_status": "ALL PASS"
+}

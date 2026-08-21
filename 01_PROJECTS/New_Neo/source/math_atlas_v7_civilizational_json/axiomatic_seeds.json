@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "seed_name": "Logic_Foundation",
+    "axioms": "Propositional logic axioms: P→(Q→P) | (P→(Q→R))→((P→Q)→(P→R)) | ((¬P→¬Q)→(Q→P))",
+    "inference_rules": "Modus ponens, universal instantiation",
+    "growth_protocols": "Derive basic theorems|Add quantifiers|Build predicate logic|Create set theory",
+    "reconstructive_power": 0.95,
+    "complexity_level": 1,
+    "historical_usage": "Foundational for all mathematical reasoning",
+    "verification_methods": "Truth tables, logical deduction",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 2,
+    "seed_name": "Set_Theory_Foundation",
+    "axioms": "ZFC axioms: Extensionality, Empty set, Pairing, Union, Power set, Infinity, Replacement, Regularity, Choice",
+    "inference_rules": "First-order logic with set-theoretic axioms",
+    "growth_protocols": "Build arithmetic|Construct analysis|Define topology|Create algebra",
+    "reconstructive_power": 0.9,
+    "complexity_level": 2,
+    "historical_usage": "Standard foundation for mathematics",
+    "verification_methods": "Relative consistency proofs, inner models",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 3,
+    "seed_name": "Arithmetic_Foundation",
+    "axioms": "Peano axioms: 0∈ℕ, ∀n∃S(n), ¬∃n S(n)=0, S(n)=S(m)→n=m, induction principle",
+    "inference_rules": "First-order logic with induction",
+    "growth_protocols": "Build number theory|Create algebra|Define analysis|Construct probability",
+    "reconstructive_power": 0.85,
+    "complexity_level": 1,
+    "historical_usage": "Foundation for number theory and arithmetic",
+    "verification_methods": "Model theory, non-standard models",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 4,
+    "seed_name": "Geometric_Foundation",
+    "axioms": "Euclidean axioms: Through any two points passes exactly one line, etc.",
+    "inference_rules": "Synthetic geometric reasoning",
+    "growth_protocols": "Build analytic geometry|Create differential geometry|Define topology|Construct algebraic geometry",
+    "reconstructive_power": 0.8,
+    "complexity_level": 2,
+    "historical_usage": "Foundation for geometric reasoning",
+    "verification_methods": "Coordinate transformation, consistency proofs",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 5,
+    "seed_name": "Computational_Foundation",
+    "axioms": "Turing machine model, lambda calculus, or computational axioms",
+    "inference_rules": "Algorithmic reasoning, complexity theory",
+    "growth_protocols": "Build computability theory|Create complexity classes|Define algorithms|Construct computational mathematics",
+    "reconstructive_power": 0.75,
+    "complexity_level": 3,
+    "historical_usage": "Foundation for computer science and computational mathematics",
+    "verification_methods": "Simulation, formal verification",
+    "created_at": "2026-08-18 01:35:31"
+  }
+]

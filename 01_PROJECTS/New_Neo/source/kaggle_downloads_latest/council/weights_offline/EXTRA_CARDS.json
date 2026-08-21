@@ -1,0 +1,101 @@
+[
+  {
+    "key": "glm-5.2",
+    "mid": "ZhipuAI/GLM-5.2",
+    "files": [
+      {
+        "ok": true,
+        "status": 200,
+        "bytes": 3732,
+        "path": "/home/user/weights_offline/modelscope/ZhipuAI__GLM-5.2/config.json",
+        "source": "modelscope",
+        "mid": "ZhipuAI/GLM-5.2",
+        "file": "config.json"
+      },
+      {
+        "ok": true,
+        "status": 200,
+        "bytes": 1065,
+        "path": "/home/user/weights_offline/modelscope/ZhipuAI__GLM-5.2/LICENSE",
+        "source": "modelscope",
+        "mid": "ZhipuAI/GLM-5.2",
+        "file": "LICENSE"
+      },
+      {
+        "ok": true,
+        "status": 200,
+        "bytes": 194,
+        "path": "/home/user/weights_offline/modelscope/ZhipuAI__GLM-5.2/generation_config.json",
+        "source": "modelscope",
+        "mid": "ZhipuAI/GLM-5.2",
+        "file": "generation_config.json"
+      }
+    ],
+    "errors": [],
+    "n_listed": 297,
+    "n_shards": 282
+  },
+  {
+    "key": "apertus-70b",
+    "mid": "swiss-ai/Apertus-70B-Instruct-2509",
+    "files": [
+      {
+        "ok": true,
+        "status": 200,
+        "bytes": 901,
+        "path": "/home/user/weights_offline/modelscope/swiss-ai__Apertus-70B-Instruct-2509/config.json",
+        "source": "modelscope",
+        "mid": "swiss-ai/Apertus-70B-Instruct-2509",
+        "file": "config.json"
+      },
+      {
+        "ok": true,
+        "status": 200,
+        "bytes": 126,
+        "path": "/home/user/weights_offline/modelscope/swiss-ai__Apertus-70B-Instruct-2509/generation_config.json",
+        "source": "modelscope",
+        "mid": "swiss-ai/Apertus-70B-Instruct-2509",
+        "file": "generation_config.json"
+      }
+    ],
+    "errors": [],
+    "n_listed": 44,
+    "n_shards": 30
+  },
+  {
+    "key": "gpt-oss-20b",
+    "mid": "openai-mirror/gpt-oss-20b",
+    "files": [
+      {
+        "ok": true,
+        "status": 200,
+        "bytes": 1806,
+        "path": "/home/user/weights_offline/modelscope/openai-mirror__gpt-oss-20b/config.json",
+        "source": "modelscope",
+        "mid": "openai-mirror/gpt-oss-20b",
+        "file": "config.json"
+      },
+      {
+        "ok": true,
+        "status": 200,
+        "bytes": 11357,
+        "path": "/home/user/weights_offline/modelscope/openai-mirror__gpt-oss-20b/LICENSE",
+        "source": "modelscope",
+        "mid": "openai-mirror/gpt-oss-20b",
+        "file": "LICENSE"
+      },
+      {
+        "ok": true,
+        "status": 200,
+        "bytes": 177,
+        "path": "/home/user/weights_offline/modelscope/openai-mirror__gpt-oss-20b/generation_config.json",
+        "source": "modelscope",
+        "mid": "openai-mirror/gpt-oss-20b",
+        "file": "generation_config.json"
+      }
+    ],
+    "errors": [],
+    "n_listed": 21,
+    "n_shards": 4
+  }
+]

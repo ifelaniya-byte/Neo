@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "formula_id": 1,
+    "keystone_type": "advanced",
+    "influence_radius": 40,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Boltzmann distribution were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 0.8,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 2,
+    "formula_id": 2,
+    "keystone_type": "advanced",
+    "influence_radius": 40,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If RSA encryption were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 0.8,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 3,
+    "formula_id": 3,
+    "keystone_type": "advanced",
+    "influence_radius": 50,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Character orthogonality (first) were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 1.0,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 4,
+    "formula_id": 4,
+    "keystone_type": "advanced",
+    "influence_radius": 50,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Compactness theorem were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 1.0,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 5,
+    "formula_id": 5,
+    "keystone_type": "advanced",
+    "influence_radius": 50,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Snake lemma were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 1.0,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 6,
+    "formula_id": 6,
+    "keystone_type": "advanced",
+    "influence_radius": 50,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Van Kampen theorem were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 1.0,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 7,
+    "formula_id": 7,
+    "keystone_type": "advanced",
+    "influence_radius": 40,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Parseval's identity were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 0.8,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 8,
+    "formula_id": 8,
+    "keystone_type": "advanced",
+    "influence_radius": 40,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Wedderburn's little theorem were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 0.8,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 9,
+    "formula_id": 9,
+    "keystone_type": "advanced",
+    "influence_radius": 50,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Gauss-Bonnet-Chern theorem were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 1.0,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 10,
+    "formula_id": 10,
+    "keystone_type": "advanced",
+    "influence_radius": 50,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Dirichlet's theorem on arithmetic progressions were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 1.0,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 11,
+    "formula_id": 11,
+    "keystone_type": "advanced",
+    "influence_radius": 50,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Martingale convergence theorem were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 1.0,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 12,
+    "formula_id": 12,
+    "keystone_type": "foundational",
+    "influence_radius": 10,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Peano axiom 1: Zero is natural were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 0.2,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 13,
+    "formula_id": 13,
+    "keystone_type": "foundational",
+    "influence_radius": 10,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Modus ponens were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 0.2,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 14,
+    "formula_id": 14,
+    "keystone_type": "foundational",
+    "influence_radius": 20,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If De Morgan's law (conjunction) were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 0.4,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 15,
+    "formula_id": 15,
+    "keystone_type": "foundational",
+    "influence_radius": 20,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Quadratic formula were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 0.4,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 16,
+    "formula_id": 16,
+    "keystone_type": "foundational",
+    "influence_radius": 20,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Pythagorean theorem were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 0.4,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 17,
+    "formula_id": 17,
+    "keystone_type": "advanced",
+    "influence_radius": 50,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Central limit theorem were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 1.0,
+    "created_at": "2026-08-18 01:43:40"
+  },
+  {
+    "id": 18,
+    "formula_id": 18,
+    "keystone_type": "advanced",
+    "influence_radius": 30,
+    "supporting_concepts": "Multiple dependent theorems and applications",
+    "cascade_effects": "If Euler's identity were lost, would affect many dependent concepts",
+    "ecosystem_stability_contribution": 0.6000000000000001,
+    "created_at": "2026-08-18 01:43:40"
+  }
+]

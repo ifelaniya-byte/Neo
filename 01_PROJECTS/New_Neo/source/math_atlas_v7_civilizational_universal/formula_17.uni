@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Central limit theorem -> Limit theorems",
+  "musical": "MUSICAL: Central limit theorem -> Standardized sample mean converges to standard normal.",
+  "tactile": "TACTILE: Central limit theorem -> \\frac{\\bar X_n-\\mu}{\\sigma/\\sqrt n}\\xrightarrow{d}N(0,1)",
+  "computational": "COMPUTATIONAL: Central limit theorem -> symbolic_computation",
+  "pattern": "PATTERN: Central limit theorem -> Probability"
+}

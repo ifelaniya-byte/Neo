@@ -1,0 +1,41 @@
+# Credentials and local authorization material
+.env
+.env.*
+.netrc
+.git-credentials
+access_token
+kaggle.json
+credentials
+credentials.json
+service-account.json
+*.pem
+*.p12
+*.pfx
+
+# Caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+
+# Model tensors and adapters
+*.safetensors
+*.gguf
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Generated release artifacts and local runtime evidence
+*.zip
+*.zip.manifest.json
+*.handoff.log
+*.tests.log
+worker.log
+*.tmp

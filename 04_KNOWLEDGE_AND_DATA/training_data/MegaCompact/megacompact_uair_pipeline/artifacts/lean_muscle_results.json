@@ -1,0 +1,11 @@
+{
+  "plan_cleared": true,
+  "canonical": "multi-file package",
+  "monolith_loader": "megacompact_monolith.py",
+  "monolith_blob": "megacompact_monolith_blob.json",
+  "thin_cli": "cli.py",
+  "modules_embedded": 24,
+  "data_files_embedded": 6,
+  "adversarial_ok": true,
+  "monolith_smt_demo": "ok"
+}

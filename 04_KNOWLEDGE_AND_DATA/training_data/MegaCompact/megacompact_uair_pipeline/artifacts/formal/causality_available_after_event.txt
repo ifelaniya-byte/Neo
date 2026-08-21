@@ -1,0 +1,7 @@
+OBLIGATION causality_available_after_event
+STATUS: unchecked
+FORMAL:
+theorem causality_available (event_ts available_ts : ℕ) :
+  available_ts ≥ event_ts
+-- Product obligation: available_timestamp_ms ≥ event_timestamp_ms for every NormalizedEvent / packet feature.
+NOTE: Run external kernel; do not treat as proven until kernel accepts.

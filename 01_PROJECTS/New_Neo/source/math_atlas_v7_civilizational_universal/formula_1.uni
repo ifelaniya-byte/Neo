@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Boltzmann distribution -> Statistical mechanics",
+  "musical": "MUSICAL: Boltzmann distribution -> Probability of a microstate in canonical ensemble.",
+  "tactile": "TACTILE: Boltzmann distribution -> P_i = \\frac{e^{-E_i/k_B T}}{Z}",
+  "computational": "COMPUTATIONAL: Boltzmann distribution -> symbolic_computation",
+  "pattern": "PATTERN: Boltzmann distribution -> Physics"
+}

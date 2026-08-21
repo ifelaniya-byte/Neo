@@ -1,0 +1,182 @@
+# Usage
+
+1. Add the `loading="lazy"` attribute to an `<img>` element that you want to lazily load. You can also use the `<picture>` element to lazily load images in different formats.
+
+2. Use `data-src` or `data-srcset` attributes to specify the high-quality image. These prevent browsers from loading images before they enter the viewport and are swapped to standard attributes when loading occurs.
+
+3. Set the `src` attribute with a pre-generated blurry placeholder, or use [hash-based placeholders](/guide/placeholders) (BlurHash or ThumbHash) to generate placeholders on the fly.
+
+::: code-group
+  ```html [Image tag]
+  <!-- You can use the `<img>` tag -->
+  <img
+    loading="lazy"
+    src="blurry placeholder ..."
+    data-srcset="image.png"
+    data-sizes="auto"
+    alt="Descriptive text"
+    width="1200"
+    height="800"
+  >
+  ```
+  ```html [Picture tag]
+  <!-- … or the `<picture>` tag -->
+  <picture>
+    <source
+      type="image/webp"
+      data-srcset="image-320w.webp 320w, image-640w.webp 640w"
+      data-sizes="auto"
+    />
+    <img
+      loading="lazy"
+      src="blurry placeholder ..."
+      data-src="lazy.jpg"
+      data-srcset="image-320w.jpg 320w, image-640w.jpg 640w"
+      data-sizes="auto"
+      alt="Descriptive text"
+      width="1200"
+      height="800"
+    />
+  </picture>
+  ```
+:::
+
+::: tip
+Set `data-sizes="auto"` to automatically calculate the `sizes` attribute when using `data-srcset`.
+:::
+
+4. In your frontend code, import the `lazyLoad` function from the library and call it:
+
+```ts
+import { lazyLoad } from 'unlazy'
+
+// Lazily load all `img[loading="lazy"]` images
+const cleanup = lazyLoad()
+
+// Optional: Call cleanup() to remove event listeners and observers
+// Useful when unmounting components or removing images dynamically
+```
+
+The `lazyLoad` function returns a cleanup function that removes event listeners and ResizeObservers. Call this when unmounting components or removing images to prevent memory leaks.
+
+## Above-the-Fold Images
+
+Images that are visible in the initial viewport – your hero / LCP image in particular – should **not** be lazy-loaded. Mark them `loading="eager"` instead:
+
+```html
+<img
+  loading="eager"
+  data-src="hero.jpg"
+  alt="Sunset over the ocean"
+  width="1600"
+  height="900"
+>
+```
+
+unlazy swaps the real source immediately and applies `fetchpriority="high"` on your behalf – see [`lazyLoad`](/api/lazy-load#how-it-works) for the exact behavior and the [Core Web Vitals guide](/guide/core-web-vitals) for when to reach for it.
+
+## Auto Calculation of the `sizes` Attribute
+
+unlazy supports setting the `sizes` attribute automatically, corresponding to the current size of your image – just set the value of `data-sizes` to `auto`.
+
+The automatic sizes calculation uses the display width of the image.
+
+```html
+<img
+  loading="lazy"
+  src="data:image/svg+xml, ..."
+  data-srcset="image-320w.jpg 320w, image-640w.jpg 640w"
+  data-sizes="auto"
+  alt="Descriptive text"
+  width="640"
+  height="360"
+>
+```
+
+When calling [`lazyLoad`](/api/lazy-load), the library automatically calculates the `sizes` attribute for all images with `data-sizes="auto"`.
+
+Alternatively, use the [`autoSizes`](/api/auto-sizes) function to calculate the `sizes` attribute without lazy loading. Call it with an `<img>` inside a `<picture>` and it walks to every `<source data-sizes="auto">` sibling in the same call:
+
+```ts
+import { autoSizes } from 'unlazy'
+
+// One-shot resolve for every matching element in the document
+autoSizes()
+```
+
+For responsive layouts where the display width changes – fluid containers, breakpoint switches, orientation changes – pass `{ updateOnResize: true }` to keep `sizes` synced. `autoSizes` returns a cleanup function – call it when you no longer need the observer:
+
+```ts
+const cleanup = autoSizes(undefined, { updateOnResize: true })
+
+// Later, when unmounting
+cleanup()
+```
+
+The same behavior is available on [`lazyLoad`](/api/lazy-load) via `updateSizesOnResize: true`, which delegates to `autoSizes` internally and bundles the cleanup into the same callback.
+
+## Custom Selectors
+
+You can customize the CSS selectors to target specific images by passing a CSS selector, a DOM element, a list of DOM elements, or an array of DOM elements to [`lazyLoad`](/api/lazy-load) and [`autoSizes`](/api/auto-sizes).
+
+For example, if you want to target images with a `data-custom-lazy` attribute, you can set the selector to `img[data-custom-lazy]`:
+
+```ts
+import { lazyLoad } from 'unlazy'
+
+lazyLoad('img[data-custom-lazy]')
+```
+
+::: info
+The `loading="lazy"` attribute is still required for the images to be lazy loaded.
+:::
+
+## Manually Loading Images
+
+If you want to load an image before it enters the viewport, you can call the [`triggerLoad`](/api/trigger-load) function directly. It accepts a `HTMLImageElement` as an argument.
+
+Import the `triggerLoad` function from the library and call it:
+
+```ts
+import { triggerLoad } from 'unlazy'
+
+const coolImage = document.querySelector('.image-to-load-first')
+
+// Trigger the load before the image enters the viewport
+triggerLoad(coolImage)
+```
+
+::: tip
+Manually loading images may negatively affect perceived performance by forcing immediate load, even when not visible in the viewport.
+:::
+
+## Using with `<picture>` Elements
+
+unlazy fully supports the `<picture>` element for art direction and format selection. Each `<source>` element should use `data-srcset` instead of `srcset`:
+
+```html
+<picture>
+  <source
+    type="image/avif"
+    data-srcset="image-320w.avif 320w, image-640w.avif 640w"
+    data-sizes="auto"
+  />
+  <source
+    type="image/webp"
+    data-srcset="image-320w.webp 320w, image-640w.webp 640w"
+    data-sizes="auto"
+  />
+  <img
+    loading="lazy"
+    src="data:image/svg+xml, ..."
+    data-src="image.jpg"
+    data-srcset="image-320w.jpg 320w, image-640w.jpg 640w"
+    data-sizes="auto"
+    alt="Descriptive text"
+    width="640"
+    height="360"
+  />
+</picture>
+```
+
+When the image loads, unlazy automatically swaps `data-srcset` to `srcset` on all `<source>` elements within the `<picture>`. The `onImageLoad` and `onImageError` callbacks fire once the browser resolves a source on the visible `<img>`.

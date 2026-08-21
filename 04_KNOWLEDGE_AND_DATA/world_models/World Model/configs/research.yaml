@@ -1,0 +1,70 @@
+# Research configuration - larger CPU run
+mode: synth
+preset: research
+
+# Synthetic data generation
+synthetic:
+  days: 7
+  blocks_per_day: 500
+  num_tokens: 10
+  num_pools: 20
+  num_venues: 5
+  seed: 7
+  baseline_volatility: 0.02
+  normal_fee_tiers: [0.003, 0.005, 0.01, 0.03]
+  liquidity_levels: [10000, 50000, 100000, 500000]
+  gas_levels: [0.1, 0.5, 1.0, 5.0, 10.0]
+  source_availability_delay_ms: 200
+  quote_staleness_probability: 0.1
+  revert_base_probability: 0.02
+  adverse_selection_strength: 0.7
+  regime_duration_blocks: 200
+  distribution_shift_start_fraction: 0.7
+
+# Splits
+splits:
+  train_fraction: 0.5
+  validation_fraction: 0.15
+  calibration_fraction: 0.15
+  test_fraction: 0.2
+
+# Model architecture
+model:
+  tabular_hidden: 128
+  action_hidden: 64
+  temporal_hidden: 128
+  latent_dim: 192
+  ensemble_size: 5
+  dropout: 0.15
+  learning_rate: 0.0005
+  batch_size: 64
+  epochs: 20
+  early_stopping_patience: 5
+
+# Calibration
+calibration:
+  confidence_level: 0.90
+  min_regime_samples: 50
+
+# Planning
+planning:
+  lambda_uncertainty: 1.5
+  lambda_cvar: 0.7
+  lambda_revert: 2.5
+  lambda_delay: 0.7
+  min_net_edge_usd: 1.0
+  max_revert_probability: 0.03
+  min_inclusion_probability: 0.90
+  ood_threshold: 0.7
+
+# Constraints
+constraints:
+  max_price_impact_bps: 50
+  max_gas_usd: 5.0
+  max_quote_age_ms: 3000
+  max_loss_usd: 10.0
+
+# Output
+output:
+  root: artifacts
+  run_id: null  # Auto-generated

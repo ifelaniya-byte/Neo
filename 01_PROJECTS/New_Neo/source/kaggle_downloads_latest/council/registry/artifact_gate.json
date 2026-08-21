@@ -1,0 +1,18 @@
+{
+  "date": "2026-08-13 19:13:30",
+  "model_dir": "weights_offline/modelscope/Qwen__Qwen2.5-0.5B-Instruct",
+  "exists": false,
+  "files": {},
+  "required_ok": false,
+  "weight_pinned_ok": false,
+  "config_json_ok": false,
+  "tokenizer_files_ok": false,
+  "transformers_available": false,
+  "config_load_ok": null,
+  "tokenizer_load_ok": null,
+  "runnable_offline": false,
+  "errors": [
+    "model directory missing"
+  ],
+  "status": "absent"
+}

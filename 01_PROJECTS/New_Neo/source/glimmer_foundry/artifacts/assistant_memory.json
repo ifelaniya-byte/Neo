@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "created_at": 1786413840.115551,
+  "updated_at": 1786413881.906993,
+  "lessons": [
+    "[2026-08-11 02:04] Ingested accuracy report; methods=['Online-LoRA+', 'GRPO-R1', 'Tree-Filtered']",
+    "[2026-08-11 02:04] Karpathy cycle done: promotions=1, online1=30, kept=30",
+    "[2026-08-11 02:04] Ingested accuracy report; methods=['Online-LoRA+', 'GRPO-R1', 'Tree-Filtered']",
+    "[2026-08-11 02:04] Karpathy cycle done: promotions=2, online1=30, kept=30"
+  ],
+  "skills": {
+    "holdout_isolation": {
+      "name": "holdout_isolation",
+      "confidence": 0.6000000000000001,
+      "evidence": [
+        "holdout never in train signal",
+        "holdout never in train signal"
+      ],
+      "wins": 2,
+      "losses": 0
+    },
+    "fixed_lr": {
+      "name": "fixed_lr",
+      "confidence": 0.6000000000000001,
+      "evidence": [
+        "invariant: never time-scale LR",
+        "invariant: never time-scale LR"
+      ],
+      "wins": 2,
+      "losses": 0
+    },
+    "online_lora": {
+      "name": "online_lora",
+      "confidence": 0.6000000000000001,
+      "evidence": [
+        "holdout mean=0.567",
+        "holdout mean=0.567"
+      ],
+      "wins": 2,
+      "losses": 0
+    },
+    "grpo_r1": {
+      "name": "grpo_r1",
+      "confidence": 0.6000000000000001,
+      "evidence": [
+        "holdout mean=0.533",
+        "holdout mean=0.533"
+      ],
+      "wins": 2,
+      "losses": 0
+    },
+    "tree_filtered": {
+      "name": "tree_filtered",
+      "confidence": 0.6000000000000001,
+      "evidence": [
+        "holdout mean=0.500",
+        "holdout mean=0.500"
+      ],
+      "wins": 2,
+      "losses": 0
+    },
+    "karpathy_loop": {
+      "name": "karpathy_loop",
+      "confidence": 0.6000000000000001,
+      "evidence": [
+        "promotions=1 updates=26",
+        "promotions=2 updates=37"
+      ],
+      "wins": 2,
+      "losses": 0
+    },
+    "muse_rewards": {
+      "name": "muse_rewards",
+      "confidence": 0.6000000000000001,
+      "evidence": [
+        "karpathy used muse_style_reward",
+        "karpathy used muse_style_reward"
+      ],
+      "wins": 2,
+      "losses": 0
+    },
+    "safety_rollback": {
+      "name": "safety_rollback",
+      "confidence": 0.6000000000000001,
+      "evidence": [
+        "safety suite passed",
+        "safety suite passed"
+      ],
+      "wins": 2,
+      "losses": 0
+    },
+    "efficiency": {
+      "name": "efficiency",
+      "confidence": 0.6000000000000001,
+      "evidence": [
+        "steps/sec=27884.4",
+        "steps/sec=26278.8"
+      ],
+      "wins": 2,
+      "losses": 0
+    },
+    "fusion_glimmer": {
+      "name": "fusion_glimmer",
+      "confidence": 0.6000000000000001,
+      "evidence": [
+        "GlimmerFoundry config present",
+        "GlimmerFoundry config present"
+      ],
+      "wins": 2,
+      "losses": 0
+    }
+  },
+  "method_scores": {
+    "Online-LoRA+": [
+      0.5667,
+      0.5667
+    ],
+    "GRPO-R1": [
+      0.5333,
+      0.5333
+    ],
+    "Tree-Filtered": [
+      0.5,
+      0.5
+    ]
+  },
+  "test_runs": 2,
+  "total_passes": 2,
+  "total_fails": 0
+}
