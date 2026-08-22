@@ -1,0 +1,48 @@
+11.7s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+11.7s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+11.7s 3 0.00s - to python to disable frozen modules.
+11.7s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.5s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.5s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.5s 7 0.00s - to python to disable frozen modules.
+12.5s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+21.7s 9 {
+21.7s 10 "python": "3.12.13",
+21.7s 11 "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+21.7s 12 "cpu_count": 4,
+21.7s 13 "disk": {
+21.7s 14 "/kaggle/working": {
+21.7s 15 "free_gb": 20.94,
+21.7s 16 "total_gb": 20.96
+21.7s 17 },
+21.7s 18 "/tmp": {
+21.7s 19 "free_gb": 1102.53,
+21.7s 20 "total_gb": 8656.92
+21.7s 21 },
+21.7s 22 "/dev/shm": {
+21.7s 23 "free_gb": 15.03,
+21.7s 24 "total_gb": 15.03
+21.7s 25 },
+21.7s 26 "/": {
+21.7s 27 "free_gb": 1102.53,
+21.7s 28 "total_gb": 8656.92
+21.7s 29 }
+21.7s 30 },
+21.7s 31 "torch": "2.10.0+cu128",
+21.7s 32 "cuda": true,
+21.7s 33 "n_gpu": 2,
+21.7s 34 "gpu0": "Tesla T4",
+21.7s 35 "vram0_gb": 15.64,
+21.7s 36 "qwen05": null,
+21.7s 37 "scratch": "/tmp",
+21.7s 38 "write_outputs_to": "/kaggle/working",
+21.7s 39 "honesty": "Usually one T4 16GB, not Dual-T4. 70B is not a plan. CPU session must not burn GPU quota."
+21.7s 40 }
+29.3s 41 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+29.3s 42 cells[i][c] = re.sub('\\\\\|', '|', cell)
+29.4s 43 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+29.4s 44 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+30.1s 45 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+30.4s 46 [NbConvertApp] Writing 6297 bytes to __notebook__.ipynb
+32.8s 47 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+33.6s 48 [NbConvertApp] Writing 285934 bytes to __results__.html

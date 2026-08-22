@@ -1,0 +1,10 @@
+{
+  "key_id": "ba500e7af15785ef",
+  "algorithms": [
+    "HMAC-SHA256",
+    "Ed25519"
+  ],
+  "purpose": "artifact_ledger_integrity_only",
+  "created": "2026-08-19T22:22:14.815991+00:00",
+  "ed25519_public_hex": "37078d915b4d3f2d1ebff370b9a71715b53ea3fa7a5fd8d2efc0e2d770540577"
+}

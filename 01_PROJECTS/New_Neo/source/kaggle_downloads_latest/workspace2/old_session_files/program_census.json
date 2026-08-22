@@ -1,0 +1,264 @@
+{
+  "date": "2026-08-13 18:03:07",
+  "utc": "2026-08-13T18:03:07Z",
+  "cwd": "/home/user",
+  "n_files_payload": 85,
+  "project_payload_bytes": 1012381697,
+  "project_payload_physical_bytes": 1012573184,
+  "project_payload_mb": 1012.38,
+  "excluded_cache_bytes": {
+    "home_cache": 0,
+    "hf_disabled": 0,
+    "pycache": 45430,
+    "git": 0,
+    "venv": 0
+  },
+  "git_bytes": 0,
+  "environment_bytes": 0,
+  "operational_footprint_bytes": 1012427127,
+  "operational_footprint_complete": false,
+  "operational_footprint_scope": [
+    "project payload",
+    "~/.cache",
+    "project .venv",
+    "project .git",
+    "selected pycache paths",
+    "weights_offline/.hf_disabled"
+  ],
+  "operational_footprint_mb": 1012.43,
+  "by_class": {
+    "datasets": {
+      "n": 2,
+      "bytes": 26220,
+      "blocks": 32768
+    },
+    "docs": {
+      "n": 13,
+      "bytes": 5810308,
+      "blocks": 5832704
+    },
+    "json": {
+      "n": 7,
+      "bytes": 88383,
+      "blocks": 106496
+    },
+    "logs": {
+      "n": 5,
+      "bytes": 6316046,
+      "blocks": 6324224
+    },
+    "model-config": {
+      "n": 16,
+      "bytes": 11500955,
+      "blocks": 11543040
+    },
+    "notebooks": {
+      "n": 4,
+      "bytes": 14639,
+      "blocks": 20480
+    },
+    "other": {
+      "n": 2,
+      "bytes": 19690,
+      "blocks": 24576
+    },
+    "source": {
+      "n": 28,
+      "bytes": 463742,
+      "blocks": 528896
+    },
+    "weight-metadata": {
+      "n": 7,
+      "bytes": 43890,
+      "blocks": 57344
+    },
+    "weight-tensors": {
+      "n": 1,
+      "bytes": 988097824,
+      "blocks": 988102656
+    }
+  },
+  "by_topdir": {
+    "weights_offline": {
+      "n": 24,
+      "bytes": 999642669
+    },
+    ".": {
+      "n": 45,
+      "bytes": 12651074
+    },
+    "registry": {
+      "n": 4,
+      "bytes": 48642
+    },
+    "datasets": {
+      "n": 4,
+      "bytes": 27240
+    },
+    "tests": {
+      "n": 7,
+      "bytes": 10051
+    },
+    "site": {
+      "n": 1,
+      "bytes": 2021
+    }
+  },
+  "largest_20": [
+    {
+      "bytes": 988097824,
+      "path": "weights_offline/modelscope/Qwen__Qwen2.5-0.5B-Instruct/model.safetensors",
+      "class": "weight-tensors"
+    },
+    {
+      "bytes": 7031645,
+      "path": "weights_offline/modelscope/Qwen__Qwen2.5-0.5B-Instruct/tokenizer.json",
+      "class": "model-config"
+    },
+    {
+      "bytes": 5454832,
+      "path": "council_dashboard.html",
+      "class": "docs"
+    },
+    {
+      "bytes": 2776833,
+      "path": "weights_offline/modelscope/Qwen__Qwen2.5-0.5B-Instruct/vocab.json",
+      "class": "model-config"
+    },
+    {
+      "bytes": 2570219,
+      "path": "council_log.json",
+      "class": "logs"
+    },
+    {
+      "bytes": 2556674,
+      "path": "weight_history.json",
+      "class": "logs"
+    },
+    {
+      "bytes": 1671839,
+      "path": "weights_offline/modelscope/Qwen__Qwen2.5-0.5B-Instruct/merges.txt",
+      "class": "model-config"
+    },
+    {
+      "bytes": 1120413,
+      "path": "usd_ledger.json",
+      "class": "logs"
+    },
+    {
+      "bytes": 217577,
+      "path": "kings_word.md",
+      "class": "docs"
+    },
+    {
+      "bytes": 100400,
+      "path": "model_council.py",
+      "class": "source"
+    },
+    {
+      "bytes": 76819,
+      "path": "weight_lineage.md",
+      "class": "docs"
+    },
+    {
+      "bytes": 66158,
+      "path": "kings_pass.py",
+      "class": "source"
+    },
+    {
+      "bytes": 65258,
+      "path": "usd_people.json",
+      "class": "logs"
+    },
+    {
+      "bytes": 57966,
+      "path": "weight_lineage.py",
+      "class": "source"
+    },
+    {
+      "bytes": 40153,
+      "path": "usd_housing.py",
+      "class": "source"
+    },
+    {
+      "bytes": 37430,
+      "path": "weights_meta.py",
+      "class": "source"
+    },
+    {
+      "bytes": 33044,
+      "path": "weights_metadata.json",
+      "class": "json"
+    },
+    {
+      "bytes": 25234,
+      "path": "registry/seats.json",
+      "class": "json"
+    },
+    {
+      "bytes": 24479,
+      "path": "mapping.json",
+      "class": "json"
+    },
+    {
+      "bytes": 23074,
+      "path": "weights_metadata.md",
+      "class": "docs"
+    }
+  ],
+  "weight_tensors": [
+    {
+      "bytes": 988097824,
+      "path": "weights_offline/modelscope/Qwen__Qwen2.5-0.5B-Instruct/model.safetensors"
+    }
+  ],
+  "notebooks": [
+    {
+      "bytes": 6818,
+      "path": "kaggle_worker_template.ipynb"
+    },
+    {
+      "bytes": 2616,
+      "path": "kaggle_00_environment_check.ipynb"
+    },
+    {
+      "bytes": 3734,
+      "path": "kaggle_10_download_verify.ipynb"
+    },
+    {
+      "bytes": 1471,
+      "path": "kaggle_30_train_qlora.ipynb"
+    }
+  ],
+  "seats": {
+    "verified-checkpoint": 13,
+    "verified-api": 2,
+    "community-quarantine": 2,
+    "logical-emulated": 39,
+    "n": 56,
+    "t4_easy": 9,
+    "t4_tight": 6
+  },
+  "usd": {
+    "n_people": 56,
+    "n_renters": 56,
+    "global_minted": 136,
+    "global_available": 136,
+    "people_minted_sum": 136,
+    "people_available_sum": 136,
+    "escrow_locked": 0,
+    "unit": "Council USD points \u2014 not redeemable US dollars"
+  },
+  "secrets_present": {
+    "kaggle_access_token_file": true,
+    "hf_token_env": false,
+    "note": "boolean only \u2014 values not printed"
+  },
+  "experiments_completed": 0,
+  "adapters_promoted": 0,
+  "last_successful_gpu_run": null,
+  "measured_peak_vram": null,
+  "integrity_errors": [],
+  "integrity_ok": true,
+  "honesty": "Council USD points are simulated ledger units, not redeemable dollars. This sandbox has no GPU/torch/transformers. Qwen2.5-0.5B files are complete on disk; offline load is unproven here. HF token absent. Kaggle token present (not printed). No adapter trained. No GPU run_report yet."
+}

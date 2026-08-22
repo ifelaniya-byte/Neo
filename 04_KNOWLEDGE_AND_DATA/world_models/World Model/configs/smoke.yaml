@@ -1,0 +1,70 @@
+# Smoke test configuration - quick 5-minute run
+mode: synth
+preset: smoke
+
+# Synthetic data generation
+synthetic:
+  days: 1
+  blocks_per_day: 100
+  num_tokens: 3
+  num_pools: 5
+  num_venues: 2
+  seed: 7
+  baseline_volatility: 0.01
+  normal_fee_tiers: [0.003, 0.005, 0.01]
+  liquidity_levels: [10000, 50000, 100000]
+  gas_levels: [0.1, 0.5, 1.0]
+  source_availability_delay_ms: 100
+  quote_staleness_probability: 0.05
+  revert_base_probability: 0.01
+  adverse_selection_strength: 0.5
+  regime_duration_blocks: 50
+  distribution_shift_start_fraction: 0.8
+
+# Splits
+splits:
+  train_fraction: 0.4
+  validation_fraction: 0.2
+  calibration_fraction: 0.2
+  test_fraction: 0.2
+
+# Model architecture
+model:
+  tabular_hidden: 64
+  action_hidden: 32
+  temporal_hidden: 64
+  latent_dim: 96
+  ensemble_size: 3
+  dropout: 0.1
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 5
+  early_stopping_patience: 3
+
+# Calibration
+calibration:
+  confidence_level: 0.90
+  min_regime_samples: 20
+
+# Planning
+planning:
+  lambda_uncertainty: 1.0
+  lambda_cvar: 0.5
+  lambda_revert: 2.0
+  lambda_delay: 0.5
+  min_net_edge_usd: 0.5
+  max_revert_probability: 0.05
+  min_inclusion_probability: 0.85
+  ood_threshold: 0.8
+
+# Constraints
+constraints:
+  max_price_impact_bps: 100
+  max_gas_usd: 2.0
+  max_quote_age_ms: 5000
+  max_loss_usd: 5.0
+
+# Output
+output:
+  root: artifacts
+  run_id: null  # Auto-generated

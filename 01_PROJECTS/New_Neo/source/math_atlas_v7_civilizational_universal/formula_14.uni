@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: De Morgan's law (conjunction) -> Propositional logic",
+  "musical": "MUSICAL: De Morgan's law (conjunction) -> Negation of conjunction equals disjunction of negations.",
+  "tactile": "TACTILE: De Morgan's law (conjunction) -> \\neg(P\\land Q)\\equiv \\neg P\\lor\\neg Q",
+  "computational": "COMPUTATIONAL: De Morgan's law (conjunction) -> symbolic_computation",
+  "pattern": "PATTERN: De Morgan's law (conjunction) -> Logic"
+}

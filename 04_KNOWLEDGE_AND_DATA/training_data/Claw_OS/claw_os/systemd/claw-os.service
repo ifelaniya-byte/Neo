@@ -1,0 +1,25 @@
+[Unit]
+Description=Claw OS Headless Media → X Pipeline
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=YOUR_USERNAME
+Group=YOUR_USERNAME
+WorkingDirectory=/opt/claw_os
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/claw_os/venv/bin/python /opt/claw_os/claw_os_headless.py --folder /home/YOUR_USERNAME/Claw_Inbox --watch
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Security hardening (optional but recommended)
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/home/YOUR_USERNAME/Claw_Inbox
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Credentials & Secrets
+.env
+.env.local
+.env.*.local
+.env.txt
+.env.*.local
+.env.claw_os
+credentials/
+secrets/
+**/twitter_keys*
+**/*SECURE*
+**/*.env.txt
+
+# Large archives / installers
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.iso
+*.dmg
+*.exe
+*.msi
+
+# Cache
+.cache/
+*.cache
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Backups
+*.bak
+*.backup
+*~
+.~*
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Archives (keep for historical reference, but don't track)
+/08_ARCHIVES_AND_BACKUPS/*.zip
+
+# Large generated datasets — retain directory structure with .gitkeep files
+/04_KNOWLEDGE_AND_DATA/datasets/*
+/04_KNOWLEDGE_AND_DATA/embeddings/*
+!.gitkeep

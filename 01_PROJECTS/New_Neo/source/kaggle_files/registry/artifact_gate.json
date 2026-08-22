@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-13 22:01:32",
+  "model_dir": "..\\test_gate",
+  "exists": true,
+  "files": {
+    "model.safetensors": {
+      "bytes": 14,
+      "sha256": "47989d7efbc4ed278b35e84f4a7dab07b7e11b7b775171c3feb6ed27322e7d7a",
+      "pinned": true,
+      "pin_match": false
+    }
+  },
+  "required_ok": false,
+  "weight_pinned_ok": false,
+  "config_json_ok": false,
+  "tokenizer_files_ok": false,
+  "transformers_available": true,
+  "config_load_ok": false,
+  "tokenizer_load_ok": false,
+  "tokenizer_offline_safe": false,
+  "chat_template_embedded": null,
+  "tokenizer_remote_refs": null,
+  "runnable_offline": false,
+  "errors": [
+    "pin mismatch model.safetensors",
+    "config parse: [Errno 2] No such file or directory: 'C:\\\\Users\\\\AIAli\\\\OneDrive\\\\Desktop\\\\NEO\\\\test_gate\\\\config.json'",
+    "config load: ValueError: Unrecognized model in C:\\Users\\AIAli\\OneDrive\\Desktop\\NEO\\test_gate. Should have a `model_type` key in its config.json.",
+    "tokenizer load: ValueError: Couldn't instantiate the backend tokenizer from one of: \n(1) a `tokenizers` library serialization file, \n(2) a slow tokenizer instance to convert or \n(3) an equivalent slow tokenizer class to instantiate and convert. \nYou need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one."
+  ],
+  "status": "incomplete",
+  "missing_required": [
+    "config.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "generation_config.json",
+    "vocab.json",
+    "merges.txt",
+    "LICENSE"
+  ],
+  "manifest_files_pinned": false,
+  "official_revision": null,
+  "source": null,
+  "license": null,
+  "authenticity": {
+    "weight_pinned": false,
+    "full_manifest_pinned": false,
+    "official_revision_pinned": false,
+    "license_recorded": false,
+    "runtime_verified": false
+  }
+}

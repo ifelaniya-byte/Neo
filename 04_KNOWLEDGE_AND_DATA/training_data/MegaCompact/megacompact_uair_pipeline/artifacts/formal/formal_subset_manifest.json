@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0-product",
+  "kind": "formal_subset_pack",
+  "created_at": "2026-08-19T22:12:58.837196+00:00",
+  "n_obligations": 3,
+  "obligations": [
+    {
+      "ok": true,
+      "path": "artifacts/formal/net_pnl_identity.txt",
+      "proven": false,
+      "kernels": {
+        "lean": false,
+        "coqc": false,
+        "isabelle": false
+      },
+      "note": "unchecked until external kernel accepts"
+    },
+    {
+      "ok": true,
+      "path": "artifacts/formal/causality_available_after_event.txt",
+      "proven": false,
+      "kernels": {
+        "lean": false,
+        "coqc": false,
+        "isabelle": false
+      },
+      "note": "unchecked until external kernel accepts"
+    },
+    {
+      "ok": true,
+      "path": "artifacts/formal/abstain_default.txt",
+      "proven": false,
+      "kernels": {
+        "lean": false,
+        "coqc": false,
+        "isabelle": false
+      },
+      "note": "unchecked until external kernel accepts"
+    }
+  ],
+  "kernels": {
+    "lean": false,
+    "coqc": false,
+    "isabelle": false
+  },
+  "proven_count": 0,
+  "note": "Unchecked until external kernel accepts. Product ships obligations, not proofs."
+}

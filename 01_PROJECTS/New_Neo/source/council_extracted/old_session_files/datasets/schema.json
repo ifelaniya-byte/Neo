@@ -1,0 +1,20 @@
+{
+  "record": {
+    "id": "math_000123",
+    "domain": "math",
+    "messages": [],
+    "reference": "",
+    "source": "",
+    "license": "",
+    "difficulty": 3,
+    "verified": true,
+    "contamination_group": ""
+  },
+  "domains": [
+    "instruction", "math", "coding", "long-doc", "extraction",
+    "planning", "critique", "creative", "multilingual", "tools",
+    "safety", "retrieval"
+  ],
+  "sizes": "500–5000 high-quality examples per capability, not millions of noisy ones",
+  "dedupe": ["exact hash", "normalized-text hash", "MinHash", "embedding near-dup", "document-level train/test split"]
+}

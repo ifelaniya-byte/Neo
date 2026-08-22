@@ -1,0 +1,48 @@
+{
+  "title": "Mathematical Language Atlas - v7 Civilizational Time Capsule",
+  "version": "v7_civilizational",
+  "generated_at": "2026-08-18T01:35:30.988028+00:00",
+  "components": {
+    "time_capsule": [
+      "temporal_layers",
+      "discovery_narratives",
+      "societal_impact",
+      "failed_approaches",
+      "anthropological_context"
+    ],
+    "noahs_ark": [
+      "mathematical_genome",
+      "conservation_categories",
+      "ecological_relationships",
+      "keystone_species",
+      "captive_breeding_programs",
+      "extinction_records"
+    ],
+    "world_black_box": [
+      "civilizational_knowledge_graph",
+      "axiomatic_seeds",
+      "reconstruction_protocols",
+      "verification_modules",
+      "quality_control_systems",
+      "hierarchical_recovery",
+      "universal_interfaces",
+      "storage_media",
+      "redundancy_systems"
+    ]
+  },
+  "exported_files": [
+    "temporal_layers.json",
+    "axiomatic_seeds.json",
+    "reconstruction_protocols.json",
+    "hierarchical_recovery.json",
+    "universal_interfaces.json",
+    "storage_media.json",
+    "redundancy_systems.json"
+  ],
+  "external_files": {
+    "dna_files": "DNA_DIR: math_atlas_v7_civilizational_dna",
+    "universal_files": "UNIVERSAL_DIR: math_atlas_v7_civilizational_universal",
+    "recovery_files": "RECOVERY_DIR: math_atlas_v7_civilizational_recovery"
+  },
+  "civilizational_note": "This represents a complete backup of mathematical civilization designed to survive catastrophes and enable reconstruction from minimal seeds."
+}

@@ -1,0 +1,2 @@
+See conversation roadmap: reflective loop best offline; external LLM best overall.
+Phases 0-2 implemented in atlas_shadow_unified.py.

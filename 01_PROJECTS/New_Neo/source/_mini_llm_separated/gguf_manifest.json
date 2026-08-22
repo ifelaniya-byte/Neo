@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "source_model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "source_checkpoint_dir": "/tmp/modelscope_cache/models/Qwen--Qwen2.5-1.5B-Instruct/snapshots/master",
+  "llama_cpp_commit": "a94d563ed801d1da1b8c2432946de07d0231bb3d",
+  "quant_type": "Q4_K_M",
+  "produced_at": 1786678528.0270603,
+  "files": {
+    "qwen2.5-1.5b-instruct-f16.gguf": {
+      "bytes": 3093669376,
+      "sha256": "3320692cf508f5f416f80c54bd5d228571e8a58326015489edc6fb6a7e86b435"
+    },
+    "qwen2.5-1.5b-instruct-Q4_K_M.gguf": {
+      "bytes": 986048512,
+      "sha256": "f5d52746f690101bc596fada9d2fb41edf5d16432610c42ef8bc3fc27a8164a8"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "@unlazy/vue",
+  "type": "module",
+  "version": "2.0.1",
+  "packageManager": "pnpm@10.33.0",
+  "description": "Vue lazy loading library for placeholder images",
+  "author": "Johann Schopplich <hello@johannschopplich.com>",
+  "license": "MIT",
+  "homepage": "https://unlazy.byjohann.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johannschopplich/unlazy.git",
+    "directory": "packages/vue"
+  },
+  "bugs": {
+    "url": "https://github.com/johannschopplich/unlazy/issues"
+  },
+  "keywords": [
+    "blurhash",
+    "lazy",
+    "loading",
+    "lozad",
+    "placeholder",
+    "responsive",
+    "thumbhash",
+    "vue"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./components": {
+      "types": "./dist/components/index.d.ts",
+      "default": "./dist/components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "pnpm -C playground run dev",
+    "dev:build": "pnpm -C playground run build",
+    "test:types": "vue-tsc --noEmit",
+    "test:build": "publint --strict"
+  },
+  "peerDependencies": {
+    "vue": "^3.5"
+  },
+  "dependencies": {
+    "unlazy": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.2",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "unplugin-vue": "^7.1.1",
+    "vue": "^3.5.32"
+  }
+}

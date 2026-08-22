@@ -1,0 +1,33 @@
+   name: Omega Engine Dual-GPU Benchmark
+   on:
+     workflow_dispatch:
+       inputs:
+         max_scale:
+           description: 'Maximum scale to test (e.g., 4, 8, 16)'
+           required: true
+           default: '4'
+           type: string
+   jobs:
+     run-benchmark:
+       runs-on: ubuntu-latest
+       steps:
+         - name: Checkout Repository
+           uses: actions/checkout@v4
+         - name: Set up Python
+           uses: actions/setup-python@v5
+           with:
+             python-version: '3.11'
+         - name: Install Modal CLI
+           run: pip install modal
+         - name: Run Benchmark
+           env:
+             MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+             MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+           run: python -m modal run ./run_modal_bridge.py --max-scale ${{ inputs.max_scale }}
+         - name: Upload Results
+           uses: actions/upload-artifact@v4
+           with:
+             name: omega-results
+             path: |
+               **/omega_modal_results/*.json
+               **/omega_ledger.csv

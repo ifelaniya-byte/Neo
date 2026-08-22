@@ -1,0 +1,226 @@
+import type { DefaultTheme } from 'vitepress'
+import UnoCSS from 'unocss/vite'
+import { defineConfig } from 'vitepress'
+import { github, ogDescription, ogImage, ogTitle, ogUrl, releases, version } from './meta'
+
+export default defineConfig({
+  lang: 'en-US',
+  title: ogTitle,
+  description: ogDescription,
+  head: [
+    ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
+    ['meta', { name: 'author', content: 'Johann Schopplich' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:url', content: ogUrl }],
+    ['meta', { property: 'og:title', content: ogTitle }],
+    ['meta', { property: 'og:description', content: ogDescription }],
+    ['meta', { property: 'og:image', content: ogImage }],
+    ['meta', { name: 'twitter:title', content: ogTitle }],
+    ['meta', { name: 'twitter:description', content: ogDescription }],
+    ['meta', { name: 'twitter:image', content: ogImage }],
+    ['meta', { name: 'twitter:site', content: '@jschopplich' }],
+    ['meta', { name: 'twitter:creator', content: '@jschopplich' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+  ],
+
+  appearance: 'dark',
+
+  vite: {
+    plugins: [UnoCSS()],
+  },
+
+  themeConfig: {
+    logo: '/logo.svg',
+
+    editLink: {
+      pattern: 'https://github.com/johannschopplich/unlazy/edit/main/docs/:path',
+      text: 'Suggest changes to this page',
+    },
+
+    nav: nav(),
+
+    sidebar: {
+      '/guide/': sidebarGuide(),
+      '/integrations/': sidebarGuide(),
+      '/api/': sidebarApi(),
+      '/advanced/': sidebarGuide(),
+    },
+
+    socialLinks: [
+      { icon: 'github', link: github },
+    ],
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2023-PRESENT Johann Schopplich',
+    },
+
+    search: {
+      provider: 'local',
+    },
+  },
+})
+
+function nav(): DefaultTheme.NavItem[] {
+  return [
+    {
+      text: 'Guide',
+      activeMatch: '^/guide/',
+      items: [
+        {
+          text: 'Guide',
+          items: [
+            { text: 'Getting Started', link: '/guide/' },
+            { text: 'Installation', link: '/guide/installation' },
+            { text: 'Usage', link: '/guide/usage' },
+            { text: 'Placeholders', link: '/guide/placeholders' },
+            { text: 'Core Web Vitals', link: '/guide/core-web-vitals' },
+            { text: 'SEO Considerations', link: '/guide/seo-considerations' },
+            { text: 'Migrating to v2', link: '/guide/migration' },
+          ],
+        },
+      ],
+    },
+    {
+      text: 'Integrations',
+      activeMatch: '^/integrations/',
+      items: [
+        {
+          text: 'How To',
+          link: '/integrations/',
+        },
+        {
+          text: 'Integrations',
+          items: [
+            { text: 'Vue', link: '/integrations/vue' },
+            { text: 'Nuxt', link: '/integrations/nuxt' },
+            { text: 'React', link: '/integrations/react' },
+            { text: 'Solid', link: '/integrations/solid' },
+            { text: 'Svelte', link: '/integrations/svelte' },
+          ],
+        },
+      ],
+    },
+    {
+      text: 'API',
+      activeMatch: '^/api/',
+      items: [
+        {
+          text: 'Overview',
+          link: '/api/',
+        },
+        {
+          text: 'Functions',
+          items: [
+            { text: 'lazyLoad', link: '/api/lazy-load' },
+            { text: 'autoSizes', link: '/api/auto-sizes' },
+            { text: 'triggerLoad', link: '/api/trigger-load' },
+            { text: 'createPlaceholderFromHash', link: '/api/create-placeholder-from-hash' },
+          ],
+        },
+        {
+          text: 'BlurHash',
+          items: [
+            { text: 'createPngDataUri', link: '/api/blurhash-create-png-data-uri' },
+          ],
+        },
+        {
+          text: 'ThumbHash',
+          items: [
+            { text: 'createPngDataUri', link: '/api/thumbhash-create-png-data-uri' },
+          ],
+        },
+      ],
+    },
+    {
+      text: 'Advanced',
+      activeMatch: '^/advanced/',
+      items: [
+        {
+          text: 'Advanced',
+          items: [
+            { text: 'Aspect Ratio', link: '/advanced/aspect-ratio' },
+            { text: 'Server-Side Rendering', link: '/advanced/ssr' },
+            { text: 'Build Flags', link: '/advanced/build-flags' },
+          ],
+        },
+      ],
+    },
+    {
+      text: `v${version}`,
+      items: [
+        {
+          text: 'Release Notes ',
+          link: releases,
+        },
+      ],
+    },
+  ]
+}
+
+function sidebarGuide(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'Guides',
+      items: [
+        { text: 'Getting Started', link: '/guide/' },
+        { text: 'Installation', link: '/guide/installation' },
+        { text: 'Usage', link: '/guide/usage' },
+        { text: 'Placeholders', link: '/guide/placeholders' },
+        { text: 'Core Web Vitals', link: '/guide/core-web-vitals' },
+        { text: 'SEO Considerations', link: '/guide/seo-considerations' },
+        { text: 'Migrating to v2', link: '/guide/migration' },
+      ],
+    },
+    {
+      text: 'Integrations',
+      items: [
+        { text: 'How To', link: '/integrations/' },
+        { text: 'Vue', link: '/integrations/vue' },
+        { text: 'Nuxt', link: '/integrations/nuxt' },
+        { text: 'React', link: '/integrations/react' },
+        { text: 'Solid', link: '/integrations/solid' },
+        { text: 'Svelte', link: '/integrations/svelte' },
+      ],
+    },
+    {
+      text: 'Advanced',
+      items: [
+        { text: 'Aspect Ratio', link: '/advanced/aspect-ratio' },
+        { text: 'Server-Side Rendering', link: '/advanced/ssr' },
+        { text: 'Build Flags', link: '/advanced/build-flags' },
+      ],
+    },
+    { text: 'Playground', link: 'https://github.com/johannschopplich/unlazy/tree/main/packages/nuxt/playground' },
+  ]
+}
+
+function sidebarApi(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'Overview',
+      link: '/api/',
+    },
+    {
+      text: 'Functions',
+      items: [
+        { text: 'lazyLoad', link: '/api/lazy-load' },
+        { text: 'autoSizes', link: '/api/auto-sizes' },
+        { text: 'triggerLoad', link: '/api/trigger-load' },
+        { text: 'createPlaceholderFromHash', link: '/api/create-placeholder-from-hash' },
+      ],
+    },
+    {
+      text: 'BlurHash',
+      items: [
+        { text: 'createPngDataUri', link: '/api/blurhash-create-png-data-uri' },
+      ],
+    },
+    {
+      text: 'ThumbHash',
+      items: [
+        { text: 'createPngDataUri', link: '/api/thumbhash-create-png-data-uri' },
+      ],
+    },
+  ]
+}

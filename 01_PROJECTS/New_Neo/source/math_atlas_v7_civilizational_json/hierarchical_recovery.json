@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "recovery_level": 0,
+    "level_name": "Axiomatic Foundation",
+    "required_concepts": "Logic, basic arithmetic",
+    "achievable_knowledge": "Basic reasoning, elementary mathematics",
+    "estimated_effort": "Minimal - can be done from scratch",
+    "prerequisites": "None",
+    "learning_curve": "Steep but necessary",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 2,
+    "recovery_level": 1,
+    "level_name": "Mathematical Infrastructure",
+    "required_concepts": "Level 0 + algebra, geometry",
+    "achievable_knowledge": "Advanced mathematics, physics foundations",
+    "estimated_effort": "Moderate - requires education system",
+    "prerequisites": "Level 0 completion",
+    "learning_curve": "Moderate",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 3,
+    "recovery_level": 2,
+    "level_name": "Specialized Domains",
+    "required_concepts": "Level 1 + analysis, topology",
+    "achievable_knowledge": "Research-level mathematics, all scientific domains",
+    "estimated_effort": "High - requires specialized education",
+    "prerequisites": "Level 1 completion",
+    "learning_curve": "Steep",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 4,
+    "recovery_level": 3,
+    "level_name": "Research Frontiers",
+    "required_concepts": "Level 2 + current research areas",
+    "achievable_knowledge": "Cutting-edge research, open problems",
+    "estimated_effort": "Very high - requires research infrastructure",
+    "prerequisites": "Level 2 completion",
+    "learning_curve": "Very steep",
+    "created_at": "2026-08-18 01:35:31"
+  },
+  {
+    "id": 5,
+    "recovery_level": 4,
+    "level_name": "Civilizational Integration",
+    "required_concepts": "All previous levels + interdisciplinary knowledge",
+    "achievable_knowledge": "Complete mathematical civilization",
+    "estimated_effort": "Maximum - requires full civilization support",
+    "prerequisites": "All previous levels",
+    "learning_curve": "Continuous",
+    "created_at": "2026-08-18 01:35:31"
+  }
+]

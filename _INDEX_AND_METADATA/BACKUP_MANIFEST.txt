@@ -1,0 +1,23 @@
+﻿# BACKUP MANIFEST
+Generated: 08/21/2026 17:03:29
+
+## BACKUP INTEGRITY VERIFICATION
+
+### Original Source
+- Location: C:\Users\AIAli\OneDrive\Desktop\Intelligence
+- Size: ~1 GB
+- Files: 6,504+
+
+### New Location
+- Location: C:\Users\AIAli\OneDrive\Desktop\Intelligence_Restructured
+- Status: ✅ VERIFIED COMPLETE
+
+### Backup Archives (in 08_ARCHIVES_AND_BACKUPS/)
+- agent-os-hub.zip (0.01 MB)
+- Atlas_Shadow_Unified_Clean.zip (0.14 MB)
+- Claw_OS_v2_Complete (2).zip (0.02 MB)
+- Claw_OS_v2_Complete.zip (0.02 MB)
+- COMBINED_SYSTEMS_UAIR_INTEGRATED.zip (0.81 MB)
+- The_Architects_Archive (2).zip (0.01 MB)
+- unlazy-main.zip (1.02 MB)
+- World Model (2).zip (0.92 MB)

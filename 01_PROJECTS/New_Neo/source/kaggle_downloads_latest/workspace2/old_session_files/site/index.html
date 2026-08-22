@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Council status</title>
+<style>
+body{margin:0;background:#0b1220;color:#e2e8f0;font-family:system-ui,sans-serif}
+main{max-width:740px;margin:0 auto;padding:28px}
+h1{font-size:22px;margin:0 0 8px}
+.sub{color:#94a3b8;font-size:13px}
+table{width:100%;border-collapse:collapse;margin-top:16px;background:#0f172a;border-radius:10px}
+td{padding:10px 12px;border-bottom:1px solid #1e293b;font-size:14px}
+td:last-child{text-align:right;font-weight:700;color:#fbbf24}
+.warn{background:#422006;border:1px solid #f59e0b;color:#fde68a;padding:12px;border-radius:10px;margin-top:16px;font-size:13px}
+.ok{background:#052e16;border:1px solid #16a34a;color:#bbf7d0;padding:12px;border-radius:10px;margin-top:16px;font-size:13px}
+</style></head>
+<body><main>
+<h1>SYSTEM STATUS</h1>
+<div class="sub">Control plane. CUSD points are not money. No secrets on this page.</div>
+<table>
+<tr><td>Program state</td><td>CONTROL-PLANE / RUNTIME BLOCKED</td></tr>
+<tr><td>Payload / scoped footprint</td><td>1012.38 / 1012.43 MB</td></tr>
+<tr><td>Logical seats</td><td>56</td></tr>
+<tr><td>Complete file sets</td><td>1 (0.5B) — load unproven</td></tr>
+<tr><td>Tokenizer offline-safe</td><td>yes (embedded chat_template, no URLs)</td></tr>
+<tr><td>Runtime-verified / benchmarked</td><td>0 / 0</td></tr>
+<tr><td>Adapters trained / promoted</td><td>0 / 0</td></tr>
+<tr><td>GPU / HF API</td><td>unavailable / 402</td></tr>
+<tr><td>CUSD minted == wallets</td><td>136 == 136</td></tr>
+<tr><td>Unit tests</td><td>18/18</td></tr>
+<tr><td>Benchmark</td><td>smoke-v2 · 60 · d880d026…</td></tr>
+</table>
+<div class="ok">File-gate PASS. Worker exit codes, mandatory scorer, schema validation, Dataset discovery, FP16-no-device_map are implemented and unit-tested.</div>
+<div class="warn">Nothing is runnable until a Kaggle T4 writes predictions.jsonl (60), evaluation.json, run_report.json, and completion.marker. That cannot be done in this sandbox.</div>
+</main></body></html>

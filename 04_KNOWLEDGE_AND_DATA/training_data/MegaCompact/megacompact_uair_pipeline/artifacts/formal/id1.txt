@@ -1,0 +1,5 @@
+OBLIGATION id1
+STATUS: unchecked
+FORMAL:
+2+2=4
+NOTE: Run external kernel; do not treat as proven until kernel accepts.

@@ -1,0 +1,29 @@
+# Project APEX Dependencies
+# Core dependencies for autonomous optimization loop with enhanced systems
+
+# System monitoring and resource tracking
+psutil>=5.9.0
+
+# Machine Learning dependencies (for Phase 2: Micro-LLM training)
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.12.0
+accelerate>=0.20.0
+
+# Knowledge graph and network analysis
+networkx>=3.0
+
+# Web scraping and research integration
+beautifulsoup4>=4.12.0
+aiohttp>=3.8.0
+requests>=2.31.0
+
+# Async operations
+asyncio>=3.4.0
+
+# Neo Status Grading System
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# Optional: For PDF generation if needed
+# weasyprint>=59.0

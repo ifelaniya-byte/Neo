@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Wedderburn's little theorem -> Ring theory",
+  "musical": "MUSICAL: Wedderburn's little theorem -> Finite division rings are fields.",
+  "tactile": "TACTILE: Wedderburn's little theorem -> R \\text{ finite division ring } \\Rightarrow R \\text{ field}",
+  "computational": "COMPUTATIONAL: Wedderburn's little theorem -> symbolic_computation",
+  "pattern": "PATTERN: Wedderburn's little theorem -> Algebra"
+}

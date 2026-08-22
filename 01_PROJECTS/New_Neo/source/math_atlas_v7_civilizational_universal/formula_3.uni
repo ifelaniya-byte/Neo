@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Character orthogonality (first) -> Representation theory",
+  "musical": "MUSICAL: Character orthogonality (first) -> Orthogonality of irreducible characters.",
+  "tactile": "TACTILE: Character orthogonality (first) -> \\frac{1}{|G|} \\sum_{g \\in G} \\chi_i(g) \\overline{\\chi_j(g)} = \\delta_{ij}",
+  "computational": "COMPUTATIONAL: Character orthogonality (first) -> symbolic_computation",
+  "pattern": "PATTERN: Character orthogonality (first) -> Algebra"
+}

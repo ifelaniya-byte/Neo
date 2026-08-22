@@ -1,0 +1,287 @@
+{
+  "date": "2026-08-13 19:34:29",
+  "utc": "2026-08-13T19:34:29Z",
+  "cwd": "/home/user/old_session_files",
+  "n_files_payload": 99,
+  "project_payload_bytes": 12866223,
+  "project_payload_physical_bytes": 13100032,
+  "project_payload_mb": 12.87,
+  "excluded_cache_bytes": {
+    "home_cache": 0,
+    "hf_disabled": 0,
+    "pycache": 45755,
+    "git": 1522176,
+    "venv": 0
+  },
+  "git_bytes": 1522176,
+  "environment_bytes": 0,
+  "operational_footprint_bytes": 14434154,
+  "operational_footprint_complete": false,
+  "operational_footprint_scope": [
+    "project payload",
+    "~/.cache",
+    "project .venv",
+    "project .git",
+    "selected pycache paths",
+    "weights_offline/.hf_disabled"
+  ],
+  "operational_footprint_mb": 14.43,
+  "by_class": {
+    "datasets": {
+      "n": 3,
+      "bytes": 40080,
+      "blocks": 49152
+    },
+    "docs": {
+      "n": 18,
+      "bytes": 5825279,
+      "blocks": 5861376
+    },
+    "json": {
+      "n": 10,
+      "bytes": 90428,
+      "blocks": 118784
+    },
+    "logs": {
+      "n": 6,
+      "bytes": 6321704,
+      "blocks": 6332416
+    },
+    "model-config": {
+      "n": 10,
+      "bytes": 12432,
+      "blocks": 41472
+    },
+    "notebooks": {
+      "n": 7,
+      "bytes": 27175,
+      "blocks": 36864
+    },
+    "other": {
+      "n": 3,
+      "bytes": 20201,
+      "blocks": 28672
+    },
+    "source": {
+      "n": 37,
+      "bytes": 501294,
+      "blocks": 594432
+    },
+    "weight-metadata": {
+      "n": 5,
+      "bytes": 27630,
+      "blocks": 36864
+    }
+  },
+  "by_topdir": {
+    ".": {
+      "n": 51,
+      "bytes": 12666626
+    },
+    "kaggle_pack": {
+      "n": 9,
+      "bytes": 52200
+    },
+    "registry": {
+      "n": 4,
+      "bytes": 46309
+    },
+    "weights_offline": {
+      "n": 15,
+      "bytes": 40062
+    },
+    "datasets": {
+      "n": 4,
+      "bytes": 27240
+    },
+    "tests": {
+      "n": 10,
+      "bytes": 12260
+    },
+    "tools": {
+      "n": 3,
+      "bytes": 11312
+    },
+    "archive": {
+      "n": 2,
+      "bytes": 8215
+    },
+    "site": {
+      "n": 1,
+      "bytes": 1999
+    }
+  },
+  "largest_20": [
+    {
+      "bytes": 5454832,
+      "path": "council_dashboard.html",
+      "class": "docs"
+    },
+    {
+      "bytes": 2570219,
+      "path": "council_log.json",
+      "class": "logs"
+    },
+    {
+      "bytes": 2556674,
+      "path": "weight_history.json",
+      "class": "logs"
+    },
+    {
+      "bytes": 1120413,
+      "path": "usd_ledger.json",
+      "class": "logs"
+    },
+    {
+      "bytes": 217577,
+      "path": "kings_word.md",
+      "class": "docs"
+    },
+    {
+      "bytes": 100400,
+      "path": "model_council.py",
+      "class": "source"
+    },
+    {
+      "bytes": 76819,
+      "path": "weight_lineage.md",
+      "class": "docs"
+    },
+    {
+      "bytes": 66158,
+      "path": "kings_pass.py",
+      "class": "source"
+    },
+    {
+      "bytes": 65258,
+      "path": "usd_people.json",
+      "class": "logs"
+    },
+    {
+      "bytes": 57966,
+      "path": "weight_lineage.py",
+      "class": "source"
+    },
+    {
+      "bytes": 40153,
+      "path": "usd_housing.py",
+      "class": "source"
+    },
+    {
+      "bytes": 37430,
+      "path": "weights_meta.py",
+      "class": "source"
+    },
+    {
+      "bytes": 33044,
+      "path": "weights_metadata.json",
+      "class": "json"
+    },
+    {
+      "bytes": 25234,
+      "path": "registry/seats.json",
+      "class": "json"
+    },
+    {
+      "bytes": 24479,
+      "path": "mapping.json",
+      "class": "json"
+    },
+    {
+      "bytes": 23074,
+      "path": "weights_metadata.md",
+      "class": "docs"
+    },
+    {
+      "bytes": 22547,
+      "path": "studies.py",
+      "class": "source"
+    },
+    {
+      "bytes": 21531,
+      "path": "seat_registry.py",
+      "class": "source"
+    },
+    {
+      "bytes": 18802,
+      "path": "registry/seats.yaml",
+      "class": "other"
+    },
+    {
+      "bytes": 13860,
+      "path": "datasets/smoke-v2.jsonl",
+      "class": "datasets"
+    }
+  ],
+  "weight_tensors": [],
+  "external_expected_artifacts": [
+    {
+      "id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "local_state": "absent",
+      "expected_tensor_bytes": 988097824,
+      "expected_tensor_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe"
+    }
+  ],
+  "historical_census_stale": true,
+  "notebooks": [
+    {
+      "bytes": 2616,
+      "path": "kaggle_00_environment_check.ipynb"
+    },
+    {
+      "bytes": 3734,
+      "path": "kaggle_10_download_verify.ipynb"
+    },
+    {
+      "bytes": 1471,
+      "path": "kaggle_30_train_qlora.ipynb"
+    },
+    {
+      "bytes": 6818,
+      "path": "kaggle_worker_template.ipynb"
+    },
+    {
+      "bytes": 3102,
+      "path": "kaggle_pack/00_cpu_preflight.ipynb"
+    },
+    {
+      "bytes": 6818,
+      "path": "kaggle_pack/01_gpu_run.ipynb"
+    },
+    {
+      "bytes": 2616,
+      "path": "kaggle_pack/kaggle_00_environment_check.ipynb"
+    }
+  ],
+  "seats": {
+    "verified-checkpoint": 13,
+    "verified-api": 2,
+    "community-quarantine": 2,
+    "logical-emulated": 39,
+    "n": 56,
+    "t4_easy": 9,
+    "t4_tight": 6
+  },
+  "usd": {
+    "n_people": 56,
+    "n_renters": 56,
+    "global_minted": 136,
+    "global_available": 136,
+    "people_minted_sum": 136,
+    "people_available_sum": 136,
+    "escrow_locked": 0,
+    "unit": "Council USD points \u2014 not redeemable US dollars"
+  },
+  "secrets_present": {
+    "kaggle_access_token_file": false,
+    "hf_token_env": false,
+    "note": "boolean only \u2014 values not printed"
+  },
+  "experiments_completed": 0,
+  "adapters_promoted": 0,
+  "last_successful_gpu_run": null,
+  "measured_peak_vram": null,
+  "integrity_errors": [],
+  "integrity_ok": true,
+  "honesty": "Council USD points are simulated ledger units, not redeemable dollars. This sandbox has no GPU/torch/transformers. The expected Qwen2.5-0.5B tensor is absent from this recovered source tree; offline loading is unproven. No adapter is trained and no GPU run report is present."
+}

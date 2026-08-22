@@ -1,0 +1,105 @@
+{
+  "started_at": 1786413879.7592537,
+  "mode": "simulation",
+  "methods": [
+    "Online-LoRA+",
+    "GRPO-R1",
+    "Tree-Filtered"
+  ],
+  "efficiency": {
+    "wall_seconds": 0.0016,
+    "cycles": 5,
+    "total_paradigm_steps": 15,
+    "steps_per_second": 9568.5,
+    "skip_count": 0,
+    "skip_rate": 0.0,
+    "holdout_per_second": {
+      "Online-LoRA+": 255.1603,
+      "GRPO-R1": 382.7404,
+      "Tree-Filtered": 318.9504
+    }
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "wall_time": 0.0007,
+      "leader": "Tree-Filtered",
+      "scores": {
+        "Online-LoRA+": 0.45,
+        "GRPO-R1": 0.3,
+        "Tree-Filtered": 0.55
+      }
+    },
+    {
+      "cycle": 2,
+      "wall_time": 0.0009,
+      "leader": "Tree-Filtered",
+      "scores": {
+        "Online-LoRA+": 0.45,
+        "GRPO-R1": 0.3,
+        "Tree-Filtered": 0.55
+      }
+    },
+    {
+      "cycle": 3,
+      "wall_time": 0.0012,
+      "leader": "Tree-Filtered",
+      "scores": {
+        "Online-LoRA+": 0.45,
+        "GRPO-R1": 0.3,
+        "Tree-Filtered": 0.55
+      }
+    },
+    {
+      "cycle": 4,
+      "wall_time": 0.0014,
+      "leader": "Tree-Filtered",
+      "scores": {
+        "Online-LoRA+": 0.45,
+        "GRPO-R1": 0.3,
+        "Tree-Filtered": 0.55
+      }
+    },
+    {
+      "cycle": 5,
+      "wall_time": 0.0016,
+      "leader": "Tree-Filtered",
+      "scores": {
+        "Online-LoRA+": 0.45,
+        "GRPO-R1": 0.3,
+        "Tree-Filtered": 0.55
+      }
+    }
+  ],
+  "paradigm_scores": {
+    "Online-LoRA+": [
+      0.45,
+      0.45,
+      0.45,
+      0.45,
+      0.45
+    ],
+    "GRPO-R1": [
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "Tree-Filtered": [
+      0.55,
+      0.55,
+      0.55,
+      0.55,
+      0.55
+    ]
+  },
+  "leader": "Tree-Filtered",
+  "final_holdout": {
+    "Online-LoRA+": 0.4,
+    "GRPO-R1": 0.6,
+    "Tree-Filtered": 0.5
+  },
+  "final_leader": "GRPO-R1",
+  "elapsed": 0.0015676419999977043
+}

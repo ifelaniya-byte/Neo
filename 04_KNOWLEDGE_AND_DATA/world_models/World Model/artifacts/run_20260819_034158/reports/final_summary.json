@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2026-08-19T03:41:59.061915+00:00",
+  "backtest_summary": {},
+  "stress_summary": {
+    "feature_timing": {
+      "passed": true,
+      "failures": [],
+      "failure_count": 0
+    },
+    "block_timing": {
+      "passed": true,
+      "failures": [],
+      "failure_count": 0
+    },
+    "label_separation": {
+      "passed": true,
+      "failures": [],
+      "failure_count": 0
+    },
+    "split_integrity": {
+      "passed": true,
+      "train_val_overlap": 0,
+      "val_cal_overlap": 0,
+      "cal_test_overlap": 0
+    },
+    "net_pnl": {
+      "passed": true,
+      "failures": [],
+      "failure_count": 0
+    }
+  },
+  "audit_summary": {
+    "feature_timing": true,
+    "block_timing": true,
+    "label_separation": true,
+    "split_integrity": true,
+    "net_pnl": true
+  },
+  "all_audits_passed": null
+}

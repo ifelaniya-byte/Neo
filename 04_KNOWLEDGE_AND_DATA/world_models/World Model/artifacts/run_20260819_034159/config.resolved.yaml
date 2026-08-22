@@ -1,0 +1,73 @@
+calibration:
+  confidence_level: 0.9
+  min_regime_samples: 50
+chain_id: 42161
+constraints:
+  max_gas_usd: 5.0
+  max_loss_usd: 10.0
+  max_price_impact_bps: 50
+  max_quote_age_ms: 3000
+input_format: parquet
+input_path: null
+max_feature_age_ms: 5000
+mode: synth
+model:
+  action_hidden: 64
+  batch_size: 64
+  dropout: 0.15
+  early_stopping_patience: 5
+  ensemble_size: 5
+  epochs: 20
+  latent_dim: 192
+  learning_rate: 0.0005
+  tabular_hidden: 128
+  temporal_hidden: 128
+output:
+  root: artifacts
+  run_id: null
+planning:
+  lambda_cvar: 0.7
+  lambda_delay: 0.7
+  lambda_revert: 2.5
+  lambda_uncertainty: 1.5
+  max_revert_probability: 0.03
+  min_inclusion_probability: 0.9
+  min_net_edge_usd: 1.0
+  ood_threshold: 0.7
+preset: research
+seed: 42
+splits:
+  calibration_fraction: 0.15
+  test_fraction: 0.2
+  train_fraction: 0.5
+  validation_fraction: 0.15
+synthetic:
+  adverse_selection_strength: 0.7
+  baseline_volatility: 0.02
+  blocks_per_day: 500
+  days: 7
+  distribution_shift_start_fraction: 0.7
+  gas_levels:
+  - 0.1
+  - 0.5
+  - 1.0
+  - 5.0
+  - 10.0
+  liquidity_levels:
+  - 10000.0
+  - 50000.0
+  - 100000.0
+  - 500000.0
+  normal_fee_tiers:
+  - 0.003
+  - 0.005
+  - 0.01
+  - 0.03
+  num_pools: 20
+  num_tokens: 10
+  num_venues: 5
+  quote_staleness_probability: 0.1
+  regime_duration_blocks: 200
+  revert_base_probability: 0.02
+  seed: 7
+  source_availability_delay_ms: 200

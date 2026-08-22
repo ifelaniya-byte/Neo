@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Dirichlet's theorem on arithmetic progressions -> Analytic number theory",
+  "musical": "MUSICAL: Dirichlet's theorem on arithmetic progressions -> Infinitely many primes in arithmetic progression.",
+  "tactile": "TACTILE: Dirichlet's theorem on arithmetic progressions -> \\text{primes } \\equiv a \\pmod d \\text{ infinite if } \\gcd(a,d)=1",
+  "computational": "COMPUTATIONAL: Dirichlet's theorem on arithmetic progressions -> symbolic_computation",
+  "pattern": "PATTERN: Dirichlet's theorem on arithmetic progressions -> Number theory"
+}

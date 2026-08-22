@@ -1,0 +1,28 @@
+{
+  "feature_timing": {
+    "passed": true,
+    "failures": [],
+    "failure_count": 0
+  },
+  "block_timing": {
+    "passed": true,
+    "failures": [],
+    "failure_count": 0
+  },
+  "label_separation": {
+    "passed": true,
+    "failures": [],
+    "failure_count": 0
+  },
+  "split_integrity": {
+    "passed": true,
+    "train_val_overlap": 0,
+    "val_cal_overlap": 0,
+    "cal_test_overlap": 0
+  },
+  "net_pnl": {
+    "passed": true,
+    "failures": [],
+    "failure_count": 0
+  }
+}

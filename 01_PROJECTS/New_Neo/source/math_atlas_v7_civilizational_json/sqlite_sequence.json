@@ -1,0 +1,62 @@
+[
+  {
+    "name": "temporal_layers",
+    "seq": 4
+  },
+  {
+    "name": "axiomatic_seeds",
+    "seq": 5
+  },
+  {
+    "name": "reconstruction_protocols",
+    "seq": 3
+  },
+  {
+    "name": "universal_interfaces",
+    "seq": 5
+  },
+  {
+    "name": "hierarchical_recovery",
+    "seq": 5
+  },
+  {
+    "name": "storage_media",
+    "seq": 5
+  },
+  {
+    "name": "redundancy_systems",
+    "seq": 4
+  },
+  {
+    "name": "formulas",
+    "seq": 18
+  },
+  {
+    "name": "mathematical_genome",
+    "seq": 18
+  },
+  {
+    "name": "discovery_narratives",
+    "seq": 18
+  },
+  {
+    "name": "societal_impact",
+    "seq": 18
+  },
+  {
+    "name": "anthropological_context",
+    "seq": 18
+  },
+  {
+    "name": "keystone_species",
+    "seq": 18
+  },
+  {
+    "name": "conservation_categories",
+    "seq": 18
+  },
+  {
+    "name": "civilizational_knowledge_graph",
+    "seq": 18
+  }
+]

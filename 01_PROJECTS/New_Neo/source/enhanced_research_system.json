@@ -1,0 +1,80 @@
+{
+  "sources": {
+    "ed7b86c8a640": {
+      "id": "ed7b86c8a640",
+      "source_type": "DOCUMENTATION",
+      "url": "https://docs.python.org/3/",
+      "title": "Python Documentation",
+      "authors": [
+        "Python Software Foundation"
+      ],
+      "publication_date": "2026-08-05T23:58:20.031198",
+      "quality": "HIGH",
+      "relevance_score": 1.0,
+      "access_count": 1,
+      "last_accessed": "2026-08-05T23:58:20.051711",
+      "tags": [
+        "python",
+        "programming",
+        "documentation"
+      ],
+      "summary": "\n        Python is a high-level, interpreted programming language known for its simplicity and readability.\n        It supports multiple programming paradigms including procedural, object-oriented, an...",
+      "content_hash": "1377657d62ddf42d"
+    }
+  },
+  "queries": {
+    "53fc1264": {
+      "id": "53fc1264",
+      "query_text": "python programming",
+      "expanded_terms": [
+        "interpreted",
+        "python",
+        "level",
+        "programming",
+        "language",
+        "high"
+      ],
+      "context": {},
+      "timestamp": "2026-08-05T23:57:40.649336",
+      "results_count": 1,
+      "satisfaction_score": 0.0,
+      "related_queries": []
+    },
+    "0c4a3905": {
+      "id": "0c4a3905",
+      "query_text": "python programming",
+      "expanded_terms": [
+        "high",
+        "level",
+        "language",
+        "interpreted",
+        "python",
+        "programming"
+      ],
+      "context": {},
+      "timestamp": "2026-08-05T23:57:49.549365",
+      "results_count": 1,
+      "satisfaction_score": 0.0,
+      "related_queries": []
+    },
+    "d1ff6b73": {
+      "id": "d1ff6b73",
+      "query_text": "python programming",
+      "expanded_terms": [
+        "level",
+        "high",
+        "python",
+        "programming",
+        "language",
+        "interpreted"
+      ],
+      "context": {},
+      "timestamp": "2026-08-05T23:58:20.051716",
+      "results_count": 1,
+      "satisfaction_score": 0.0,
+      "related_queries": []
+    }
+  },
+  "insights": {},
+  "syntheses": {}
+}

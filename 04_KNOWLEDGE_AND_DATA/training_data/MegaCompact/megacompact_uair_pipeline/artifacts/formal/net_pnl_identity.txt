@@ -1,0 +1,7 @@
+OBLIGATION net_pnl_identity
+STATUS: unchecked
+FORMAL:
+theorem net_pnl_identity (gross costs : ℝ) :
+  net = gross - costs → net + costs = gross
+-- Product obligation: OutcomeLabel net_pnl_usd MUST equal gross_pnl_usd - sum(all cost components).
+NOTE: Run external kernel; do not treat as proven until kernel accepts.

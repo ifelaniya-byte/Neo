@@ -1,0 +1,198 @@
+{
+  "messages": {
+    "7f5d56b7": {
+      "id": "7f5d56b7",
+      "message_type": "TEXT",
+      "sender": "neo",
+      "recipient": "user",
+      "content": "Regarding enhanced_activation, hi there! how can i help you today?",
+      "metadata": {
+        "intent": "GREETING",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-08-05T23:57:49.551374",
+      "emotional_state": "CONFIDENT",
+      "communication_style": "FRIENDLY",
+      "context": {
+        "conversation_id": "361d2f5a"
+      },
+      "response_to": null
+    },
+    "f921d6f3": {
+      "id": "f921d6f3",
+      "message_type": "TEXT",
+      "sender": "user",
+      "recipient": "neo",
+      "content": "Hello Neo!",
+      "metadata": {
+        "intent": "GREETING"
+      },
+      "timestamp": "2026-08-05T23:57:49.552207",
+      "emotional_state": "neutral",
+      "communication_style": "unknown",
+      "context": {
+        "conversation_id": "361d2f5a"
+      },
+      "response_to": null
+    },
+    "c695e65c": {
+      "id": "c695e65c",
+      "message_type": "TEXT",
+      "sender": "neo",
+      "recipient": "user",
+      "content": "Hmm, i understand your question. here's what i can tell you.",
+      "metadata": {
+        "intent": "QUESTION",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-08-05T23:57:49.553233",
+      "emotional_state": "CURIOUS",
+      "communication_style": "FRIENDLY",
+      "context": {
+        "conversation_id": "361d2f5a"
+      },
+      "response_to": null
+    },
+    "50b7f32a": {
+      "id": "50b7f32a",
+      "message_type": "TEXT",
+      "sender": "user",
+      "recipient": "neo",
+      "content": "What can you do?",
+      "metadata": {
+        "intent": "QUESTION"
+      },
+      "timestamp": "2026-08-05T23:57:49.554160",
+      "emotional_state": "neutral",
+      "communication_style": "unknown",
+      "context": {
+        "conversation_id": "361d2f5a"
+      },
+      "response_to": null
+    },
+    "be1b803a": {
+      "id": "be1b803a",
+      "message_type": "TEXT",
+      "sender": "neo",
+      "recipient": "user",
+      "content": "Regarding enhanced_activation, hello! i'm neo, ready to assist you.",
+      "metadata": {
+        "intent": "GREETING",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-08-05T23:58:20.053855",
+      "emotional_state": "HAPPY",
+      "communication_style": "FRIENDLY",
+      "context": {
+        "conversation_id": "99fe5d66"
+      },
+      "response_to": null
+    },
+    "0c25f82a": {
+      "id": "0c25f82a",
+      "message_type": "TEXT",
+      "sender": "user",
+      "recipient": "neo",
+      "content": "Hello Neo!",
+      "metadata": {
+        "intent": "GREETING"
+      },
+      "timestamp": "2026-08-05T23:58:20.055030",
+      "emotional_state": "neutral",
+      "communication_style": "unknown",
+      "context": {
+        "conversation_id": "99fe5d66"
+      },
+      "response_to": null
+    },
+    "f963f85d": {
+      "id": "f963f85d",
+      "message_type": "TEXT",
+      "sender": "neo",
+      "recipient": "user",
+      "content": "Regarding enhanced_activation, i understand your question. here's what i can tell you.",
+      "metadata": {
+        "intent": "QUESTION",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-08-05T23:58:20.056316",
+      "emotional_state": "CURIOUS",
+      "communication_style": "FRIENDLY",
+      "context": {
+        "conversation_id": "99fe5d66"
+      },
+      "response_to": null
+    },
+    "6b15e43c": {
+      "id": "6b15e43c",
+      "message_type": "TEXT",
+      "sender": "user",
+      "recipient": "neo",
+      "content": "What can you do?",
+      "metadata": {
+        "intent": "QUESTION"
+      },
+      "timestamp": "2026-08-05T23:58:20.057406",
+      "emotional_state": "neutral",
+      "communication_style": "unknown",
+      "context": {
+        "conversation_id": "99fe5d66"
+      },
+      "response_to": null
+    }
+  },
+  "personality": {
+    "base_style": "FRIENDLY",
+    "emotional_range": 0.7,
+    "expressiveness": 0.6,
+    "humor_level": 0.3,
+    "formality_level": 0.5,
+    "technical_depth": 0.7,
+    "empathy_level": 0.8,
+    "adaptability": 0.9
+  },
+  "conversations": {
+    "361d2f5a": {
+      "conversation_id": "361d2f5a",
+      "participants": [
+        "neo",
+        "user"
+      ],
+      "topic": "enhanced_activation",
+      "start_time": "2026-08-05T23:57:49.531730",
+      "last_activity": "2026-08-05T23:57:49.554169",
+      "message_count": 4,
+      "context_variables": {},
+      "emotional_history": [
+        "CONFIDENT",
+        "neutral",
+        "CURIOUS",
+        "neutral"
+      ],
+      "resolved_topics": [],
+      "pending_questions": []
+    },
+    "99fe5d66": {
+      "conversation_id": "99fe5d66",
+      "participants": [
+        "neo",
+        "user"
+      ],
+      "topic": "enhanced_activation",
+      "start_time": "2026-08-05T23:58:20.033195",
+      "last_activity": "2026-08-05T23:58:20.057414",
+      "message_count": 4,
+      "context_variables": {},
+      "emotional_history": [
+        "HAPPY",
+        "neutral",
+        "CURIOUS",
+        "neutral"
+      ],
+      "resolved_topics": [],
+      "pending_questions": []
+    }
+  },
+  "current_emotional_state": "CURIOUS",
+  "current_conversation_id": "99fe5d66"
+}

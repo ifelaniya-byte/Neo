@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Martingale convergence theorem -> Stochastic processes",
+  "musical": "MUSICAL: Martingale convergence theorem -> L\u00b9-bounded martingales converge almost surely.",
+  "tactile": "TACTILE: Martingale convergence theorem -> M_n \\to M_\\infty \\text{ a.s. if } \\sup_n E[|M_n|] < \\infty",
+  "computational": "COMPUTATIONAL: Martingale convergence theorem -> symbolic_computation",
+  "pattern": "PATTERN: Martingale convergence theorem -> Probability"
+}

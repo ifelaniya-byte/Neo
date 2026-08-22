@@ -1,0 +1,91 @@
+# Weight Foundry × Muse Glimmer fusion
+# Open local model (Meta) + continual learning harness (Foundry)
+
+model:
+  # Primary: Meta Muse Glimmer — open Apache 2.0, on-device agent, ~30B
+  id: "meta-models/Muse-Glimmer-30B"
+  # Alternative: LFM 2.5 8B A1B — high-performance compact model
+  alternative_id: "LFM/LFM-2.5-8B-A1B"
+  # Fallbacks when primary models are too heavy for the machine
+  fallback_id: "Qwen/Qwen2.5-0.5B-Instruct"
+  device: "auto"
+  max_new_tokens: 256
+  load_in_4bit: true          # Glimmer fits ~16–20GB at 4-bit on one consumer GPU
+  trust_remote_code: true
+  # Model selection strategy: "primary" | "alternative" | "auto" (choose based on available resources)
+  selection_strategy: "auto"
+
+lora:
+  r: 16
+  alpha: 32
+  target_modules: ["q_proj", "v_proj", "k_proj", "o_proj"]
+  dropout: 0.05
+
+training:
+  mode: "all"                 # all | online_lora | grpo | tree_filtered
+  learning_rate: 0.0002
+  group_size: 8
+  eval_interval_sec: 120
+  holdout_drop_threshold: 0.15
+  max_grad_norm: 1.0
+  cadence_sec: 2.0
+  reg_lambda: 0.1
+  shift_threshold: 0.08
+  n_banks: 3
+
+agent:
+  # On-device agent loop (Zuckerberg "power in people's hands")
+  local_only: true
+  tool_calling: true
+  always_on: false
+  speculative_decoding: true
+
+safety:
+  nan_guard: true
+  explosion_guard: true
+  auto_checkpoint: true
+  auto_rollback: true
+  heartbeat_interval_sec: 5
+  importance_regularization: true
+  # E2B sandbox configuration for safe code execution
+  e2b_enabled: true
+  e2b_timeout_sec: 30
+  e2b_fallback_to_text: true
+
+# External services integration
+external_services:
+  # Groq API for high-speed teacher distillation
+  groq_enabled: true
+  groq_model: "llama-3.1-8b-instant"  # Fast model for teacher traces
+  groq_timeout_sec: 15
+  
+  # HuggingFace synchronization
+  hf_sync_enabled: false
+  hf_repo_id: "user/glimmer-farming-lora"
+  hf_sync_interval_sec: 300
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  api_key: null
+
+paths:
+  checkpoint_dir: "./artifacts/checkpoints"
+  queue_file: "./artifacts/queue.jsonl"
+  ledger_file: "./artifacts/ledger.json"
+  session_file: "./artifacts/session.json"
+  heartbeat_file: "./artifacts/watchdog_heartbeat.json"
+  adapter_hub: "./artifacts/adapters"   # push local LoRA deltas here
+
+simulation:
+  input_dim: 8
+  n_test: 20
+  n_holdout: 10
+  iterations_per_cycle: 5
+
+fusion:
+  name: "GlimmerFoundry"
+  thesis: "Open weights in your hands + continual adaptation you control"
+  base_lineage: "meta-models/Muse-Glimmer-30B (Apache 2.0) | LFM/LFM-2.5-8B-A1B"
+  harness_lineage: "Online-LoRA+ | GRPO-R1 | Tree-Filtered | E2B Sandbox Safety | Groq Teacher Distillation"
+  safety_features: "E2B isolated execution | holdout promote/rollback | NaN guards"

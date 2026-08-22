@@ -1,0 +1,12 @@
+services:
+  claw-os:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: claw-os
+    restart: unless-stopped
+    env_file:
+      - ../.env
+    volumes:
+      # Replace with the actual media folder on the host.
+      - /path/to/your/media/folder:/data

@@ -1,0 +1,322 @@
+{
+  "cycles": 5,
+  "wall_seconds": 6.269,
+  "final_stats": {
+    "cycle": 5,
+    "online1_collected": 30,
+    "offline_kept": 30,
+    "offline_dropped": 0,
+    "online2_updates": 37,
+    "promotions": 2,
+    "rollbacks": 0,
+    "holdout_scores": [
+      0.5277777777777778,
+      0.5277777777777778,
+      0.5277777777777778,
+      0.5277777777777778,
+      0.5555555555555555
+    ]
+  },
+  "ledger": {
+    "winnings": 3.700000000000002,
+    "losses": 0.0,
+    "accepted": 37,
+    "rejected": 0,
+    "gpu_hours": 0.0,
+    "cost_per_hour": 0.2,
+    "started_at": 1786413872.8405466,
+    "events": [
+      {
+        "t": 1786413872.8617516,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413872.861805,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413872.8618984,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413872.8619688,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413872.862032,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413872.862082,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413874.4061344,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413874.406195,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413874.406287,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413874.4064088,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413874.406535,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413874.4066033,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413874.4066892,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413875.4395666,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413875.4396472,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413875.4396973,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413875.4398022,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413875.4398773,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413875.4399633,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413875.4400272,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413875.4400887,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413875.4401665,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413876.4747345,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413876.4748013,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413876.4749134,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413876.474988,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413876.4750774,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413876.4751444,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413877.5202048,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413877.520265,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413877.5203147,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413877.5207734,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413877.5208657,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413877.5209548,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413877.5210683,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413877.521202,
+        "kind": "accept",
+        "delta": 0.1
+      },
+      {
+        "t": 1786413877.5212746,
+        "kind": "accept",
+        "delta": 0.1
+      }
+    ],
+    "profit": 3.700000000000002,
+    "uptime_sec": 6.2864813804626465
+  },
+  "history_tail": [
+    {
+      "cycle": 3,
+      "online1": 6,
+      "offline_kept": 6,
+      "update": {
+        "status": "updated",
+        "holdouts": {
+          "Online-LoRA+": 0.5,
+          "GRPO-R1": 0.4166666666666667,
+          "Tree-Filtered": 0.6666666666666666
+        },
+        "gate": {
+          "action": "hold",
+          "score": 0.5277777777777778
+        },
+        "reports_n": 15
+      },
+      "stats": {
+        "cycle": 3,
+        "online1_collected": 18,
+        "offline_kept": 18,
+        "offline_dropped": 0,
+        "online2_updates": 22,
+        "promotions": 1,
+        "rollbacks": 0,
+        "holdout_scores": [
+          0.5277777777777778,
+          0.5277777777777778,
+          0.5277777777777778
+        ]
+      },
+      "ledger_profit": 2.2000000000000006
+    },
+    {
+      "cycle": 4,
+      "online1": 6,
+      "offline_kept": 6,
+      "update": {
+        "status": "updated",
+        "holdouts": {
+          "Online-LoRA+": 0.5,
+          "GRPO-R1": 0.4166666666666667,
+          "Tree-Filtered": 0.6666666666666666
+        },
+        "gate": {
+          "action": "hold",
+          "score": 0.5277777777777778
+        },
+        "reports_n": 15
+      },
+      "stats": {
+        "cycle": 4,
+        "online1_collected": 24,
+        "offline_kept": 24,
+        "offline_dropped": 0,
+        "online2_updates": 28,
+        "promotions": 1,
+        "rollbacks": 0,
+        "holdout_scores": [
+          0.5277777777777778,
+          0.5277777777777778,
+          0.5277777777777778,
+          0.5277777777777778
+        ]
+      },
+      "ledger_profit": 2.800000000000001
+    },
+    {
+      "cycle": 5,
+      "online1": 6,
+      "offline_kept": 6,
+      "update": {
+        "status": "updated",
+        "holdouts": {
+          "Online-LoRA+": 0.5833333333333334,
+          "GRPO-R1": 0.4166666666666667,
+          "Tree-Filtered": 0.6666666666666666
+        },
+        "gate": {
+          "action": "promote",
+          "score": 0.5555555555555555
+        },
+        "reports_n": 15
+      },
+      "stats": {
+        "cycle": 5,
+        "online1_collected": 30,
+        "offline_kept": 30,
+        "offline_dropped": 0,
+        "online2_updates": 37,
+        "promotions": 2,
+        "rollbacks": 0,
+        "holdout_scores": [
+          0.5277777777777778,
+          0.5277777777777778,
+          0.5277777777777778,
+          0.5277777777777778,
+          0.5555555555555555
+        ]
+      },
+      "ledger_profit": 3.700000000000002
+    }
+  ]
+}

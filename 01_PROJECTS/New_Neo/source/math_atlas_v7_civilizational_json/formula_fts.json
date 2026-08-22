@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Boltzmann distribution",
+    "statement": "Probability of a microstate in canonical ensemble.",
+    "domain": "Statistical mechanics",
+    "latex": "P_i = \\frac{e^{-E_i/k_B T}}{Z}",
+    "unicode": "Pᵢ = e^(-Eᵢ/kₚT)/Z"
+  },
+  {
+    "name": "RSA encryption",
+    "statement": "Encryption: c = m^e mod n, Decryption: m = c^d mod n.",
+    "domain": "Public-key cryptography",
+    "latex": "c = m^e \\pmod n,\\ m = c^d \\pmod n",
+    "unicode": "c = m^e mod n, m = c^d mod n"
+  },
+  {
+    "name": "Character orthogonality (first)",
+    "statement": "Orthogonality of irreducible characters.",
+    "domain": "Representation theory",
+    "latex": "\\frac{1}{|G|} \\sum_{g \\in G} \\chi_i(g) \\overline{\\chi_j(g)} = \\delta_{ij}",
+    "unicode": "(1/|G|) Σ χᵢ(g)χ̄ⱼ(g) = δᵢⱼ"
+  },
+  {
+    "name": "Compactness theorem",
+    "statement": "A set of sentences has a model iff every finite subset has a model.",
+    "domain": "Model theory",
+    "latex": "\\text{If } \\Sigma \\text{ is finitely satisfiable, then } \\Sigma \\text{ is satisfiable}",
+    "unicode": "If Σ is finitely satisfiable, then Σ is satisfiable"
+  },
+  {
+    "name": "Snake lemma",
+    "statement": "Long exact sequence from commutative diagram with exact rows.",
+    "domain": "Homological algebra",
+    "latex": "\\ker(\\alpha) \\to \\ker(\\beta) \\to \\ker(\\gamma) \\to \\text{coker}(\\alpha)",
+    "unicode": "ker(α) → ker(β) → ker(γ) → coker(α)"
+  },
+  {
+    "name": "Van Kampen theorem",
+    "statement": "Fundamental group of union via free product with amalgamation.",
+    "domain": "Algebraic topology",
+    "latex": "\\pi_1(X) \\cong \\pi_1(U) *_{\\pi_1(U \\cap V)} \\pi_1(V)",
+    "unicode": "π₁(X) ≅ π₁(U) *_{π₁(U∩V)} π₁(V)"
+  },
+  {
+    "name": "Parseval's identity",
+    "statement": "Energy conservation in Fourier series.",
+    "domain": "Fourier analysis",
+    "latex": "\\int_{-\\pi}^{\\pi} |f(x)|^2 dx = \\sum_{n=-\\infty}^\\infty |\\hat{f}(n)|^2",
+    "unicode": "∫_{-π}^{π} |f(x)|² dx = Σ |f̂(n)|²"
+  },
+  {
+    "name": "Wedderburn's little theorem",
+    "statement": "Finite division rings are fields.",
+    "domain": "Ring theory",
+    "latex": "R \\text{ finite division ring } \\Rightarrow R \\text{ field}",
+    "unicode": "R finite division ring ⇒ R field"
+  },
+  {
+    "name": "Gauss-Bonnet-Chern theorem",
+    "statement": "Total curvature relates to Euler characteristic.",
+    "domain": "Differential geometry",
+    "latex": "\\int_M \\text{Pf}(\\Omega) = \\chi(M)",
+    "unicode": "∫ₘ Pf(Ω) = χ(M)"
+  },
+  {
+    "name": "Dirichlet's theorem on arithmetic progressions",
+    "statement": "Infinitely many primes in arithmetic progression.",
+    "domain": "Analytic number theory",
+    "latex": "\\text{primes } \\equiv a \\pmod d \\text{ infinite if } \\gcd(a,d)=1",
+    "unicode": "primes ≡ a (mod d) infinite if gcd(a,d)=1"
+  },
+  {
+    "name": "Martingale convergence theorem",
+    "statement": "L¹-bounded martingales converge almost surely.",
+    "domain": "Stochastic processes",
+    "latex": "M_n \\to M_\\infty \\text{ a.s. if } \\sup_n E[|M_n|] < \\infty",
+    "unicode": "Mₙ → M_∞ a.s. if supₙ E[|Mₙ|] < ∞"
+  },
+  {
+    "name": "Peano axiom 1: Zero is natural",
+    "statement": "Zero is a natural number.",
+    "domain": "Arithmetic",
+    "latex": "0 \\in \\mathbb{N}",
+    "unicode": "0 ∈ ℕ"
+  },
+  {
+    "name": "Modus ponens",
+    "statement": "From P and P→Q, infer Q.",
+    "domain": "Propositional logic",
+    "latex": "P, P\\to Q \\vdash Q",
+    "unicode": "P, P → Q ⊢ Q"
+  },
+  {
+    "name": "De Morgan's law (conjunction)",
+    "statement": "Negation of conjunction equals disjunction of negations.",
+    "domain": "Propositional logic",
+    "latex": "\\neg(P\\land Q)\\equiv \\neg P\\lor\\neg Q",
+    "unicode": "¬(P∧Q) ≡ ¬P∨¬Q"
+  },
+  {
+    "name": "Quadratic formula",
+    "statement": "Solutions to ax²+bx+c=0.",
+    "domain": "Polynomial equations",
+    "latex": "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}",
+    "unicode": "x = (-b±√(b²-4ac))/(2a)"
+  },
+  {
+    "name": "Pythagorean theorem",
+    "statement": "a²+b²=c² in a right triangle.",
+    "domain": "Euclidean geometry",
+    "latex": "a^2+b^2=c^2",
+    "unicode": "a²+b²=c²"
+  },
+  {
+    "name": "Central limit theorem",
+    "statement": "Standardized sample mean converges to standard normal.",
+    "domain": "Limit theorems",
+    "latex": "\\frac{\\bar X_n-\\mu}{\\sigma/\\sqrt n}\\xrightarrow{d}N(0,1)",
+    "unicode": "(X̄ₙ-μ)/(σ/√n) →ᵈ N(0,1)"
+  },
+  {
+    "name": "Euler's identity",
+    "statement": "e^(iπ) + 1 = 0.",
+    "domain": "Complex analysis",
+    "latex": "e^{i\\pi}+1=0",
+    "unicode": "e^(iπ)+1 = 0"
+  }
+]

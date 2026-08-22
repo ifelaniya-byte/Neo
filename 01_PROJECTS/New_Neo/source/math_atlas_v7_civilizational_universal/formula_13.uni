@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Modus ponens -> Propositional logic",
+  "musical": "MUSICAL: Modus ponens -> From P and P\u2192Q, infer Q.",
+  "tactile": "TACTILE: Modus ponens -> P, P\\to Q \\vdash Q",
+  "computational": "COMPUTATIONAL: Modus ponens -> symbolic_computation",
+  "pattern": "PATTERN: Modus ponens -> Logic"
+}

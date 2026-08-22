@@ -1,0 +1,60 @@
+{
+  "python_compile": {
+    "ok": true,
+    "files": 11
+  },
+  "source_engineer": {
+    "ok": true,
+    "files": 11,
+    "critical": 0,
+    "high": 0
+  },
+  "super_math_code": {
+    "ok": true,
+    "checks": 9
+  },
+  "stationary_initial": {
+    "ok": true,
+    "formulas": {
+      "ok": true,
+      "intact": 28,
+      "compromised": 0,
+      "compromised_names": [],
+      "total": 28
+    }
+  },
+  "super_reasoning_pipeline": {
+    "ok": true,
+    "order": "preflight\u2192brainstorm\u2192research\u2192test\u2192verify\u2192implement\u2192post_verify"
+  },
+  "reflective_loop": {
+    "ok": true,
+    "rounds": 2,
+    "source_ok": true,
+    "math_ok": true,
+    "formulas": {
+      "ok": true,
+      "intact": 28,
+      "compromised": 0,
+      "compromised_names": [],
+      "total": 28
+    }
+  },
+  "corruption_recovery": {
+    "detected": true,
+    "actor_resealed": true,
+    "recovered": true
+  },
+  "telemetry_single_invocation": {
+    "ok": true,
+    "calls": 3,
+    "samples": 3
+  },
+  "optimizer_unified_candidate": {
+    "deterministic": true,
+    "detail": "deterministic",
+    "samples": 4,
+    "errors": 0.0
+  },
+  "all_ok": true
+}

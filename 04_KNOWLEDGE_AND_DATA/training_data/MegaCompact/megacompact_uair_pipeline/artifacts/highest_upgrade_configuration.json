@@ -1,0 +1,151 @@
+{
+  "name": "highest_safe_upgrade_configuration",
+  "zip": {
+    "verdict": "PASS",
+    "allowed": true,
+    "n_files": 80,
+    "bytes": 150304
+  },
+  "principle": "Maximize verification, coverage, abstention; never completeness oracle, live trading, or drop double-pass",
+  "gates": {
+    "double_pass": "MANDATORY",
+    "llm_clearance": "PASS + allowed_for_llm only",
+    "completeness_claims": "BLOCKED",
+    "live_trading": "OFF",
+    "online_weights": "OFF"
+  },
+  "knowledge_stack": {
+    "settled": 20,
+    "formulas": 19,
+    "domains": 10,
+    "languages": 17,
+    "constants": 16,
+    "open_problems": 12,
+    "coverage_maximizer": true,
+    "rag_settled": true
+  },
+  "checks_on": [
+    "schema_registry",
+    "causality",
+    "net_pnl",
+    "nan_inf",
+    "ast_source",
+    "atlas_gate",
+    "settled_gate",
+    "ledger_memory",
+    "rag_evidence",
+    "sympy_optional",
+    "constants",
+    "serialisation"
+  ],
+  "pipeline": [
+    "synth",
+    "engineer_events",
+    "validate",
+    "build_packets",
+    "engineer_packets",
+    "label",
+    "engineer_labels",
+    "split",
+    "fit_baseline",
+    "plan_and_decide",
+    "engineer_decisions",
+    "adversarial_ci",
+    "audit",
+    "report"
+  ],
+  "performance": {
+    "parallel_batch": true,
+    "max_workers": 4,
+    "engineer_batch_cap": 40,
+    "synthetic": {
+      "days": 5,
+      "blocks_per_day": 120
+    }
+  },
+  "policies": [
+    "policies/calibration_thresholds.json",
+    "promotion offline",
+    "differential_audit"
+  ],
+  "tests": {
+    "modules_allowed": true,
+    "adversarial": "5/5",
+    "adversarial_ok": true
+  },
+  "rejected_forever": [
+    "complete physics oracle",
+    "remove double-pass",
+    "live execution",
+    "silent self-mod"
+  ],
+  "ceiling_next": [
+    "Grow KSKB via promotion + human confirm only",
+    "Expand rag_settled licensed digests",
+    "Fit per-regime calibration from paper runs",
+    "Unit tags on feature payloads",
+    "Scale data under same gates"
+  ],
+  "modules": [
+    {
+      "module": "engineers.py",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "module": "pipeline.py",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "module": "knowledge_coverage.py",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "module": "known_settled_db.py",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "module": "atlas.py",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "module": "constants_db.py",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "module": "promotion.py",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "module": "adversarial_suite.py",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "module": "ledger_index.py",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "module": "differential_audit.py",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "module": "run_all.py",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "module": "megacompact16/core.py",
+      "verdict": "PASS",
+      "allowed": true
+    }
+  ]
+}

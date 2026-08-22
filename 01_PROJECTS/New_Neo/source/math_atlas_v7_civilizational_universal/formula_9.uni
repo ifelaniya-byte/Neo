@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Gauss-Bonnet-Chern theorem -> Differential geometry",
+  "musical": "MUSICAL: Gauss-Bonnet-Chern theorem -> Total curvature relates to Euler characteristic.",
+  "tactile": "TACTILE: Gauss-Bonnet-Chern theorem -> \\int_M \\text{Pf}(\\Omega) = \\chi(M)",
+  "computational": "COMPUTATIONAL: Gauss-Bonnet-Chern theorem -> symbolic_computation",
+  "pattern": "PATTERN: Gauss-Bonnet-Chern theorem -> Geometry"
+}

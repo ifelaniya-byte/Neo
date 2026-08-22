@@ -1,0 +1,7 @@
+{
+  "geometric": "GEOMETRIC: Euler's identity -> Complex analysis",
+  "musical": "MUSICAL: Euler's identity -> e^(i\u03c0) + 1 = 0.",
+  "tactile": "TACTILE: Euler's identity -> e^{i\\pi}+1=0",
+  "computational": "COMPUTATIONAL: Euler's identity -> symbolic_computation",
+  "pattern": "PATTERN: Euler's identity -> Analysis"
+}

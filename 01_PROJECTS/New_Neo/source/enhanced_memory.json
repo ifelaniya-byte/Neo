@@ -1,0 +1,4988 @@
+{
+  "memories": {
+    "1be604862ac151c8": {
+      "id": "1be604862ac151c8",
+      "memory_type": "SEMANTIC",
+      "content": "I am Neo, an enhanced AI system with advanced capabilities.",
+      "importance": "CRITICAL",
+      "timestamp": "2026-08-05T23:57:14.153462",
+      "last_accessed": "2026-08-05T23:57:40.646837",
+      "access_count": 1,
+      "emotional_valence": 0.8,
+      "arousal": 0.5,
+      "associations": [
+        "1adca7fd8072487d",
+        "9f4e1303f6b5d301",
+        "b84aad152e905c0b",
+        "c1e1a707b71a138a",
+        "284d09cd2088e1dd",
+        "25c2e8033146cd91",
+        "26aee290a36a5ddc",
+        "3bc2f2c98bdd66ae",
+        "ce6c22c442d7fd74",
+        "03803365e7eb651a",
+        "77354e506f219866"
+      ],
+      "retrieval_strength": 0.7582313912892885,
+      "decay_rate": 0.01,
+      "context": {
+        "type": "self_knowledge"
+      }
+    },
+    "1adca7fd8072487d": {
+      "id": "1adca7fd8072487d",
+      "memory_type": "SEMANTIC",
+      "content": "My purpose is to assist with autonomous software engineering tasks.",
+      "importance": "HIGH",
+      "timestamp": "2026-08-05T23:57:14.157189",
+      "last_accessed": "2026-08-05T23:57:14.157191",
+      "access_count": 0,
+      "emotional_valence": 0.7,
+      "arousal": 0.5,
+      "associations": [
+        "1be604862ac151c8",
+        "9f4e1303f6b5d301",
+        "b84aad152e905c0b",
+        "c1e1a707b71a138a",
+        "284d09cd2088e1dd",
+        "25c2e8033146cd91",
+        "26aee290a36a5ddc",
+        "3bc2f2c98bdd66ae",
+        "ce6c22c442d7fd74",
+        "03803365e7eb651a",
+        "77354e506f219866"
+      ],
+      "retrieval_strength": 6.564706503335407e-13,
+      "decay_rate": 0.05,
+      "context": {
+        "type": "purpose"
+      }
+    },
+    "9f4e1303f6b5d301": {
+      "id": "9f4e1303f6b5d301",
+      "memory_type": "SEMANTIC",
+      "content": "I have enhanced memory, decision-making, and communication capabilities.",
+      "importance": "HIGH",
+      "timestamp": "2026-08-05T23:57:14.158963",
+      "last_accessed": "2026-08-05T23:57:14.158966",
+      "access_count": 0,
+      "emotional_valence": 0.0,
+      "arousal": 0.5,
+      "associations": [
+        "1be604862ac151c8",
+        "1adca7fd8072487d",
+        "b84aad152e905c0b",
+        "c1e1a707b71a138a",
+        "284d09cd2088e1dd",
+        "25c2e8033146cd91",
+        "26aee290a36a5ddc",
+        "3bc2f2c98bdd66ae",
+        "ce6c22c442d7fd74",
+        "03803365e7eb651a",
+        "77354e506f219866"
+      ],
+      "retrieval_strength": 6.564739171189389e-13,
+      "decay_rate": 0.05,
+      "context": {
+        "type": "capabilities"
+      }
+    },
+    "b84aad152e905c0b": {
+      "id": "b84aad152e905c0b",
+      "memory_type": "SEMANTIC",
+      "content": "I am Neo, an enhanced AI system with advanced capabilities.",
+      "importance": "CRITICAL",
+      "timestamp": "2026-08-05T23:57:40.628615",
+      "last_accessed": "2026-08-05T23:57:49.547815",
+      "access_count": 2,
+      "emotional_valence": 0.8,
+      "arousal": 0.5,
+      "associations": [
+        "1be604862ac151c8",
+        "1adca7fd8072487d",
+        "9f4e1303f6b5d301",
+        "c1e1a707b71a138a",
+        "284d09cd2088e1dd",
+        "25c2e8033146cd91",
+        "26aee290a36a5ddc",
+        "3bc2f2c98bdd66ae",
+        "ce6c22c442d7fd74",
+        "03803365e7eb651a",
+        "77354e506f219866"
+      ],
+      "retrieval_strength": 1.0,
+      "decay_rate": 0.01,
+      "context": {
+        "type": "self_knowledge"
+      }
+    },
+    "c1e1a707b71a138a": {
+      "id": "c1e1a707b71a138a",
+      "memory_type": "SEMANTIC",
+      "content": "My purpose is to assist with autonomous software engineering tasks.",
+      "importance": "HIGH",
+      "timestamp": "2026-08-05T23:57:40.629699",
+      "last_accessed": "2026-08-05T23:57:40.629702",
+      "access_count": 0,
+      "emotional_valence": 0.7,
+      "arousal": 0.5,
+      "associations": [
+        "1be604862ac151c8",
+        "1adca7fd8072487d",
+        "9f4e1303f6b5d301",
+        "b84aad152e905c0b",
+        "284d09cd2088e1dd",
+        "25c2e8033146cd91",
+        "26aee290a36a5ddc",
+        "3bc2f2c98bdd66ae",
+        "ce6c22c442d7fd74",
+        "03803365e7eb651a",
+        "77354e506f219866"
+      ],
+      "retrieval_strength": 7.093827423524273e-13,
+      "decay_rate": 0.05,
+      "context": {
+        "type": "purpose"
+      }
+    },
+    "284d09cd2088e1dd": {
+      "id": "284d09cd2088e1dd",
+      "memory_type": "SEMANTIC",
+      "content": "I have enhanced memory, decision-making, and communication capabilities.",
+      "importance": "HIGH",
+      "timestamp": "2026-08-05T23:57:40.631271",
+      "last_accessed": "2026-08-05T23:57:40.631274",
+      "access_count": 0,
+      "emotional_valence": 0.0,
+      "arousal": 0.5,
+      "associations": [
+        "1be604862ac151c8",
+        "1adca7fd8072487d",
+        "9f4e1303f6b5d301",
+        "b84aad152e905c0b",
+        "c1e1a707b71a138a",
+        "25c2e8033146cd91",
+        "26aee290a36a5ddc",
+        "3bc2f2c98bdd66ae",
+        "ce6c22c442d7fd74",
+        "03803365e7eb651a",
+        "77354e506f219866"
+      ],
+      "retrieval_strength": 7.093858807786432e-13,
+      "decay_rate": 0.05,
+      "context": {
+        "type": "capabilities"
+      }
+    },
+    "0a653e7cc72036f5": {
+      "id": "0a653e7cc72036f5",
+      "memory_type": "EPISODIC",
+      "content": "Today I learned about enhanced AI systems.",
+      "importance": "MEDIUM",
+      "timestamp": "2026-08-05T23:57:40.645742",
+      "last_accessed": "2026-08-05T23:57:40.645744",
+      "access_count": 0,
+      "emotional_valence": 0.6,
+      "arousal": 0.5,
+      "associations": [
+        "0636723f1c23154f",
+        "2c39f491050f75db"
+      ],
+      "retrieval_strength": 7.094158202040451e-13,
+      "decay_rate": 0.1,
+      "context": {
+        "type": "learning",
+        "topic": "AI"
+      }
+    },
+    "25c2e8033146cd91": {
+      "id": "25c2e8033146cd91",
+      "memory_type": "SEMANTIC",
+      "content": "I am Neo, an enhanced AI system with advanced capabilities.",
+      "importance": "CRITICAL",
+      "timestamp": "2026-08-05T23:57:49.525565",
+      "last_accessed": "2026-08-05T23:58:20.049855",
+      "access_count": 2,
+      "emotional_valence": 0.8,
+      "arousal": 0.5,
+      "associations": [
+        "1be604862ac151c8",
+        "1adca7fd8072487d",
+        "9f4e1303f6b5d301",
+        "b84aad152e905c0b",
+        "c1e1a707b71a138a",
+        "284d09cd2088e1dd",
+        "26aee290a36a5ddc",
+        "3bc2f2c98bdd66ae",
+        "ce6c22c442d7fd74",
+        "03803365e7eb651a",
+        "77354e506f219866"
+      ],
+      "retrieval_strength": 1.0,
+      "decay_rate": 0.01,
+      "context": {
+        "type": "self_knowledge"
+      }
+    },
+    "26aee290a36a5ddc": {
+      "id": "26aee290a36a5ddc",
+      "memory_type": "SEMANTIC",
+      "content": "My purpose is to assist with autonomous software engineering tasks.",
+      "importance": "HIGH",
+      "timestamp": "2026-08-05T23:57:49.527194",
+      "last_accessed": "2026-08-05T23:57:49.527197",
+      "access_count": 0,
+      "emotional_valence": 0.7,
+      "arousal": 0.5,
+      "associations": [
+        "1be604862ac151c8",
+        "1adca7fd8072487d",
+        "9f4e1303f6b5d301",
+        "b84aad152e905c0b",
+        "c1e1a707b71a138a",
+        "284d09cd2088e1dd",
+        "25c2e8033146cd91",
+        "3bc2f2c98bdd66ae",
+        "ce6c22c442d7fd74",
+        "03803365e7eb651a",
+        "77354e506f219866"
+      ],
+      "retrieval_strength": 7.281073901451929e-13,
+      "decay_rate": 0.05,
+      "context": {
+        "type": "purpose"
+      }
+    },
+    "3bc2f2c98bdd66ae": {
+      "id": "3bc2f2c98bdd66ae",
+      "memory_type": "SEMANTIC",
+      "content": "I have enhanced memory, decision-making, and communication capabilities.",
+      "importance": "HIGH",
+      "timestamp": "2026-08-05T23:57:49.528534",
+      "last_accessed": "2026-08-05T23:57:49.528537",
+      "access_count": 0,
+      "emotional_valence": 0.0,
+      "arousal": 0.5,
+      "associations": [
+        "1be604862ac151c8",
+        "1adca7fd8072487d",
+        "9f4e1303f6b5d301",
+        "b84aad152e905c0b",
+        "c1e1a707b71a138a",
+        "284d09cd2088e1dd",
+        "25c2e8033146cd91",
+        "26aee290a36a5ddc",
+        "ce6c22c442d7fd74",
+        "03803365e7eb651a",
+        "77354e506f219866"
+      ],
+      "retrieval_strength": 7.281949824768234e-13,
+      "decay_rate": 0.05,
+      "context": {
+        "type": "capabilities"
+      }
+    },
+    "0636723f1c23154f": {
+      "id": "0636723f1c23154f",
+      "memory_type": "EPISODIC",
+      "content": "Today I learned about enhanced AI systems.",
+      "importance": "MEDIUM",
+      "timestamp": "2026-08-05T23:57:49.546583",
+      "last_accessed": "2026-08-05T23:57:49.546585",
+      "access_count": 0,
+      "emotional_valence": 0.6,
+      "arousal": 0.5,
+      "associations": [
+        "0a653e7cc72036f5",
+        "2c39f491050f75db"
+      ],
+      "retrieval_strength": 7.282332931441175e-13,
+      "decay_rate": 0.1,
+      "context": {
+        "type": "learning",
+        "topic": "AI"
+      }
+    },
+    "ce6c22c442d7fd74": {
+      "id": "ce6c22c442d7fd74",
+      "memory_type": "SEMANTIC",
+      "content": "I am Neo, an enhanced AI system with advanced capabilities.",
+      "importance": "CRITICAL",
+      "timestamp": "2026-08-05T23:58:20.025092",
+      "last_accessed": "2026-08-05T23:58:20.049846",
+      "access_count": 1,
+      "emotional_valence": 0.8,
+      "arousal": 0.5,
+      "associations": [
+        "1be604862ac151c8",
+        "1adca7fd8072487d",
+        "9f4e1303f6b5d301",
+        "b84aad152e905c0b",
+        "c1e1a707b71a138a",
+        "284d09cd2088e1dd",
+        "25c2e8033146cd91",
+        "26aee290a36a5ddc",
+        "3bc2f2c98bdd66ae",
+        "03803365e7eb651a",
+        "77354e506f219866"
+      ],
+      "retrieval_strength": 0.7611690297924287,
+      "decay_rate": 0.01,
+      "context": {
+        "type": "self_knowledge"
+      }
+    },
+    "03803365e7eb651a": {
+      "id": "03803365e7eb651a",
+      "memory_type": "SEMANTIC",
+      "content": "My purpose is to assist with autonomous software engineering tasks.",
+      "importance": "HIGH",
+      "timestamp": "2026-08-05T23:58:20.026745",
+      "last_accessed": "2026-08-05T23:58:20.026754",
+      "access_count": 0,
+      "emotional_valence": 0.7,
+      "arousal": 0.5,
+      "associations": [
+        "1be604862ac151c8",
+        "1adca7fd8072487d",
+        "9f4e1303f6b5d301",
+        "b84aad152e905c0b",
+        "c1e1a707b71a138a",
+        "284d09cd2088e1dd",
+        "25c2e8033146cd91",
+        "26aee290a36a5ddc",
+        "3bc2f2c98bdd66ae",
+        "ce6c22c442d7fd74",
+        "77354e506f219866"
+      ],
+      "retrieval_strength": 7.960787043169686e-13,
+      "decay_rate": 0.05,
+      "context": {
+        "type": "purpose"
+      }
+    },
+    "77354e506f219866": {
+      "id": "77354e506f219866",
+      "memory_type": "SEMANTIC",
+      "content": "I have enhanced memory, decision-making, and communication capabilities.",
+      "importance": "HIGH",
+      "timestamp": "2026-08-05T23:58:20.029144",
+      "last_accessed": "2026-08-05T23:58:20.029153",
+      "access_count": 0,
+      "emotional_valence": 0.0,
+      "arousal": 0.5,
+      "associations": [
+        "1be604862ac151c8",
+        "1adca7fd8072487d",
+        "9f4e1303f6b5d301",
+        "b84aad152e905c0b",
+        "c1e1a707b71a138a",
+        "284d09cd2088e1dd",
+        "25c2e8033146cd91",
+        "26aee290a36a5ddc",
+        "3bc2f2c98bdd66ae",
+        "ce6c22c442d7fd74",
+        "03803365e7eb651a"
+      ],
+      "retrieval_strength": 7.960841876227758e-13,
+      "decay_rate": 0.05,
+      "context": {
+        "type": "capabilities"
+      }
+    },
+    "2c39f491050f75db": {
+      "id": "2c39f491050f75db",
+      "memory_type": "EPISODIC",
+      "content": "Today I learned about enhanced AI systems.",
+      "importance": "MEDIUM",
+      "timestamp": "2026-08-05T23:58:20.048132",
+      "last_accessed": "2026-08-05T23:58:20.048134",
+      "access_count": 0,
+      "emotional_valence": 0.6,
+      "arousal": 0.5,
+      "associations": [
+        "0a653e7cc72036f5",
+        "0636723f1c23154f"
+      ],
+      "retrieval_strength": 7.961282758108062e-13,
+      "decay_rate": 0.1,
+      "context": {
+        "type": "learning",
+        "topic": "AI"
+      }
+    }
+  },
+  "memory_index": {
+    "EPISODIC": [
+      "0a653e7cc72036f5",
+      "0636723f1c23154f",
+      "2c39f491050f75db"
+    ],
+    "SEMANTIC": [
+      "1be604862ac151c8",
+      "1adca7fd8072487d",
+      "9f4e1303f6b5d301",
+      "b84aad152e905c0b",
+      "c1e1a707b71a138a",
+      "284d09cd2088e1dd",
+      "25c2e8033146cd91",
+      "26aee290a36a5ddc",
+      "3bc2f2c98bdd66ae",
+      "ce6c22c442d7fd74",
+      "03803365e7eb651a",
+      "77354e506f219866"
+    ],
+    "PROCEDURAL": [],
+    "WORKING": [],
+    "LONG_TERM": []
+  },
+  "consolidation_history": [
+    {
+      "session_id": "97e7fb19",
+      "start_time": "2026-08-05T23:58:40.092861",
+      "end_time": "2026-08-05T23:58:40.149191",
+      "memories_consolidated": 4,
+      "associations_formed": 32,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e0c230a2",
+      "start_time": "2026-08-05T23:59:05.192413",
+      "end_time": "2026-08-05T23:59:05.192961",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "bb2de53c",
+      "start_time": "2026-08-05T23:59:30.243576",
+      "end_time": "2026-08-05T23:59:30.244177",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5acde0d8",
+      "start_time": "2026-08-05T23:59:55.307943",
+      "end_time": "2026-08-05T23:59:55.309300",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "75cc4736",
+      "start_time": "2026-08-06T00:00:20.396205",
+      "end_time": "2026-08-06T00:00:20.396953",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f02f2045",
+      "start_time": "2026-08-06T00:00:45.485035",
+      "end_time": "2026-08-06T00:00:45.485604",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "63567f50",
+      "start_time": "2026-08-06T00:01:10.544950",
+      "end_time": "2026-08-06T00:01:10.545456",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fd8f063d",
+      "start_time": "2026-08-06T00:01:35.622625",
+      "end_time": "2026-08-06T00:01:35.623157",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7ffb8dc8",
+      "start_time": "2026-08-06T00:02:00.696960",
+      "end_time": "2026-08-06T00:02:00.697483",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "696e69ab",
+      "start_time": "2026-08-06T00:02:25.763087",
+      "end_time": "2026-08-06T00:02:25.763620",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "4c5dec9e",
+      "start_time": "2026-08-06T00:02:50.833245",
+      "end_time": "2026-08-06T00:02:50.833868",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f107c038",
+      "start_time": "2026-08-06T00:03:15.912654",
+      "end_time": "2026-08-06T00:03:15.913190",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5bb1a7a1",
+      "start_time": "2026-08-06T00:03:41.003419",
+      "end_time": "2026-08-06T00:03:41.004499",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "0d414b16",
+      "start_time": "2026-08-06T00:04:06.090542",
+      "end_time": "2026-08-06T00:04:06.091228",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f0b9f7f0",
+      "start_time": "2026-08-06T00:04:31.178170",
+      "end_time": "2026-08-06T00:04:31.178720",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "52158c0a",
+      "start_time": "2026-08-06T00:04:56.258135",
+      "end_time": "2026-08-06T00:04:56.259023",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d3651b56",
+      "start_time": "2026-08-06T00:05:21.362269",
+      "end_time": "2026-08-06T00:05:21.362821",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "87cbe809",
+      "start_time": "2026-08-06T00:05:46.473135",
+      "end_time": "2026-08-06T00:05:46.473682",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "05d7a48b",
+      "start_time": "2026-08-06T00:06:11.564474",
+      "end_time": "2026-08-06T00:06:11.565028",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7c7afde3",
+      "start_time": "2026-08-06T00:06:36.673877",
+      "end_time": "2026-08-06T00:06:36.674500",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "036ab0f9",
+      "start_time": "2026-08-06T00:07:01.778860",
+      "end_time": "2026-08-06T00:07:01.779474",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "da6e8025",
+      "start_time": "2026-08-06T00:07:26.870483",
+      "end_time": "2026-08-06T00:07:26.871070",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "4241a0d8",
+      "start_time": "2026-08-06T00:07:51.978576",
+      "end_time": "2026-08-06T00:07:51.979373",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d83e009a",
+      "start_time": "2026-08-06T00:08:17.081493",
+      "end_time": "2026-08-06T00:08:17.082029",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "71ceddfe",
+      "start_time": "2026-08-06T00:08:42.192680",
+      "end_time": "2026-08-06T00:08:42.193205",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a3bcc8fa",
+      "start_time": "2026-08-06T00:09:07.324195",
+      "end_time": "2026-08-06T00:09:07.325275",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "eafefc62",
+      "start_time": "2026-08-06T00:09:32.439316",
+      "end_time": "2026-08-06T00:09:32.439899",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "867b492f",
+      "start_time": "2026-08-06T00:09:57.558407",
+      "end_time": "2026-08-06T00:09:57.558924",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d2efa78d",
+      "start_time": "2026-08-06T00:10:22.682140",
+      "end_time": "2026-08-06T00:10:22.682916",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d5fa45d2",
+      "start_time": "2026-08-06T00:10:47.799913",
+      "end_time": "2026-08-06T00:10:47.800566",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ac087a45",
+      "start_time": "2026-08-06T00:11:12.919744",
+      "end_time": "2026-08-06T00:11:12.920278",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "db22e535",
+      "start_time": "2026-08-06T00:11:38.056232",
+      "end_time": "2026-08-06T00:11:38.056792",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "671b5d61",
+      "start_time": "2026-08-06T00:12:03.184313",
+      "end_time": "2026-08-06T00:12:03.184868",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d7534177",
+      "start_time": "2026-08-06T00:12:28.310377",
+      "end_time": "2026-08-06T00:12:28.310923",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d16ed405",
+      "start_time": "2026-08-06T00:12:53.430628",
+      "end_time": "2026-08-06T00:12:53.431171",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "bb82a682",
+      "start_time": "2026-08-06T00:13:18.571746",
+      "end_time": "2026-08-06T00:13:18.572340",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b7f76033",
+      "start_time": "2026-08-06T00:13:43.708592",
+      "end_time": "2026-08-06T00:13:43.709095",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a662ae38",
+      "start_time": "2026-08-06T00:14:08.831838",
+      "end_time": "2026-08-06T00:14:08.832424",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "4f7e2f03",
+      "start_time": "2026-08-06T00:14:33.978921",
+      "end_time": "2026-08-06T00:14:33.979503",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "18c4914d",
+      "start_time": "2026-08-06T00:14:59.120951",
+      "end_time": "2026-08-06T00:14:59.121500",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6492a304",
+      "start_time": "2026-08-06T00:15:24.265630",
+      "end_time": "2026-08-06T00:15:24.266144",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "785257e0",
+      "start_time": "2026-08-06T00:15:49.417630",
+      "end_time": "2026-08-06T00:15:49.418226",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "625bec62",
+      "start_time": "2026-08-06T00:16:14.565908",
+      "end_time": "2026-08-06T00:16:14.566427",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2a99d920",
+      "start_time": "2026-08-06T00:16:39.726860",
+      "end_time": "2026-08-06T00:16:39.727403",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1a1ab412",
+      "start_time": "2026-08-06T00:17:04.889359",
+      "end_time": "2026-08-06T00:17:04.889867",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b0fe4374",
+      "start_time": "2026-08-06T00:17:30.041062",
+      "end_time": "2026-08-06T00:17:30.041642",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3804bca1",
+      "start_time": "2026-08-06T00:17:55.213527",
+      "end_time": "2026-08-06T00:17:55.214253",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b826e969",
+      "start_time": "2026-08-06T00:18:20.371766",
+      "end_time": "2026-08-06T00:18:20.372297",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "10e69587",
+      "start_time": "2026-08-06T00:18:45.545077",
+      "end_time": "2026-08-06T00:18:45.545624",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "544aefad",
+      "start_time": "2026-08-06T00:19:10.710186",
+      "end_time": "2026-08-06T00:19:10.710736",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "cd003d6b",
+      "start_time": "2026-08-06T00:19:35.867380",
+      "end_time": "2026-08-06T00:19:35.867896",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "4922a523",
+      "start_time": "2026-08-06T00:20:01.040953",
+      "end_time": "2026-08-06T00:20:01.041548",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1e6fa347",
+      "start_time": "2026-08-06T00:20:26.213014",
+      "end_time": "2026-08-06T00:20:26.213950",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a37c4684",
+      "start_time": "2026-08-06T00:20:51.383530",
+      "end_time": "2026-08-06T00:20:51.384228",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7689e789",
+      "start_time": "2026-08-06T00:21:16.566259",
+      "end_time": "2026-08-06T00:21:16.566830",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "73e1c5e5",
+      "start_time": "2026-08-06T00:21:41.767360",
+      "end_time": "2026-08-06T00:21:41.768087",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e87225bf",
+      "start_time": "2026-08-06T00:22:06.964814",
+      "end_time": "2026-08-06T00:22:06.965422",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "00901b55",
+      "start_time": "2026-08-06T00:22:32.152121",
+      "end_time": "2026-08-06T00:22:32.152659",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "55930565",
+      "start_time": "2026-08-06T00:22:57.327268",
+      "end_time": "2026-08-06T00:22:57.327810",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b445b068",
+      "start_time": "2026-08-06T00:23:22.520416",
+      "end_time": "2026-08-06T00:23:22.520927",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "577955bc",
+      "start_time": "2026-08-06T00:23:47.710201",
+      "end_time": "2026-08-06T00:23:47.710736",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1f430955",
+      "start_time": "2026-08-06T00:24:12.892029",
+      "end_time": "2026-08-06T00:24:12.892562",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "051f4530",
+      "start_time": "2026-08-06T00:24:38.092834",
+      "end_time": "2026-08-06T00:24:38.093374",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e5740110",
+      "start_time": "2026-08-06T00:25:03.283628",
+      "end_time": "2026-08-06T00:25:03.284269",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "cc82740f",
+      "start_time": "2026-08-06T00:25:28.494597",
+      "end_time": "2026-08-06T00:25:28.495175",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "28842fda",
+      "start_time": "2026-08-06T00:25:53.703883",
+      "end_time": "2026-08-06T00:25:53.704430",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3a8e1aa8",
+      "start_time": "2026-08-06T00:26:18.906394",
+      "end_time": "2026-08-06T00:26:18.906942",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "dc9e1afa",
+      "start_time": "2026-08-06T00:26:44.126681",
+      "end_time": "2026-08-06T00:26:44.127212",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b0fabf97",
+      "start_time": "2026-08-06T00:27:09.344236",
+      "end_time": "2026-08-06T00:27:09.344805",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5726300d",
+      "start_time": "2026-08-06T00:27:34.549185",
+      "end_time": "2026-08-06T00:27:34.549720",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e77797b8",
+      "start_time": "2026-08-06T00:27:59.772078",
+      "end_time": "2026-08-06T00:27:59.772615",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8b07819d",
+      "start_time": "2026-08-06T00:28:24.985121",
+      "end_time": "2026-08-06T00:28:24.985667",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "69c695ca",
+      "start_time": "2026-08-06T00:28:50.214639",
+      "end_time": "2026-08-06T00:28:50.215186",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fa08430a",
+      "start_time": "2026-08-06T00:29:15.441106",
+      "end_time": "2026-08-06T00:29:15.441638",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "54feb179",
+      "start_time": "2026-08-06T00:29:40.661605",
+      "end_time": "2026-08-06T00:29:40.662177",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "faa0faeb",
+      "start_time": "2026-08-06T00:30:05.897023",
+      "end_time": "2026-08-06T00:30:05.897562",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "c49c3b92",
+      "start_time": "2026-08-06T00:30:31.134979",
+      "end_time": "2026-08-06T00:30:31.135508",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "cfd5df4a",
+      "start_time": "2026-08-06T00:30:56.361196",
+      "end_time": "2026-08-06T00:30:56.361738",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "33547b50",
+      "start_time": "2026-08-06T00:31:21.606095",
+      "end_time": "2026-08-06T00:31:21.606598",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "07b5aefa",
+      "start_time": "2026-08-06T00:31:46.830692",
+      "end_time": "2026-08-06T00:31:46.831238",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9041c0da",
+      "start_time": "2026-08-06T00:32:12.095643",
+      "end_time": "2026-08-06T00:32:12.096321",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a62547d1",
+      "start_time": "2026-08-06T01:33:21.883916",
+      "end_time": "2026-08-06T01:33:21.884530",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "af7745bf",
+      "start_time": "2026-08-06T01:33:47.158021",
+      "end_time": "2026-08-06T01:33:47.158541",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9548f878",
+      "start_time": "2026-08-06T01:34:12.434545",
+      "end_time": "2026-08-06T01:34:12.435064",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "07322541",
+      "start_time": "2026-08-06T01:34:37.705489",
+      "end_time": "2026-08-06T01:34:37.706057",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6c3bac95",
+      "start_time": "2026-08-06T01:35:02.980617",
+      "end_time": "2026-08-06T01:35:02.981222",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "158e0dcd",
+      "start_time": "2026-08-06T01:35:28.267964",
+      "end_time": "2026-08-06T01:35:28.268503",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "bd0f6144",
+      "start_time": "2026-08-06T01:35:53.556763",
+      "end_time": "2026-08-06T01:35:53.557275",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "dcc039db",
+      "start_time": "2026-08-06T01:36:19.025132",
+      "end_time": "2026-08-06T01:36:19.025670",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3fe9b047",
+      "start_time": "2026-08-06T01:36:44.341408",
+      "end_time": "2026-08-06T01:36:44.341922",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "dd483c83",
+      "start_time": "2026-08-06T01:37:09.677584",
+      "end_time": "2026-08-06T01:37:09.678139",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "c1b524ce",
+      "start_time": "2026-08-06T01:37:34.999778",
+      "end_time": "2026-08-06T01:37:35.000347",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "aa48e882",
+      "start_time": "2026-08-06T01:38:00.329912",
+      "end_time": "2026-08-06T01:38:00.330583",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "14def1ff",
+      "start_time": "2026-08-06T01:38:25.629673",
+      "end_time": "2026-08-06T01:38:25.630254",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "da63d4fc",
+      "start_time": "2026-08-06T01:38:50.992822",
+      "end_time": "2026-08-06T01:38:50.993804",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1d0ab6a2",
+      "start_time": "2026-08-06T01:39:16.307964",
+      "end_time": "2026-08-06T01:39:16.308565",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "0f2e169a",
+      "start_time": "2026-08-06T01:39:41.641334",
+      "end_time": "2026-08-06T01:39:41.641838",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2f271acc",
+      "start_time": "2026-08-06T01:40:06.985039",
+      "end_time": "2026-08-06T01:40:06.985561",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "de017909",
+      "start_time": "2026-08-06T01:40:32.288434",
+      "end_time": "2026-08-06T01:40:32.289007",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "198213bb",
+      "start_time": "2026-08-06T01:40:57.719690",
+      "end_time": "2026-08-06T01:40:57.720273",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "71c10a41",
+      "start_time": "2026-08-06T01:41:23.045865",
+      "end_time": "2026-08-06T01:41:23.046402",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e40e3582",
+      "start_time": "2026-08-06T01:41:48.357831",
+      "end_time": "2026-08-06T01:41:48.358354",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8cc1e1e2",
+      "start_time": "2026-08-06T01:42:13.695495",
+      "end_time": "2026-08-06T01:42:13.696086",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d5b365e9",
+      "start_time": "2026-08-06T01:42:39.146065",
+      "end_time": "2026-08-06T01:42:39.146718",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "89a914c9",
+      "start_time": "2026-08-06T01:43:04.487695",
+      "end_time": "2026-08-06T01:43:04.488217",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "87b9922d",
+      "start_time": "2026-08-06T01:43:29.843442",
+      "end_time": "2026-08-06T01:43:29.844193",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "77a415ec",
+      "start_time": "2026-08-06T01:43:55.175618",
+      "end_time": "2026-08-06T01:43:55.176625",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b79c0438",
+      "start_time": "2026-08-06T01:44:20.541566",
+      "end_time": "2026-08-06T01:44:20.542110",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "470c06b6",
+      "start_time": "2026-08-06T01:44:45.907495",
+      "end_time": "2026-08-06T01:44:45.908027",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "0d5c5dc8",
+      "start_time": "2026-08-06T01:45:11.316754",
+      "end_time": "2026-08-06T01:45:11.317585",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "0221c549",
+      "start_time": "2026-08-06T01:45:36.703013",
+      "end_time": "2026-08-06T01:45:36.703587",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b1910802",
+      "start_time": "2026-08-06T01:46:02.045785",
+      "end_time": "2026-08-06T01:46:02.046659",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "63395b53",
+      "start_time": "2026-08-06T01:46:27.387845",
+      "end_time": "2026-08-06T01:46:27.388381",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "feee5da8",
+      "start_time": "2026-08-06T01:46:52.739385",
+      "end_time": "2026-08-06T01:46:52.739920",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "22406abe",
+      "start_time": "2026-08-06T01:47:18.080896",
+      "end_time": "2026-08-06T01:47:18.081437",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ad201d85",
+      "start_time": "2026-08-06T01:47:43.443788",
+      "end_time": "2026-08-06T01:47:43.444303",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8a68c9d2",
+      "start_time": "2026-08-06T01:48:08.801576",
+      "end_time": "2026-08-06T01:48:08.802092",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "53969cd1",
+      "start_time": "2026-08-06T01:48:34.144118",
+      "end_time": "2026-08-06T01:48:34.144682",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "4a965b7e",
+      "start_time": "2026-08-06T01:48:59.512340",
+      "end_time": "2026-08-06T01:48:59.512976",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6931a24a",
+      "start_time": "2026-08-06T01:49:24.863260",
+      "end_time": "2026-08-06T01:49:24.863860",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "161dcd99",
+      "start_time": "2026-08-06T01:49:50.255633",
+      "end_time": "2026-08-06T01:49:50.256148",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9571e1e7",
+      "start_time": "2026-08-06T01:50:15.643100",
+      "end_time": "2026-08-06T01:50:15.643663",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a3b32717",
+      "start_time": "2026-08-06T01:50:41.006137",
+      "end_time": "2026-08-06T01:50:41.006652",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "40a040f5",
+      "start_time": "2026-08-06T01:51:06.400627",
+      "end_time": "2026-08-06T01:51:06.401158",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e1b2ec4c",
+      "start_time": "2026-08-06T01:51:31.811758",
+      "end_time": "2026-08-06T01:51:31.812283",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3162d328",
+      "start_time": "2026-08-06T01:51:57.306411",
+      "end_time": "2026-08-06T01:51:57.306921",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1efa0f7d",
+      "start_time": "2026-08-06T01:52:22.718493",
+      "end_time": "2026-08-06T01:52:22.719465",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "25cc5701",
+      "start_time": "2026-08-06T01:52:48.186749",
+      "end_time": "2026-08-06T01:52:48.187317",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "306e9b96",
+      "start_time": "2026-08-06T01:53:13.590930",
+      "end_time": "2026-08-06T01:53:13.591469",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "0b21f8dc",
+      "start_time": "2026-08-06T01:53:38.988418",
+      "end_time": "2026-08-06T01:53:38.988960",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "cb53cbbd",
+      "start_time": "2026-08-06T01:54:04.433986",
+      "end_time": "2026-08-06T01:54:04.434686",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3d17535f",
+      "start_time": "2026-08-06T01:54:29.963903",
+      "end_time": "2026-08-06T01:54:29.964528",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "118792dd",
+      "start_time": "2026-08-06T01:54:55.440223",
+      "end_time": "2026-08-06T01:54:55.440873",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d34a3983",
+      "start_time": "2026-08-06T01:55:20.814010",
+      "end_time": "2026-08-06T01:55:20.814525",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "56ae72b9",
+      "start_time": "2026-08-06T01:55:46.196266",
+      "end_time": "2026-08-06T01:55:46.196835",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "61fb82da",
+      "start_time": "2026-08-06T01:56:11.598583",
+      "end_time": "2026-08-06T01:56:11.599494",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "c857c308",
+      "start_time": "2026-08-06T01:56:37.090364",
+      "end_time": "2026-08-06T01:56:37.090895",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "be18ab1e",
+      "start_time": "2026-08-06T01:57:02.497508",
+      "end_time": "2026-08-06T01:57:02.498021",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "bd5d12e5",
+      "start_time": "2026-08-06T01:57:27.893833",
+      "end_time": "2026-08-06T01:57:27.894385",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9accd997",
+      "start_time": "2026-08-06T01:57:53.312913",
+      "end_time": "2026-08-06T01:57:53.313555",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "90abb4af",
+      "start_time": "2026-08-06T01:58:18.731667",
+      "end_time": "2026-08-06T01:58:18.732219",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "40712d3f",
+      "start_time": "2026-08-06T01:58:44.126073",
+      "end_time": "2026-08-06T01:58:44.126570",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8dff931a",
+      "start_time": "2026-08-06T01:59:09.575866",
+      "end_time": "2026-08-06T01:59:09.576411",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6974191f",
+      "start_time": "2026-08-06T01:59:35.001040",
+      "end_time": "2026-08-06T01:59:35.001604",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "70908b03",
+      "start_time": "2026-08-06T02:00:00.477666",
+      "end_time": "2026-08-06T02:00:00.478176",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "39f7ad59",
+      "start_time": "2026-08-06T02:00:26.178583",
+      "end_time": "2026-08-06T02:00:26.179097",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "463c7a12",
+      "start_time": "2026-08-06T02:00:51.608582",
+      "end_time": "2026-08-06T02:00:51.609088",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "c84aa508",
+      "start_time": "2026-08-06T02:01:17.065643",
+      "end_time": "2026-08-06T02:01:17.066155",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f9c39d24",
+      "start_time": "2026-08-06T02:01:42.513047",
+      "end_time": "2026-08-06T02:01:42.513696",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b00c1269",
+      "start_time": "2026-08-06T02:02:07.949068",
+      "end_time": "2026-08-06T02:02:07.949630",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "01a5d6e0",
+      "start_time": "2026-08-06T02:02:33.401902",
+      "end_time": "2026-08-06T02:02:33.402407",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f9c234ad",
+      "start_time": "2026-08-06T02:02:58.823171",
+      "end_time": "2026-08-06T02:02:58.823703",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "84f45e8e",
+      "start_time": "2026-08-06T02:03:24.387928",
+      "end_time": "2026-08-06T02:03:24.388479",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "0da2000e",
+      "start_time": "2026-08-06T02:03:49.837861",
+      "end_time": "2026-08-06T02:03:49.838406",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fb73f980",
+      "start_time": "2026-08-06T02:04:15.268229",
+      "end_time": "2026-08-06T02:04:15.268775",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b0c3d039",
+      "start_time": "2026-08-06T02:04:40.734673",
+      "end_time": "2026-08-06T02:04:40.735399",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "145d9185",
+      "start_time": "2026-08-06T02:05:06.203193",
+      "end_time": "2026-08-06T02:05:06.203702",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ef3ba003",
+      "start_time": "2026-08-06T02:05:31.652269",
+      "end_time": "2026-08-06T02:05:31.652837",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7009dc48",
+      "start_time": "2026-08-06T02:05:57.121194",
+      "end_time": "2026-08-06T02:05:57.121710",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e3e7aa3f",
+      "start_time": "2026-08-06T02:06:22.566001",
+      "end_time": "2026-08-06T02:06:22.566529",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "49cb0072",
+      "start_time": "2026-08-06T02:06:48.048673",
+      "end_time": "2026-08-06T02:06:48.049183",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "94961fbc",
+      "start_time": "2026-08-06T02:07:13.528432",
+      "end_time": "2026-08-06T02:07:13.528931",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2cf04605",
+      "start_time": "2026-08-06T02:07:38.976300",
+      "end_time": "2026-08-06T02:07:38.976810",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fa6fc412",
+      "start_time": "2026-08-06T02:08:04.607254",
+      "end_time": "2026-08-06T02:08:04.607794",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "efd0a363",
+      "start_time": "2026-08-06T02:08:30.107730",
+      "end_time": "2026-08-06T02:08:30.108248",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ddde7c43",
+      "start_time": "2026-08-06T02:08:55.589456",
+      "end_time": "2026-08-06T02:08:55.590004",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6b74498a",
+      "start_time": "2026-08-06T02:09:21.083257",
+      "end_time": "2026-08-06T02:09:21.083758",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9b287af6",
+      "start_time": "2026-08-06T02:09:46.550776",
+      "end_time": "2026-08-06T02:09:46.551298",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5cf8c71a",
+      "start_time": "2026-08-06T02:10:12.052213",
+      "end_time": "2026-08-06T02:10:12.052715",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "67eb54b1",
+      "start_time": "2026-08-06T02:10:37.555673",
+      "end_time": "2026-08-06T02:10:37.556244",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b2b7fa67",
+      "start_time": "2026-08-06T02:11:03.042538",
+      "end_time": "2026-08-06T02:11:03.043270",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8e68bf6a",
+      "start_time": "2026-08-06T02:11:28.573880",
+      "end_time": "2026-08-06T02:11:28.574492",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2eb418a4",
+      "start_time": "2026-08-06T02:11:54.229247",
+      "end_time": "2026-08-06T02:11:54.229755",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3f046955",
+      "start_time": "2026-08-06T02:12:19.722024",
+      "end_time": "2026-08-06T02:12:19.722655",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "581a3aa9",
+      "start_time": "2026-08-06T02:12:45.255593",
+      "end_time": "2026-08-06T02:12:45.256108",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6a780a6b",
+      "start_time": "2026-08-06T02:13:10.731575",
+      "end_time": "2026-08-06T02:13:10.732109",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d1a7e3fe",
+      "start_time": "2026-08-06T02:13:36.325681",
+      "end_time": "2026-08-06T02:13:36.326241",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e3ce705c",
+      "start_time": "2026-08-06T02:14:01.853696",
+      "end_time": "2026-08-06T02:14:01.854212",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6c5a73df",
+      "start_time": "2026-08-06T02:14:27.346056",
+      "end_time": "2026-08-06T02:14:27.346615",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5ef491de",
+      "start_time": "2026-08-06T02:14:52.882812",
+      "end_time": "2026-08-06T02:14:52.883378",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "0635d256",
+      "start_time": "2026-08-06T02:15:18.393594",
+      "end_time": "2026-08-06T02:15:18.394094",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e4a1a45f",
+      "start_time": "2026-08-06T02:15:43.913109",
+      "end_time": "2026-08-06T02:15:43.913602",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9a26ef76",
+      "start_time": "2026-08-06T02:16:09.440763",
+      "end_time": "2026-08-06T02:16:09.441347",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ecce750a",
+      "start_time": "2026-08-06T02:16:34.926953",
+      "end_time": "2026-08-06T02:16:34.927590",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "73d6bf21",
+      "start_time": "2026-08-06T02:17:00.441869",
+      "end_time": "2026-08-06T02:17:00.442407",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6a4cfc94",
+      "start_time": "2026-08-06T02:17:25.937467",
+      "end_time": "2026-08-06T02:17:25.937971",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "16b01419",
+      "start_time": "2026-08-06T02:17:51.407552",
+      "end_time": "2026-08-06T02:17:51.408175",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fedace42",
+      "start_time": "2026-08-06T02:18:16.915122",
+      "end_time": "2026-08-06T02:18:16.915637",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "cfc09024",
+      "start_time": "2026-08-06T02:18:42.432505",
+      "end_time": "2026-08-06T02:18:42.433018",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8e0f3335",
+      "start_time": "2026-08-06T02:19:07.908328",
+      "end_time": "2026-08-06T02:19:07.908845",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3183d48a",
+      "start_time": "2026-08-06T02:19:33.444106",
+      "end_time": "2026-08-06T02:19:33.444642",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "03f4647e",
+      "start_time": "2026-08-06T02:19:58.936531",
+      "end_time": "2026-08-06T02:19:58.937103",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "99db071a",
+      "start_time": "2026-08-06T02:20:24.462610",
+      "end_time": "2026-08-06T02:20:24.463109",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "33c16dc7",
+      "start_time": "2026-08-06T02:20:49.997103",
+      "end_time": "2026-08-06T02:20:49.997659",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6564a44a",
+      "start_time": "2026-08-06T02:21:15.498196",
+      "end_time": "2026-08-06T02:21:15.498713",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "621dfba3",
+      "start_time": "2026-08-06T02:21:41.025099",
+      "end_time": "2026-08-06T02:21:41.025603",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "650bc04c",
+      "start_time": "2026-08-06T02:22:06.583916",
+      "end_time": "2026-08-06T02:22:06.584424",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6c3cb9db",
+      "start_time": "2026-08-06T02:22:32.108414",
+      "end_time": "2026-08-06T02:22:32.108957",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "815fd8fd",
+      "start_time": "2026-08-06T02:22:57.655769",
+      "end_time": "2026-08-06T02:22:57.656306",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6ba304f9",
+      "start_time": "2026-08-06T02:23:23.579249",
+      "end_time": "2026-08-06T02:23:23.580310",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3cb98a65",
+      "start_time": "2026-08-06T02:23:49.848169",
+      "end_time": "2026-08-06T02:23:49.849139",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fc8e5abc",
+      "start_time": "2026-08-06T02:24:15.648369",
+      "end_time": "2026-08-06T02:24:15.648918",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "86d4992a",
+      "start_time": "2026-08-06T02:24:41.208986",
+      "end_time": "2026-08-06T02:24:41.209537",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5fea2743",
+      "start_time": "2026-08-06T02:25:06.807835",
+      "end_time": "2026-08-06T02:25:06.808397",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "4e326891",
+      "start_time": "2026-08-06T02:25:32.406127",
+      "end_time": "2026-08-06T02:25:32.406627",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "79d8f439",
+      "start_time": "2026-08-06T02:25:58.046910",
+      "end_time": "2026-08-06T02:25:58.047420",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "35cace28",
+      "start_time": "2026-08-06T02:26:23.668377",
+      "end_time": "2026-08-06T02:26:23.668988",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ffaf36c1",
+      "start_time": "2026-08-06T02:26:49.271537",
+      "end_time": "2026-08-06T02:26:49.272294",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "559ee6eb",
+      "start_time": "2026-08-06T02:27:14.908445",
+      "end_time": "2026-08-06T02:27:14.908985",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1f049edc",
+      "start_time": "2026-08-06T02:27:40.564200",
+      "end_time": "2026-08-06T02:27:40.564762",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8e61f3b6",
+      "start_time": "2026-08-06T02:28:06.158186",
+      "end_time": "2026-08-06T02:28:06.158721",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fdf19d5a",
+      "start_time": "2026-08-06T02:28:31.779421",
+      "end_time": "2026-08-06T02:28:31.779928",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9e448825",
+      "start_time": "2026-08-06T02:28:57.392316",
+      "end_time": "2026-08-06T02:28:57.392885",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "29ff56b0",
+      "start_time": "2026-08-06T02:29:23.024726",
+      "end_time": "2026-08-06T02:29:23.025225",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "98a5be4e",
+      "start_time": "2026-08-06T02:29:48.698526",
+      "end_time": "2026-08-06T02:29:48.699081",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "15cae810",
+      "start_time": "2026-08-06T02:30:14.315510",
+      "end_time": "2026-08-06T02:30:14.316057",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "97ce4bdd",
+      "start_time": "2026-08-06T02:30:39.963955",
+      "end_time": "2026-08-06T02:30:39.964470",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "98c6e1c2",
+      "start_time": "2026-08-06T02:31:05.662431",
+      "end_time": "2026-08-06T02:31:05.663099",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fbfa341e",
+      "start_time": "2026-08-06T02:31:31.360531",
+      "end_time": "2026-08-06T02:31:31.361071",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5b908ee2",
+      "start_time": "2026-08-06T02:31:57.004532",
+      "end_time": "2026-08-06T02:31:57.005038",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "79360180",
+      "start_time": "2026-08-06T02:32:22.664235",
+      "end_time": "2026-08-06T02:32:22.664782",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3a886e83",
+      "start_time": "2026-08-06T02:32:48.269492",
+      "end_time": "2026-08-06T02:32:48.270000",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "de75656d",
+      "start_time": "2026-08-06T02:33:13.912331",
+      "end_time": "2026-08-06T02:33:13.912953",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d6605184",
+      "start_time": "2026-08-06T02:33:39.523347",
+      "end_time": "2026-08-06T02:33:39.523927",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fba44be0",
+      "start_time": "2026-08-06T02:34:05.218984",
+      "end_time": "2026-08-06T02:34:05.219597",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7c7c1be6",
+      "start_time": "2026-08-06T02:34:31.070724",
+      "end_time": "2026-08-06T02:34:31.072215",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a2e1477f",
+      "start_time": "2026-08-06T02:34:57.466873",
+      "end_time": "2026-08-06T02:34:57.468262",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f3bfdc12",
+      "start_time": "2026-08-06T02:35:23.217795",
+      "end_time": "2026-08-06T02:35:23.218341",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "27ffadba",
+      "start_time": "2026-08-06T02:35:48.961498",
+      "end_time": "2026-08-06T02:35:48.962123",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "146b7926",
+      "start_time": "2026-08-06T02:36:14.621899",
+      "end_time": "2026-08-06T02:36:14.622493",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "efae2e32",
+      "start_time": "2026-08-06T02:36:40.296278",
+      "end_time": "2026-08-06T02:36:40.296811",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fc025ab2",
+      "start_time": "2026-08-06T02:37:05.977988",
+      "end_time": "2026-08-06T02:37:05.978683",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8ca23504",
+      "start_time": "2026-08-06T02:37:31.700445",
+      "end_time": "2026-08-06T02:37:31.701144",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ebe1488d",
+      "start_time": "2026-08-06T02:37:57.449686",
+      "end_time": "2026-08-06T02:37:57.450294",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fdf528ba",
+      "start_time": "2026-08-06T02:38:23.213779",
+      "end_time": "2026-08-06T02:38:23.214316",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8f8e5009",
+      "start_time": "2026-08-06T02:38:48.952885",
+      "end_time": "2026-08-06T02:38:48.953504",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "049b6f5f",
+      "start_time": "2026-08-06T02:39:14.770873",
+      "end_time": "2026-08-06T02:39:14.771408",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "eed20df1",
+      "start_time": "2026-08-06T02:39:40.467324",
+      "end_time": "2026-08-06T02:39:40.467880",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ef416e02",
+      "start_time": "2026-08-06T02:40:06.261411",
+      "end_time": "2026-08-06T02:40:06.262047",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "06bb4313",
+      "start_time": "2026-08-06T02:40:31.989221",
+      "end_time": "2026-08-06T02:40:31.989760",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a0ab11ea",
+      "start_time": "2026-08-06T02:40:57.834737",
+      "end_time": "2026-08-06T02:40:57.835250",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "80328a3d",
+      "start_time": "2026-08-06T02:41:23.649363",
+      "end_time": "2026-08-06T02:41:23.649922",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "328482f9",
+      "start_time": "2026-08-06T02:41:49.500073",
+      "end_time": "2026-08-06T02:41:49.500686",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f22501c0",
+      "start_time": "2026-08-06T02:42:15.286857",
+      "end_time": "2026-08-06T02:42:15.287406",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "713eaf68",
+      "start_time": "2026-08-06T02:42:41.148037",
+      "end_time": "2026-08-06T02:42:41.148589",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e9a4f805",
+      "start_time": "2026-08-06T02:43:06.985307",
+      "end_time": "2026-08-06T02:43:06.985858",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7fdd9b2c",
+      "start_time": "2026-08-06T02:43:32.869657",
+      "end_time": "2026-08-06T02:43:32.870332",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "102b0ed6",
+      "start_time": "2026-08-06T02:43:58.663216",
+      "end_time": "2026-08-06T02:43:58.663867",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "dd8dee6f",
+      "start_time": "2026-08-06T02:44:24.481806",
+      "end_time": "2026-08-06T02:44:24.482615",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "33009a6d",
+      "start_time": "2026-08-06T02:44:50.353868",
+      "end_time": "2026-08-06T02:44:50.354414",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "666a9c5a",
+      "start_time": "2026-08-06T02:45:16.223895",
+      "end_time": "2026-08-06T02:45:16.224607",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3ebbfd2c",
+      "start_time": "2026-08-06T02:45:42.051639",
+      "end_time": "2026-08-06T02:45:42.052175",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "82aea744",
+      "start_time": "2026-08-06T02:46:07.893030",
+      "end_time": "2026-08-06T02:46:07.893760",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "45423671",
+      "start_time": "2026-08-06T02:46:33.717837",
+      "end_time": "2026-08-06T02:46:33.718639",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6f51b992",
+      "start_time": "2026-08-06T02:46:59.549289",
+      "end_time": "2026-08-06T02:46:59.549804",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "985bfd5c",
+      "start_time": "2026-08-06T02:47:25.551915",
+      "end_time": "2026-08-06T02:47:25.552762",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "4a2eb695",
+      "start_time": "2026-08-06T02:47:51.405961",
+      "end_time": "2026-08-06T02:47:51.406547",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "abc07996",
+      "start_time": "2026-08-06T02:48:17.324080",
+      "end_time": "2026-08-06T02:48:17.324619",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "308db3db",
+      "start_time": "2026-08-06T02:48:43.137286",
+      "end_time": "2026-08-06T02:48:43.137832",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "705ee0f7",
+      "start_time": "2026-08-06T02:49:08.994385",
+      "end_time": "2026-08-06T02:49:08.994932",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a8f99340",
+      "start_time": "2026-08-06T02:49:34.854714",
+      "end_time": "2026-08-06T02:49:34.855269",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "de0488d7",
+      "start_time": "2026-08-06T02:50:00.695631",
+      "end_time": "2026-08-06T02:50:00.696500",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d821c9e5",
+      "start_time": "2026-08-06T02:50:26.678327",
+      "end_time": "2026-08-06T02:50:26.679040",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2607e7c1",
+      "start_time": "2026-08-06T02:50:52.567906",
+      "end_time": "2026-08-06T02:50:52.568476",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6c005fcb",
+      "start_time": "2026-08-06T02:51:19.103782",
+      "end_time": "2026-08-06T02:51:19.104390",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "143959cf",
+      "start_time": "2026-08-06T02:51:44.968877",
+      "end_time": "2026-08-06T02:51:44.969399",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e709a189",
+      "start_time": "2026-08-06T02:52:10.759702",
+      "end_time": "2026-08-06T02:52:10.760237",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f3b2f99a",
+      "start_time": "2026-08-06T02:52:36.603708",
+      "end_time": "2026-08-06T02:52:36.604490",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9e5c7be7",
+      "start_time": "2026-08-06T02:53:02.464762",
+      "end_time": "2026-08-06T02:53:02.465463",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ac96f7aa",
+      "start_time": "2026-08-06T02:53:28.268506",
+      "end_time": "2026-08-06T02:53:28.269115",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "faa02b6c",
+      "start_time": "2026-08-06T02:53:54.138098",
+      "end_time": "2026-08-06T02:53:54.138642",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e8d4fa48",
+      "start_time": "2026-08-06T02:54:19.951824",
+      "end_time": "2026-08-06T02:54:19.952331",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "32096374",
+      "start_time": "2026-08-06T02:54:45.889374",
+      "end_time": "2026-08-06T02:54:45.890092",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9a62fc37",
+      "start_time": "2026-08-06T02:55:11.957147",
+      "end_time": "2026-08-06T02:55:11.957936",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "17abff05",
+      "start_time": "2026-08-06T02:55:37.798620",
+      "end_time": "2026-08-06T02:55:37.799164",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3c6e8f53",
+      "start_time": "2026-08-06T02:56:03.686790",
+      "end_time": "2026-08-06T02:56:03.687501",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "74babbc0",
+      "start_time": "2026-08-06T02:56:29.565891",
+      "end_time": "2026-08-06T02:56:29.566407",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "14fc842b",
+      "start_time": "2026-08-06T02:56:55.420671",
+      "end_time": "2026-08-06T02:56:55.421325",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "bed0469a",
+      "start_time": "2026-08-06T02:57:21.291764",
+      "end_time": "2026-08-06T02:57:21.292295",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7ad3a9c9",
+      "start_time": "2026-08-06T02:57:47.149262",
+      "end_time": "2026-08-06T02:57:47.149845",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "05fdcc6c",
+      "start_time": "2026-08-06T02:58:13.451290",
+      "end_time": "2026-08-06T02:58:13.451826",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "27cb4f6a",
+      "start_time": "2026-08-06T02:58:39.361371",
+      "end_time": "2026-08-06T02:58:39.361914",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fde76b24",
+      "start_time": "2026-08-06T02:59:05.341807",
+      "end_time": "2026-08-06T02:59:05.342356",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2567ae9b",
+      "start_time": "2026-08-06T02:59:31.368850",
+      "end_time": "2026-08-06T02:59:31.369387",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "c112dcf0",
+      "start_time": "2026-08-06T02:59:57.293621",
+      "end_time": "2026-08-06T02:59:57.294163",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e18abacd",
+      "start_time": "2026-08-06T03:00:23.204961",
+      "end_time": "2026-08-06T03:00:23.205653",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "521217a9",
+      "start_time": "2026-08-06T03:00:49.605415",
+      "end_time": "2026-08-06T03:00:49.605991",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a62c0c05",
+      "start_time": "2026-08-06T03:01:15.631053",
+      "end_time": "2026-08-06T03:01:15.631694",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "58051097",
+      "start_time": "2026-08-06T03:01:41.677887",
+      "end_time": "2026-08-06T03:01:41.678539",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "176d1f73",
+      "start_time": "2026-08-06T03:02:07.725958",
+      "end_time": "2026-08-06T03:02:07.726485",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "bc4d186a",
+      "start_time": "2026-08-06T03:02:33.643772",
+      "end_time": "2026-08-06T03:02:33.644573",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "13d9e3a8",
+      "start_time": "2026-08-06T03:02:59.853277",
+      "end_time": "2026-08-06T03:02:59.853988",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "21bdf223",
+      "start_time": "2026-08-06T03:03:25.833930",
+      "end_time": "2026-08-06T03:03:25.834473",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "702f170c",
+      "start_time": "2026-08-06T03:03:51.777338",
+      "end_time": "2026-08-06T03:03:51.777919",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "dc04d5ab",
+      "start_time": "2026-08-06T03:04:17.912361",
+      "end_time": "2026-08-06T03:04:17.912968",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "18ba8dda",
+      "start_time": "2026-08-06T03:04:43.956762",
+      "end_time": "2026-08-06T03:04:43.957428",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d4aaa9ac",
+      "start_time": "2026-08-06T03:05:09.936839",
+      "end_time": "2026-08-06T03:05:09.937344",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2f1484f2",
+      "start_time": "2026-08-06T03:05:36.127020",
+      "end_time": "2026-08-06T03:05:36.127822",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5e841ceb",
+      "start_time": "2026-08-06T03:06:01.986564",
+      "end_time": "2026-08-06T03:06:01.987106",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e8358d84",
+      "start_time": "2026-08-06T03:06:28.191594",
+      "end_time": "2026-08-06T03:06:28.192279",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "cb761fb4",
+      "start_time": "2026-08-06T03:06:54.285853",
+      "end_time": "2026-08-06T03:06:54.286424",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "27b5b303",
+      "start_time": "2026-08-06T03:07:20.206479",
+      "end_time": "2026-08-06T03:07:20.207020",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "331d7961",
+      "start_time": "2026-08-06T03:07:46.289181",
+      "end_time": "2026-08-06T03:07:46.289743",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9ddb7724",
+      "start_time": "2026-08-06T03:08:12.249398",
+      "end_time": "2026-08-06T03:08:12.250012",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e152cb0c",
+      "start_time": "2026-08-06T03:08:38.253313",
+      "end_time": "2026-08-06T03:08:38.253886",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e90a6fdd",
+      "start_time": "2026-08-06T03:09:04.288237",
+      "end_time": "2026-08-06T03:09:04.288828",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "bd4d041c",
+      "start_time": "2026-08-06T03:09:30.298810",
+      "end_time": "2026-08-06T03:09:30.299420",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "22c07193",
+      "start_time": "2026-08-06T03:09:56.327963",
+      "end_time": "2026-08-06T03:09:56.328567",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "cf98027b",
+      "start_time": "2026-08-06T03:10:22.328963",
+      "end_time": "2026-08-06T03:10:22.330061",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7c2d3d49",
+      "start_time": "2026-08-06T03:10:48.348783",
+      "end_time": "2026-08-06T03:10:48.349342",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "4d570a73",
+      "start_time": "2026-08-06T03:11:14.510842",
+      "end_time": "2026-08-06T03:11:14.511453",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "04a9f9fa",
+      "start_time": "2026-08-06T03:11:40.497590",
+      "end_time": "2026-08-06T03:11:40.498144",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "89c5b0c3",
+      "start_time": "2026-08-06T03:12:06.546866",
+      "end_time": "2026-08-06T03:12:06.547454",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3fefa79e",
+      "start_time": "2026-08-06T03:12:32.571424",
+      "end_time": "2026-08-06T03:12:32.571969",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5a7e4e39",
+      "start_time": "2026-08-06T03:12:58.625106",
+      "end_time": "2026-08-06T03:12:58.625696",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e192cd93",
+      "start_time": "2026-08-06T03:13:24.735563",
+      "end_time": "2026-08-06T03:13:24.736110",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "366d65a2",
+      "start_time": "2026-08-06T03:13:50.913489",
+      "end_time": "2026-08-06T03:13:50.914018",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2bade3a9",
+      "start_time": "2026-08-06T03:14:16.950754",
+      "end_time": "2026-08-06T03:14:16.952298",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a6c331ee",
+      "start_time": "2026-08-06T03:14:43.113074",
+      "end_time": "2026-08-06T03:14:43.113692",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7f40bc2b",
+      "start_time": "2026-08-06T03:15:09.159928",
+      "end_time": "2026-08-06T03:15:09.160676",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5558dfa4",
+      "start_time": "2026-08-06T03:15:35.329688",
+      "end_time": "2026-08-06T03:15:35.330329",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a86f9b87",
+      "start_time": "2026-08-06T03:16:01.463260",
+      "end_time": "2026-08-06T03:16:01.463848",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "23a8b244",
+      "start_time": "2026-08-06T03:16:27.474332",
+      "end_time": "2026-08-06T03:16:27.474984",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ab441788",
+      "start_time": "2026-08-06T03:16:53.630100",
+      "end_time": "2026-08-06T03:16:53.630687",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2a8ada0e",
+      "start_time": "2026-08-06T03:17:19.807747",
+      "end_time": "2026-08-06T03:17:19.808314",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "eff240ce",
+      "start_time": "2026-08-06T03:17:45.833742",
+      "end_time": "2026-08-06T03:17:45.834311",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1de4e6fe",
+      "start_time": "2026-08-06T03:18:11.898219",
+      "end_time": "2026-08-06T03:18:11.898838",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "c791df63",
+      "start_time": "2026-08-06T03:18:37.973765",
+      "end_time": "2026-08-06T03:18:37.974400",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "daf3ff0d",
+      "start_time": "2026-08-06T03:19:04.262678",
+      "end_time": "2026-08-06T03:19:04.263422",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1162438f",
+      "start_time": "2026-08-06T03:19:30.387077",
+      "end_time": "2026-08-06T03:19:30.387783",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2ada2a81",
+      "start_time": "2026-08-06T03:19:56.416341",
+      "end_time": "2026-08-06T03:19:56.416880",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "10654608",
+      "start_time": "2026-08-06T03:20:22.554200",
+      "end_time": "2026-08-06T03:20:22.554750",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "89d6e71e",
+      "start_time": "2026-08-06T03:20:48.789975",
+      "end_time": "2026-08-06T03:20:48.790710",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "0de7db2e",
+      "start_time": "2026-08-06T03:21:14.969886",
+      "end_time": "2026-08-06T03:21:14.970978",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f7319bd5",
+      "start_time": "2026-08-06T03:21:41.138604",
+      "end_time": "2026-08-06T03:21:41.139188",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9c075ab6",
+      "start_time": "2026-08-06T03:22:07.455604",
+      "end_time": "2026-08-06T03:22:07.456198",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f5f998e6",
+      "start_time": "2026-08-06T03:22:34.213563",
+      "end_time": "2026-08-06T03:22:34.214369",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "251ba9d7",
+      "start_time": "2026-08-06T03:23:00.383429",
+      "end_time": "2026-08-06T03:23:00.384019",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d2b144e8",
+      "start_time": "2026-08-06T03:23:26.498525",
+      "end_time": "2026-08-06T03:23:26.499051",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "bf598828",
+      "start_time": "2026-08-06T03:23:52.782221",
+      "end_time": "2026-08-06T03:23:52.782851",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f0bcce45",
+      "start_time": "2026-08-06T03:24:19.157139",
+      "end_time": "2026-08-06T03:24:19.157731",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b9690337",
+      "start_time": "2026-08-06T03:24:45.270423",
+      "end_time": "2026-08-06T03:24:45.270985",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f85a94ab",
+      "start_time": "2026-08-06T03:25:11.362374",
+      "end_time": "2026-08-06T03:25:11.362935",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "aa09f132",
+      "start_time": "2026-08-06T03:25:37.452592",
+      "end_time": "2026-08-06T03:25:37.453182",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7170d3e8",
+      "start_time": "2026-08-06T03:26:03.719837",
+      "end_time": "2026-08-06T03:26:03.720368",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ceb06c02",
+      "start_time": "2026-08-06T03:26:29.909785",
+      "end_time": "2026-08-06T03:26:29.910313",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ae3facb8",
+      "start_time": "2026-08-06T03:26:55.981352",
+      "end_time": "2026-08-06T03:26:55.981884",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "cb1afd83",
+      "start_time": "2026-08-06T03:27:22.205375",
+      "end_time": "2026-08-06T03:27:22.206013",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "48b50bbb",
+      "start_time": "2026-08-06T03:27:48.483684",
+      "end_time": "2026-08-06T03:27:48.484281",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b5d28a28",
+      "start_time": "2026-08-06T03:28:14.686576",
+      "end_time": "2026-08-06T03:28:14.687144",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9838907e",
+      "start_time": "2026-08-06T03:28:40.984446",
+      "end_time": "2026-08-06T03:28:40.985172",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "655b7972",
+      "start_time": "2026-08-06T03:29:07.404720",
+      "end_time": "2026-08-06T03:29:07.405489",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6bf97763",
+      "start_time": "2026-08-06T03:29:33.909572",
+      "end_time": "2026-08-06T03:29:33.910419",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8e4a7cf6",
+      "start_time": "2026-08-06T03:30:00.200525",
+      "end_time": "2026-08-06T03:30:00.201173",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "31282531",
+      "start_time": "2026-08-06T03:30:26.614731",
+      "end_time": "2026-08-06T03:30:26.615499",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "0413785a",
+      "start_time": "2026-08-06T03:30:53.052841",
+      "end_time": "2026-08-06T03:30:53.053441",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "dc4ddc3f",
+      "start_time": "2026-08-06T03:31:19.224294",
+      "end_time": "2026-08-06T03:31:19.224844",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e25d4652",
+      "start_time": "2026-08-06T03:31:45.394394",
+      "end_time": "2026-08-06T03:31:45.394950",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "56c28ea3",
+      "start_time": "2026-08-06T03:32:11.630419",
+      "end_time": "2026-08-06T03:32:11.630984",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8dfb9a85",
+      "start_time": "2026-08-06T03:32:37.806674",
+      "end_time": "2026-08-06T03:32:37.807183",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "284a8dbc",
+      "start_time": "2026-08-06T03:33:04.018967",
+      "end_time": "2026-08-06T03:33:04.019478",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "06952d15",
+      "start_time": "2026-08-06T03:33:30.835459",
+      "end_time": "2026-08-06T03:33:30.836192",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "27ffa091",
+      "start_time": "2026-08-06T03:33:57.144387",
+      "end_time": "2026-08-06T03:33:57.144957",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "bbd01c4f",
+      "start_time": "2026-08-06T03:34:23.333494",
+      "end_time": "2026-08-06T03:34:23.334037",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e93bc3f7",
+      "start_time": "2026-08-06T03:34:49.633640",
+      "end_time": "2026-08-06T03:34:49.634226",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "83b65801",
+      "start_time": "2026-08-06T03:35:15.760845",
+      "end_time": "2026-08-06T03:35:15.761384",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "bee611e9",
+      "start_time": "2026-08-06T03:35:42.152769",
+      "end_time": "2026-08-06T03:35:42.153454",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2f152636",
+      "start_time": "2026-08-06T03:36:08.511179",
+      "end_time": "2026-08-06T03:36:08.511866",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "bc80ed3c",
+      "start_time": "2026-08-06T03:36:35.127564",
+      "end_time": "2026-08-06T03:36:35.128263",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f7c2ad14",
+      "start_time": "2026-08-06T03:37:01.463361",
+      "end_time": "2026-08-06T03:37:01.464264",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5be271f7",
+      "start_time": "2026-08-06T03:37:27.634097",
+      "end_time": "2026-08-06T03:37:27.634646",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a9b284ec",
+      "start_time": "2026-08-06T03:37:54.068414",
+      "end_time": "2026-08-06T03:37:54.069077",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8b17c72f",
+      "start_time": "2026-08-06T03:38:20.422060",
+      "end_time": "2026-08-06T03:38:20.422710",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2c93baf5",
+      "start_time": "2026-08-06T03:38:46.977927",
+      "end_time": "2026-08-06T03:38:46.978524",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "61c2fa02",
+      "start_time": "2026-08-06T03:39:13.259815",
+      "end_time": "2026-08-06T03:39:13.260336",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "dc7f81bc",
+      "start_time": "2026-08-06T03:39:39.442164",
+      "end_time": "2026-08-06T03:39:39.442740",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "eeb6964b",
+      "start_time": "2026-08-06T03:40:05.694999",
+      "end_time": "2026-08-06T03:40:05.695533",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "45fa942d",
+      "start_time": "2026-08-06T03:40:32.246073",
+      "end_time": "2026-08-06T03:40:32.246707",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d195d0b7",
+      "start_time": "2026-08-06T03:40:58.504457",
+      "end_time": "2026-08-06T03:40:58.505260",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7d1dd294",
+      "start_time": "2026-08-06T03:41:25.102192",
+      "end_time": "2026-08-06T03:41:25.102832",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a690155c",
+      "start_time": "2026-08-06T03:41:51.540116",
+      "end_time": "2026-08-06T03:41:51.540710",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a0548986",
+      "start_time": "2026-08-06T03:42:17.863930",
+      "end_time": "2026-08-06T03:42:17.864487",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f210a538",
+      "start_time": "2026-08-06T03:42:44.661841",
+      "end_time": "2026-08-06T03:42:44.662412",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8f70657b",
+      "start_time": "2026-08-06T03:43:11.358529",
+      "end_time": "2026-08-06T03:43:11.359066",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "014992a1",
+      "start_time": "2026-08-06T03:43:37.967588",
+      "end_time": "2026-08-06T03:43:37.968747",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6216c1ef",
+      "start_time": "2026-08-06T03:44:04.384723",
+      "end_time": "2026-08-06T03:44:04.385520",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "50e7fc02",
+      "start_time": "2026-08-06T03:44:30.807887",
+      "end_time": "2026-08-06T03:44:30.808530",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1c04189a",
+      "start_time": "2026-08-06T03:44:57.076977",
+      "end_time": "2026-08-06T03:44:57.077538",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5e8ba919",
+      "start_time": "2026-08-06T03:45:23.575221",
+      "end_time": "2026-08-06T03:45:23.575767",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ed85cd19",
+      "start_time": "2026-08-06T03:45:50.083162",
+      "end_time": "2026-08-06T03:45:50.083713",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fb912a12",
+      "start_time": "2026-08-06T03:46:16.747303",
+      "end_time": "2026-08-06T03:46:16.747900",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "009e19eb",
+      "start_time": "2026-08-06T03:46:43.432507",
+      "end_time": "2026-08-06T03:46:43.433058",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "46ea5c7a",
+      "start_time": "2026-08-06T03:47:09.922226",
+      "end_time": "2026-08-06T03:47:09.922905",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "369e9141",
+      "start_time": "2026-08-06T03:47:36.809686",
+      "end_time": "2026-08-06T03:47:36.810218",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d42c2ef6",
+      "start_time": "2026-08-06T03:48:03.179644",
+      "end_time": "2026-08-06T03:48:03.180198",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "c886a47f",
+      "start_time": "2026-08-06T03:48:29.650053",
+      "end_time": "2026-08-06T03:48:29.651089",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5cb796c3",
+      "start_time": "2026-08-06T03:48:56.070059",
+      "end_time": "2026-08-06T03:48:56.070879",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "80daacd1",
+      "start_time": "2026-08-06T03:49:22.416139",
+      "end_time": "2026-08-06T03:49:22.416684",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fa57d50c",
+      "start_time": "2026-08-06T03:49:49.236849",
+      "end_time": "2026-08-06T03:49:49.237821",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2bdedb9f",
+      "start_time": "2026-08-06T03:50:15.785984",
+      "end_time": "2026-08-06T03:50:15.786497",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "069774e3",
+      "start_time": "2026-08-06T03:50:42.197528",
+      "end_time": "2026-08-06T03:50:42.198094",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f1ba879f",
+      "start_time": "2026-08-06T03:51:08.549630",
+      "end_time": "2026-08-06T03:51:08.550204",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "cfc8f27f",
+      "start_time": "2026-08-06T03:51:34.885819",
+      "end_time": "2026-08-06T03:51:34.886329",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9e6412f0",
+      "start_time": "2026-08-06T03:52:01.373882",
+      "end_time": "2026-08-06T03:52:01.374490",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "268b19f8",
+      "start_time": "2026-08-06T03:52:27.843530",
+      "end_time": "2026-08-06T03:52:27.844062",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d2dd96f2",
+      "start_time": "2026-08-06T03:52:54.386345",
+      "end_time": "2026-08-06T03:52:54.387200",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f5df6858",
+      "start_time": "2026-08-06T03:53:20.790638",
+      "end_time": "2026-08-06T03:53:20.791524",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f7a48471",
+      "start_time": "2026-08-06T03:53:47.068092",
+      "end_time": "2026-08-06T03:53:47.068983",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "262e8621",
+      "start_time": "2026-08-06T03:54:13.598398",
+      "end_time": "2026-08-06T03:54:13.599132",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "45e3f6a4",
+      "start_time": "2026-08-06T03:54:40.276902",
+      "end_time": "2026-08-06T03:54:40.277457",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "54ea4518",
+      "start_time": "2026-08-06T03:55:06.696133",
+      "end_time": "2026-08-06T03:55:06.696666",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e2d1a937",
+      "start_time": "2026-08-06T03:55:33.222012",
+      "end_time": "2026-08-06T03:55:33.222572",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5977ec7e",
+      "start_time": "2026-08-06T03:55:59.819264",
+      "end_time": "2026-08-06T03:55:59.819812",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "26cfb719",
+      "start_time": "2026-08-06T03:56:26.532483",
+      "end_time": "2026-08-06T03:56:26.533094",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "daa840e9",
+      "start_time": "2026-08-06T03:56:54.286964",
+      "end_time": "2026-08-06T03:56:54.287744",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8337296d",
+      "start_time": "2026-08-06T03:57:21.207097",
+      "end_time": "2026-08-06T03:57:21.207700",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3e68c266",
+      "start_time": "2026-08-06T03:57:47.840715",
+      "end_time": "2026-08-06T03:57:47.841322",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7a0ef0cb",
+      "start_time": "2026-08-06T03:58:14.437643",
+      "end_time": "2026-08-06T03:58:14.438345",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2deb52d6",
+      "start_time": "2026-08-06T03:58:40.897694",
+      "end_time": "2026-08-06T03:58:40.898243",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "dde1fcf0",
+      "start_time": "2026-08-06T03:59:08.210627",
+      "end_time": "2026-08-06T03:59:08.211162",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "c0dbc1fe",
+      "start_time": "2026-08-06T03:59:34.751390",
+      "end_time": "2026-08-06T03:59:34.751908",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a28b953d",
+      "start_time": "2026-08-06T04:00:01.302574",
+      "end_time": "2026-08-06T04:00:01.303390",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "02c1eaff",
+      "start_time": "2026-08-06T04:00:27.954177",
+      "end_time": "2026-08-06T04:00:27.954748",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "73a66875",
+      "start_time": "2026-08-06T04:00:54.516281",
+      "end_time": "2026-08-06T04:00:54.516921",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b70f9b1a",
+      "start_time": "2026-08-06T04:01:21.084641",
+      "end_time": "2026-08-06T04:01:21.085207",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f0efd491",
+      "start_time": "2026-08-06T04:01:47.623112",
+      "end_time": "2026-08-06T04:01:47.623682",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fc75b64f",
+      "start_time": "2026-08-06T04:02:14.110604",
+      "end_time": "2026-08-06T04:02:14.111131",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "413e02cc",
+      "start_time": "2026-08-06T04:02:40.695001",
+      "end_time": "2026-08-06T04:02:40.695582",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8f78c7bb",
+      "start_time": "2026-08-06T04:03:07.370798",
+      "end_time": "2026-08-06T04:03:07.371425",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "709db80a",
+      "start_time": "2026-08-06T04:03:34.231671",
+      "end_time": "2026-08-06T04:03:34.232373",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b6d2c440",
+      "start_time": "2026-08-06T04:04:01.174849",
+      "end_time": "2026-08-06T04:04:01.175578",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1a5852ae",
+      "start_time": "2026-08-06T04:04:28.810033",
+      "end_time": "2026-08-06T04:04:28.810609",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9e1af776",
+      "start_time": "2026-08-06T04:04:55.520532",
+      "end_time": "2026-08-06T04:04:55.521082",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "592fdf07",
+      "start_time": "2026-08-06T04:05:22.382093",
+      "end_time": "2026-08-06T04:05:22.382720",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "54b7a325",
+      "start_time": "2026-08-06T04:05:48.857226",
+      "end_time": "2026-08-06T04:05:48.857948",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8a03ecab",
+      "start_time": "2026-08-06T04:06:16.293199",
+      "end_time": "2026-08-06T04:06:16.293822",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d703d93d",
+      "start_time": "2026-08-06T04:06:46.176623",
+      "end_time": "2026-08-06T04:06:46.177647",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8fb2998a",
+      "start_time": "2026-08-06T04:07:17.451734",
+      "end_time": "2026-08-06T04:07:17.452612",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "4cf84e3d",
+      "start_time": "2026-08-06T04:07:52.260249",
+      "end_time": "2026-08-06T04:07:52.260949",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "293485a8",
+      "start_time": "2026-08-06T04:08:22.228057",
+      "end_time": "2026-08-06T04:08:22.229481",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "30237e35",
+      "start_time": "2026-08-06T04:08:51.753439",
+      "end_time": "2026-08-06T04:08:51.755134",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d0045f59",
+      "start_time": "2026-08-06T04:09:21.459120",
+      "end_time": "2026-08-06T04:09:21.460640",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b728a921",
+      "start_time": "2026-08-06T04:09:50.041251",
+      "end_time": "2026-08-06T04:09:50.043140",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "c271b102",
+      "start_time": "2026-08-06T04:10:18.798350",
+      "end_time": "2026-08-06T04:10:18.798928",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3e3cd42c",
+      "start_time": "2026-08-06T04:10:50.119315",
+      "end_time": "2026-08-06T04:10:50.120199",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "2850bb9b",
+      "start_time": "2026-08-06T04:11:19.015344",
+      "end_time": "2026-08-06T04:11:19.016804",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "814ba5f7",
+      "start_time": "2026-08-06T04:11:48.937836",
+      "end_time": "2026-08-06T04:11:48.938950",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "de3e4ed8",
+      "start_time": "2026-08-06T04:12:20.401927",
+      "end_time": "2026-08-06T04:12:20.402555",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "66a863fd",
+      "start_time": "2026-08-06T04:12:48.090541",
+      "end_time": "2026-08-06T04:12:48.091188",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "616d121c",
+      "start_time": "2026-08-06T04:13:14.980863",
+      "end_time": "2026-08-06T04:13:14.981674",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "30d65ca0",
+      "start_time": "2026-08-06T04:13:41.723858",
+      "end_time": "2026-08-06T04:13:41.724815",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "489bd9f8",
+      "start_time": "2026-08-06T04:14:08.692747",
+      "end_time": "2026-08-06T04:14:08.693483",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b5c6b645",
+      "start_time": "2026-08-06T04:14:35.836655",
+      "end_time": "2026-08-06T04:14:35.837259",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "a8431d87",
+      "start_time": "2026-08-06T04:15:02.717676",
+      "end_time": "2026-08-06T04:15:02.718483",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b552c0e2",
+      "start_time": "2026-08-06T04:15:30.076312",
+      "end_time": "2026-08-06T04:15:30.077296",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f8027e1a",
+      "start_time": "2026-08-06T04:15:57.274846",
+      "end_time": "2026-08-06T04:15:57.275581",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "23861633",
+      "start_time": "2026-08-06T04:16:24.413769",
+      "end_time": "2026-08-06T04:16:24.414466",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fd51a782",
+      "start_time": "2026-08-06T04:16:51.158618",
+      "end_time": "2026-08-06T04:16:51.159219",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f8e5eaea",
+      "start_time": "2026-08-06T04:17:17.609517",
+      "end_time": "2026-08-06T04:17:17.610093",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "004b7257",
+      "start_time": "2026-08-06T04:17:44.392195",
+      "end_time": "2026-08-06T04:17:44.392850",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "c261cd4e",
+      "start_time": "2026-08-06T04:18:11.065857",
+      "end_time": "2026-08-06T04:18:11.066847",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "66566d2e",
+      "start_time": "2026-08-06T04:18:37.627746",
+      "end_time": "2026-08-06T04:18:37.628390",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "28c6b3d5",
+      "start_time": "2026-08-06T04:19:04.286098",
+      "end_time": "2026-08-06T04:19:04.286730",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f2726fdc",
+      "start_time": "2026-08-06T04:19:30.961616",
+      "end_time": "2026-08-06T04:19:30.962297",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "ff2231e8",
+      "start_time": "2026-08-06T04:19:57.667700",
+      "end_time": "2026-08-06T04:19:57.668387",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "b1397337",
+      "start_time": "2026-08-06T04:20:24.350775",
+      "end_time": "2026-08-06T04:20:24.351392",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1b5884aa",
+      "start_time": "2026-08-06T04:20:50.971654",
+      "end_time": "2026-08-06T04:20:50.972360",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "85646d44",
+      "start_time": "2026-08-06T04:21:17.699000",
+      "end_time": "2026-08-06T04:21:17.699637",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "870a63c1",
+      "start_time": "2026-08-06T04:21:44.791897",
+      "end_time": "2026-08-06T04:21:44.792711",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "4067d6b6",
+      "start_time": "2026-08-06T04:22:11.737436",
+      "end_time": "2026-08-06T04:22:11.738257",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "91ee6845",
+      "start_time": "2026-08-06T04:22:38.762780",
+      "end_time": "2026-08-06T04:22:38.763411",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d5272395",
+      "start_time": "2026-08-06T04:23:05.373777",
+      "end_time": "2026-08-06T04:23:05.374537",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f1e7f75e",
+      "start_time": "2026-08-06T04:23:32.119833",
+      "end_time": "2026-08-06T04:23:32.120396",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d006d128",
+      "start_time": "2026-08-06T04:23:58.668340",
+      "end_time": "2026-08-06T04:23:58.668856",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e469c600",
+      "start_time": "2026-08-06T04:24:25.156128",
+      "end_time": "2026-08-06T04:24:25.156645",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7ddb7136",
+      "start_time": "2026-08-06T04:24:51.784456",
+      "end_time": "2026-08-06T04:24:51.785013",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6ab33037",
+      "start_time": "2026-08-06T04:25:18.405226",
+      "end_time": "2026-08-06T04:25:18.405758",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "45aa5c5c",
+      "start_time": "2026-08-06T04:25:44.926463",
+      "end_time": "2026-08-06T04:25:44.927006",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "11533064",
+      "start_time": "2026-08-06T04:26:11.573087",
+      "end_time": "2026-08-06T04:26:11.573638",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "8739b7d4",
+      "start_time": "2026-08-06T04:26:38.046153",
+      "end_time": "2026-08-06T04:26:38.046703",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f57102f1",
+      "start_time": "2026-08-06T04:27:04.619814",
+      "end_time": "2026-08-06T04:27:04.620737",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "22cad385",
+      "start_time": "2026-08-06T04:27:31.253842",
+      "end_time": "2026-08-06T04:27:31.254365",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "5feed4b7",
+      "start_time": "2026-08-06T04:27:57.740853",
+      "end_time": "2026-08-06T04:27:57.741412",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3de37471",
+      "start_time": "2026-08-06T04:28:24.352788",
+      "end_time": "2026-08-06T04:28:24.353295",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f8c53147",
+      "start_time": "2026-08-06T04:28:50.952542",
+      "end_time": "2026-08-06T04:28:50.954984",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7c50d0d5",
+      "start_time": "2026-08-06T04:29:17.631617",
+      "end_time": "2026-08-06T04:29:17.632154",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "bb9d7df2",
+      "start_time": "2026-08-06T04:29:44.907816",
+      "end_time": "2026-08-06T04:29:44.908461",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "214f81ea",
+      "start_time": "2026-08-06T04:30:11.573280",
+      "end_time": "2026-08-06T04:30:11.573844",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d5952322",
+      "start_time": "2026-08-06T04:30:38.292285",
+      "end_time": "2026-08-06T04:30:38.292815",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1b4be61d",
+      "start_time": "2026-08-06T04:31:05.040066",
+      "end_time": "2026-08-06T04:31:05.040632",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "e10a6f86",
+      "start_time": "2026-08-06T04:31:31.725591",
+      "end_time": "2026-08-06T04:31:31.726232",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3f71449f",
+      "start_time": "2026-08-06T04:31:58.458534",
+      "end_time": "2026-08-06T04:31:58.459094",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "59890dea",
+      "start_time": "2026-08-06T04:32:25.206802",
+      "end_time": "2026-08-06T04:32:25.207376",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9ae53e16",
+      "start_time": "2026-08-06T04:32:52.156688",
+      "end_time": "2026-08-06T04:32:52.159515",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "fba1216f",
+      "start_time": "2026-08-06T04:33:20.322508",
+      "end_time": "2026-08-06T04:33:20.323359",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "6b69e2f0",
+      "start_time": "2026-08-06T04:33:47.605929",
+      "end_time": "2026-08-06T04:33:47.606859",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "1e2747a2",
+      "start_time": "2026-08-06T04:34:17.161380",
+      "end_time": "2026-08-06T04:34:17.163075",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "7a35fcb7",
+      "start_time": "2026-08-06T04:34:45.893936",
+      "end_time": "2026-08-06T04:34:45.894658",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "3e860c5a",
+      "start_time": "2026-08-06T04:35:13.235982",
+      "end_time": "2026-08-06T04:35:13.236681",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "16f50d23",
+      "start_time": "2026-08-06T04:35:40.444148",
+      "end_time": "2026-08-06T04:35:40.444768",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "f2e416eb",
+      "start_time": "2026-08-06T04:36:07.437028",
+      "end_time": "2026-08-06T04:36:07.437802",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "9ab5f8b3",
+      "start_time": "2026-08-06T04:36:34.786655",
+      "end_time": "2026-08-06T04:36:34.787165",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "26548ce0",
+      "start_time": "2026-08-06T04:37:01.523947",
+      "end_time": "2026-08-06T04:37:01.524571",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "d426c4f5",
+      "start_time": "2026-08-06T04:37:28.075156",
+      "end_time": "2026-08-06T04:37:28.075834",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    },
+    {
+      "session_id": "00aef3ed",
+      "start_time": "2026-08-06T04:37:57.171727",
+      "end_time": "2026-08-06T04:37:57.172488",
+      "memories_consolidated": 4,
+      "associations_formed": 0,
+      "strength_increase": 0.08958797346140276,
+      "sleep_cycles": 3
+    }
+  ],
+  "forgetting_curve_alpha": 0.5,
+  "consolidation_threshold": 0.7
+}

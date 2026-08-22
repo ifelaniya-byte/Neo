@@ -1,0 +1,36 @@
+{
+  "cycle": 6,
+  "online1": 6,
+  "offline_kept": 6,
+  "update": {
+    "status": "updated",
+    "holdouts": {
+      "Online-LoRA+": 0.4166666666666667,
+      "GRPO-R1": 0.6666666666666666,
+      "Tree-Filtered": 0.4166666666666667
+    },
+    "gate": {
+      "action": "hold",
+      "score": 0.5
+    },
+    "reports_n": 15
+  },
+  "stats": {
+    "cycle": 6,
+    "online1_collected": 36,
+    "offline_kept": 36,
+    "offline_dropped": 0,
+    "online2_updates": 36,
+    "promotions": 1,
+    "rollbacks": 0,
+    "holdout_scores": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "ledger_profit": 3.300000000000002
+}
