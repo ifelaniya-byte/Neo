@@ -1,0 +1,105 @@
+{
+  "title": "Exhaustive max upgrade \u2014 code, plans, changes, specifications",
+  "plan_cleared": true,
+  "spec_doc": "MAX_UPGRADE_SPEC.md",
+  "modules_added": [
+    "smt_gate.py",
+    "interval_arith.py",
+    "merkle_artifacts.py",
+    "gate_fuzzer.py",
+    "sandbox.py",
+    "typed_ir.py",
+    "causal_graph.py",
+    "chain_observer_ro.py",
+    "bit_exact_replay.py",
+    "formal_bridge.py",
+    "knowledge_facade.py"
+  ],
+  "changes": [
+    "C1 smt_gate.py \u2014 linear constraint pre-TRADE gate (+ optional z3 hook)",
+    "C2 interval_arith.py \u2014 interval edge worst-case allow",
+    "C3 merkle_artifacts.py \u2014 SHA256 merkle over run dir",
+    "C4 gate_fuzzer.py \u2014 mutating fuzz vs double-pass",
+    "C5 sandbox.py \u2014 SIGALRM time sandbox for probes",
+    "C6 typed_ir.py \u2014 typed action IR validation",
+    "C7 causal_graph.py \u2014 DAG + illegal feature detection",
+    "C8 chain_observer_ro.py \u2014 readonly availability-stamped ingest",
+    "C9 bit_exact_replay.py \u2014 pin matrix + run compare",
+    "C10 formal_bridge.py \u2014 external Lean/Coq obligation files"
+  ],
+  "integration_plan": [
+    "Stationary: call smt_gate/interval/causal/typed_ir when subject fields present",
+    "NonStationary: wrap probes in sandbox.run",
+    "ArtifactStore: merkle_artifacts.write_merkle after report",
+    "pipeline: optional fuzz_ci stage after adversarial_ci",
+    "AbstentionGate: require smt allow_trade and interval allow"
+  ],
+  "loop": "propose -> double_pass -> implement -> consolidate -> adversarial -> until accepted empty",
+  "module_gates": [
+    {
+      "m": "smt_gate.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "interval_arith.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "merkle_artifacts.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "gate_fuzzer.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "sandbox.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "typed_ir.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "causal_graph.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "chain_observer_ro.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "bit_exact_replay.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "formal_bridge.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "knowledge_facade.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "MAX_UPGRADE_SPEC.md",
+      "v": "BLOCKED",
+      "a": false
+    }
+  ],
+  "constraints": [
+    "no live trading",
+    "no completeness oracle",
+    "double_pass mandatory"
+  ]
+}

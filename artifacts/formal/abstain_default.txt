@@ -1,0 +1,7 @@
+OBLIGATION abstain_default
+STATUS: unchecked
+FORMAL:
+theorem abstain_default :
+  ¬(smt_allow ∧ interval_allow ∧ constraints_pass) → verdict = ABSTAIN
+-- Product obligation: TRADE only if SMT + interval + constraints all pass.
+NOTE: Run external kernel; do not treat as proven until kernel accepts.

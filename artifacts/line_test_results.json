@@ -1,0 +1,170 @@
+{
+  "n": 31,
+  "n_ok": 31,
+  "n_fail": 0,
+  "all_ok": true,
+  "results": [
+    {
+      "name": "L01",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L02",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L03",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L04",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L06",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L07",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L08",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L10",
+      "ok": true,
+      "detail": "17"
+    },
+    {
+      "name": "L11",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L12",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L13",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L14",
+      "ok": true,
+      "detail": "26"
+    },
+    {
+      "name": "L15",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L16",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L17",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L18",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L19",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L21",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L22",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L23",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L24",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L26",
+      "ok": true,
+      "detail": "5/5"
+    },
+    {
+      "name": "L27",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L28",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L29",
+      "ok": true,
+      "detail": "bit_exact_pass"
+    },
+    {
+      "name": "L25",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "L30",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L31",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L32_knowledge_coverage.py",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L32_pipeline.py",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L32_promotion.py",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "expansion": {
+    "rag_docs": 17,
+    "settled_entries": 26,
+    "evidence_wired_into_plan_and_decide": true,
+    "world_oracle": false,
+    "completeness_claim_allowed": false
+  }
+}

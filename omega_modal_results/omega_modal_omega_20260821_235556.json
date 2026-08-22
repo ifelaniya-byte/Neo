@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "mode": "omega",
+  "cuda_available": true,
+  "gpu_count": 1,
+  "devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "total_vram_mib": 14912
+    }
+  ],
+  "elapsed_seconds": 0.025247573852539062,
+  "omega_stdout_tail": "",
+  "omega_stderr": "python: can't open file '/root/run_kaggle_bridge.py': [Errno 2] No such file or directory\n",
+  "return_code": 2
+}

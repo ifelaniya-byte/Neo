@@ -1,0 +1,74 @@
+{
+  "feed_id": "example_feed_v1",
+  "schema_version": "1.0.0",
+  "chain_id": 42161,
+  "source": "synthetic_example",
+  "as_of": "2026-08-19",
+  "license": "CC0-1.0",
+  "events": [
+    {
+      "event_id": "feed_ex_0",
+      "entity_id": "pool_demo",
+      "event_timestamp_ms": 1700000000000,
+      "observed_timestamp_ms": 1700000000200,
+      "available_timestamp_ms": 1700000000500,
+      "event_type": "quote",
+      "chain_id": 42161,
+      "payload": {
+        "mid_usd": 100.0,
+        "bid_usd": 99.95,
+        "ask_usd": 100.05,
+        "gas_gwei": 0.05
+      },
+      "checksum": "0423144148b46e568225b989ac3ed5cf3c5a6b993da85d223795a599755fa715"
+    },
+    {
+      "event_id": "feed_ex_1",
+      "entity_id": "pool_demo",
+      "event_timestamp_ms": 1700000012000,
+      "observed_timestamp_ms": 1700000012200,
+      "available_timestamp_ms": 1700000012500,
+      "event_type": "quote",
+      "chain_id": 42161,
+      "payload": {
+        "mid_usd": 100.05,
+        "bid_usd": 100.0,
+        "ask_usd": 100.1,
+        "gas_gwei": 0.05
+      },
+      "checksum": "e48df2dd67b5bc970638ccbf7470353a82413256409064e996cb7bf9158263ea"
+    },
+    {
+      "event_id": "feed_ex_2",
+      "entity_id": "pool_demo",
+      "event_timestamp_ms": 1700000024000,
+      "observed_timestamp_ms": 1700000024200,
+      "available_timestamp_ms": 1700000024500,
+      "event_type": "quote",
+      "chain_id": 42161,
+      "payload": {
+        "mid_usd": 100.1,
+        "bid_usd": 100.05,
+        "ask_usd": 100.14999999999999,
+        "gas_gwei": 0.05
+      },
+      "checksum": "ce50b8cb2213a6da479e6e36515b76dc21b198e7cb5f17c17ebda64d08ae6b8d"
+    },
+    {
+      "event_id": "feed_ex_3",
+      "entity_id": "pool_demo",
+      "event_timestamp_ms": 1700000036000,
+      "observed_timestamp_ms": 1700000036200,
+      "available_timestamp_ms": 1700000036500,
+      "event_type": "quote",
+      "chain_id": 42161,
+      "payload": {
+        "mid_usd": 100.15,
+        "bid_usd": 100.10000000000001,
+        "ask_usd": 100.2,
+        "gas_gwei": 0.05
+      },
+      "checksum": "dea26c3ff52bed0b22458fe1336de7d441c6cf0ce2407057dbaaf8c720f9d0aa"
+    }
+  ]
+}

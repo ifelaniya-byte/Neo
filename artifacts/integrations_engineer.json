@@ -1,0 +1,18 @@
+{
+  "adapters/feed_format.py": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "llm_wrapper.py": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "ci/lab_ci.py": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "schemas/normalized_event_feed.v1.json": {
+    "verdict": "PASS",
+    "allowed": true
+  }
+}

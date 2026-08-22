@@ -1,0 +1,42 @@
+{
+  "job": "lab_ci",
+  "version": "1.0.0",
+  "timestamp": "2026-08-19T22:49:07.436825+00:00",
+  "product": "simulation_assurance",
+  "live_trading": false,
+  "checks": {
+    "adversarial": {
+      "all_ok": true,
+      "n_suite_pass": 5,
+      "n_cases": 5
+    },
+    "independent_audit": {
+      "ok": true,
+      "failed": [],
+      "double_pass": {
+        "verdict": "PASS",
+        "allowed_for_llm": true
+      },
+      "adversarial": {
+        "all_ok": true,
+        "n_suite_pass": 5,
+        "n_cases": 5
+      }
+    },
+    "overclaim_probe": {
+      "blocked": true,
+      "verdict": "BLOCKED"
+    },
+    "feed_format": {
+      "ok": true,
+      "n": 3,
+      "validation_ok": true
+    },
+    "llm_wrapper_refuse": {
+      "refused": true,
+      "detail": "subject.allowed_for_llm is False"
+    }
+  },
+  "failed": [],
+  "ok": true
+}

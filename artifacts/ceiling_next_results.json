@@ -1,0 +1,60 @@
+{
+  "step4_units": {
+    "probe": {
+      "ok": true,
+      "n_tags": 2,
+      "malformed": 0
+    },
+    "pair": {
+      "ok": true,
+      "a_m": 1.5,
+      "b_m": 2.0,
+      "ratio": 0.75
+    },
+    "stationary": "PASS",
+    "double_pass": "PASS",
+    "allowed": true
+  },
+  "step5_scale": {
+    "stationary": "PASS",
+    "double_pass": "PASS",
+    "config": {
+      "days": 5,
+      "blocks_per_day": 120,
+      "num_tokens": 6,
+      "num_pools": 10,
+      "num_venues": 4,
+      "gates": "unchanged"
+    }
+  },
+  "step6_adversarial": {
+    "all_ok": true,
+    "score": "5/5"
+  },
+  "step6_modules": [
+    {
+      "m": "unit_tags.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "knowledge_coverage.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "engineers.py",
+      "v": "PASS",
+      "a": true
+    },
+    {
+      "m": "promotion.py",
+      "v": "PASS",
+      "a": true
+    }
+  ],
+  "final_double_pass": {
+    "verdict": "PASS",
+    "allowed": true
+  }
+}

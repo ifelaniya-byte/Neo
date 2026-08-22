@@ -1,0 +1,96 @@
+{
+  "question": "What can the engineer system do that LLMs cannot, that we have not already implemented?",
+  "already_implemented_count": 25,
+  "gap_list": [
+    {
+      "id": "cap.formal_proof_kernel",
+      "title": "Machine-checked proofs (Lean/Coq/Isabelle kernel)",
+      "why_not_llm": "LLMs can sketch proofs; cannot guarantee kernel acceptance",
+      "implemented": false,
+      "feasible": "external_tooling",
+      "engineer": "PASS"
+    },
+    {
+      "id": "cap.deterministic_replay_bit_exact",
+      "title": "Bit-exact multi-run replay under pinned RNG+deps",
+      "why_not_llm": "LLMs are stochastic; no bit-exact artifact replay",
+      "implemented": "partial",
+      "feasible": "yes",
+      "engineer": "PASS"
+    },
+    {
+      "id": "cap.smt_constraint_solver",
+      "title": "SMT/SAT checks on constraint sets before decide",
+      "why_not_llm": "LLMs approximate; solvers decide satisfiability",
+      "implemented": false,
+      "feasible": "yes",
+      "engineer": "PASS"
+    },
+    {
+      "id": "cap.interval_arithmetic_bounds",
+      "title": "Interval/affine arithmetic for rigorous numeric bounds",
+      "why_not_llm": "LLMs float-handwave; intervals give enclosures",
+      "implemented": false,
+      "feasible": "yes",
+      "engineer": "PASS"
+    },
+    {
+      "id": "cap.merkle_artifact_chain",
+      "title": "Merkle/hash chain over full artifact tree per run",
+      "why_not_llm": "Cryptographic integrity not linguistic",
+      "implemented": "partial",
+      "feasible": "yes",
+      "engineer": "PASS"
+    },
+    {
+      "id": "cap.differential_fuzzing",
+      "title": "Continuous fuzzing of engineer gates with mutating inputs",
+      "why_not_llm": "Systematic mutation testing vs prompt sampling",
+      "implemented": "partial",
+      "feasible": "yes",
+      "engineer": "PASS"
+    },
+    {
+      "id": "cap.resource_sandbox_limits",
+      "title": "OS-level CPU/mem/time sandbox on non-stationary probes",
+      "why_not_llm": "Enforcement is OS/runtime, not text generation",
+      "implemented": false,
+      "feasible": "yes",
+      "engineer": "PASS"
+    },
+    {
+      "id": "cap.typed_il_ir",
+      "title": "Typed intermediate representation for actions before execution sim",
+      "why_not_llm": "Type soundness proofs vs free-form JSON",
+      "implemented": false,
+      "feasible": "yes",
+      "engineer": "PASS"
+    },
+    {
+      "id": "cap.causal_graph_identification",
+      "title": "Explicit causal graph + d-separation checks on features",
+      "why_not_llm": "Graph criteria are mechanical; LLMs confabulate causality",
+      "implemented": false,
+      "feasible": "yes",
+      "engineer": "PASS"
+    },
+    {
+      "id": "cap.live_mempool_observer_readonly",
+      "title": "Read-only chain observer with availability timestamps",
+      "why_not_llm": "Grounded external state vs parametric memory",
+      "implemented": false,
+      "feasible": "yes_readonly",
+      "engineer": "PASS"
+    }
+  ],
+  "stationary_note": "Engineers excel at fail-closed mechanical verification, provenance, and deterministic gates. LLMs excel at open-ended language and hypothesis generation. The spine uses LLMs only after gates; gaps below are non-LLM strengths not yet built.",
+  "top_unbuilt_llm_resistant": [
+    "cap.formal_proof_kernel",
+    "cap.smt_constraint_solver",
+    "cap.interval_arithmetic_bounds",
+    "cap.resource_sandbox_limits",
+    "cap.typed_il_ir",
+    "cap.causal_graph_identification",
+    "cap.live_mempool_observer_readonly"
+  ]
+}

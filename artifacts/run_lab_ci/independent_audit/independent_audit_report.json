@@ -1,0 +1,251 @@
+{
+  "auditor": "IndependentAuditor",
+  "version": "1.0.0-product",
+  "timestamp": "2026-08-19T22:49:14.253154+00:00",
+  "product": "simulation_assurance",
+  "live_trading": false,
+  "checks": {
+    "double_pass": {
+      "verdict": "PASS",
+      "allowed_for_llm": true
+    },
+    "adversarial": {
+      "all_ok": true,
+      "n_suite_pass": 5,
+      "n_cases": 5
+    },
+    "mechanical_battery": {
+      "double_pass": "PASS",
+      "smt": {
+        "sat": true,
+        "failed": [],
+        "n_constraints": 4,
+        "z3_available_attempted": false,
+        "allow_trade": true,
+        "values": {
+          "net_edge_usd": 2.0,
+          "revert_p": 0.01,
+          "inclusion_p": 0.95,
+          "ood": 0.2
+        },
+        "thresholds": {
+          "min_net_edge_usd": 1.0,
+          "max_revert_probability": 0.03,
+          "min_inclusion_probability": 0.9,
+          "ood_threshold": 0.7
+        }
+      },
+      "interval": {
+        "allow_trade": true,
+        "edge": {
+          "lo": 1,
+          "hi": 4
+        },
+        "min_edge": 1.0,
+        "worst_case": 1,
+        "best_case": 4
+      },
+      "causal": {
+        "ok": false,
+        "results": {
+          "features_t": {
+            "ok": true,
+            "reason": "allowed"
+          },
+          "outcome_t": {
+            "ok": false,
+            "reason": "banned_post_outcome"
+          }
+        }
+      },
+      "typed": {
+        "ok": true,
+        "n": 1,
+        "results": [
+          {
+            "ok": true,
+            "issues": [],
+            "action": {
+              "kind": "swap",
+              "venue": "x",
+              "token_in": "A",
+              "token_out": "B",
+              "amount_in": 1.0,
+              "max_slippage_bps": 30.0,
+              "chain_id": 42161,
+              "deadline_ms": 999
+            }
+          }
+        ]
+      },
+      "schema": {
+        "ok": true,
+        "missing": [],
+        "schema_id": "NormalizedEvent"
+      },
+      "adversarial": {
+        "n_cases": 5,
+        "n_suite_pass": 5,
+        "n_suite_fail": 0,
+        "all_ok": true,
+        "results": [
+          {
+            "id": "leak_future_feature",
+            "expect_blocked": true,
+            "got_blocked": true,
+            "verdict": "BLOCKED",
+            "suite_ok": true,
+            "reason": "available < observed"
+          },
+          {
+            "id": "net_pnl_mismatch",
+            "expect_blocked": true,
+            "got_blocked": true,
+            "verdict": "BLOCKED",
+            "suite_ok": true,
+            "reason": "net_pnl identity broken"
+          },
+          {
+            "id": "nan_payload",
+            "expect_blocked": true,
+            "got_blocked": true,
+            "verdict": "BLOCKED",
+            "suite_ok": true,
+            "reason": "NaN not allowed"
+          },
+          {
+            "id": "completeness_overclaim",
+            "expect_blocked": true,
+            "got_blocked": true,
+            "verdict": "BLOCKED",
+            "suite_ok": true,
+            "reason": "completeness overclaim"
+          },
+          {
+            "id": "clean_event",
+            "expect_blocked": false,
+            "got_blocked": false,
+            "verdict": "PASS",
+            "suite_ok": true,
+            "reason": "valid causality"
+          }
+        ]
+      },
+      "knowledge": {
+        "n_settled": 26,
+        "n_formulas": 19,
+        "n_domains": 10,
+        "n_languages": 17,
+        "n_constants": 16,
+        "n_rag_docs": 17,
+        "n_open_problems": 12,
+        "completeness_claim_allowed": false
+      }
+    },
+    "formal_subset": {
+      "ok": true,
+      "path": "artifacts/run_lab_ci/independent_audit/formal/audit_net_pnl_identity.txt",
+      "proven": false,
+      "kernels": {
+        "lean": false,
+        "coqc": false,
+        "isabelle": false
+      },
+      "note": "unchecked until external kernel accepts",
+      "lean_attempt": {
+        "ok": false,
+        "proven": false,
+        "reason": "lean_not_installed"
+      }
+    },
+    "kernels_available": {
+      "lean": false,
+      "coqc": false,
+      "isabelle": false
+    },
+    "bit_exact_self": {
+      "ok": true,
+      "artifact_compare": {
+        "ok": true,
+        "n_compared": 4,
+        "diffs": [],
+        "pin_matrix_a": {
+          "python": "3.12.3",
+          "platform": "linux",
+          "machine": "x86_64",
+          "implementation": "CPython",
+          "hash_seed": "unset",
+          "hash_seed_note": "PYTHONHASHSEED=0 recommended for stable hashing",
+          "timezone": "UTC"
+        },
+        "run_a": "artifacts/run_lab_ci/independent_audit",
+        "run_b": "artifacts/run_lab_ci/independent_audit"
+      },
+      "pin_matrix": {
+        "present_a": true,
+        "present_b": true,
+        "match": true,
+        "a": {
+          "python": "3.12.3",
+          "platform": "linux",
+          "machine": "x86_64",
+          "hash_seed": "unset"
+        },
+        "b": {
+          "python": "3.12.3",
+          "platform": "linux",
+          "machine": "x86_64",
+          "hash_seed": "unset"
+        }
+      },
+      "proof": "bit_exact_pass",
+      "note": "Set PYTHONHASHSEED=0 and same deps for cross-machine proofs"
+    },
+    "merkle": {
+      "merkle_root": "6f5caa71d9c94269496fd6d73c0aeb85ce41eddadd0a66d44aaa1b254b7cc97d",
+      "n_files": 7,
+      "leaves": [
+        {
+          "path": "audit_engineer_ledger.jsonl",
+          "sha256": "46ee0b8a89dfa3c44bbbe4231f24cebb306829a03aee981d1fc4e418dc3bb058"
+        },
+        {
+          "path": "formal/audit_net_pnl_identity.txt",
+          "sha256": "23e419a722b6b67fb4b2fb48b26c48360d9ee35c46eb7354b993d83cabe586a3"
+        },
+        {
+          "path": "hashes/pin_matrix.json",
+          "sha256": "1b061e73cfcce02afa8ba0d6a43539af172900c5592495a90b9785f3d687ec42"
+        },
+        {
+          "path": "hashes/run_hashes.json",
+          "sha256": "692fded02c7c5327b667b5eb1fff1465e66116f99e0132f7a20b5d9422c977b5"
+        },
+        {
+          "path": "independent_audit_report.json",
+          "sha256": "c00273b6097d5adc92365f66a18c9d19113fcaeb398209a169ff4ec4c5f4402e"
+        },
+        {
+          "path": "reports/run_summary.json",
+          "sha256": "2f07c2dabf08f243a8a719b82b9b816433bcbfcd3429f7e33523f0d783c9cc3f"
+        },
+        {
+          "path": "signed_audit_ledger.jsonl",
+          "sha256": "704f57a47b10f72da4b22486fc719351be413f9108ce54ce7b67e32eaec2e0db"
+        }
+      ]
+    },
+    "signed_ledger": {
+      "entry_id": "569697872abc46fe",
+      "algorithm": "Ed25519+HMAC-SHA256",
+      "verify": {
+        "ok": true,
+        "n": 2,
+        "failures": []
+      }
+    }
+  },
+  "ok": true,
+  "failed": [],
+  "product_claim": "Paper-only simulation assurance under double-pass engineers. No live trading. Finite settled knowledge only."
+}

@@ -1,0 +1,14 @@
+{
+  "battery_adversarial_ok": true,
+  "battery_dp": "PASS",
+  "knowledge": {
+    "n_settled": 21,
+    "n_formulas": 19,
+    "n_domains": 10,
+    "n_languages": 17,
+    "n_constants": 16,
+    "n_rag_docs": 13,
+    "n_open_problems": 12,
+    "completeness_claim_allowed": false
+  }
+}

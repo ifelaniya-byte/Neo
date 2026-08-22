@@ -1,0 +1,79 @@
+{
+  "accepted": [
+    {
+      "id": "consol.unified_knowledge_facade",
+      "title": "Single knowledge facade over atlas+kskb+constants+rag+coverage",
+      "type": "consolidation",
+      "risk": "low",
+      "statement": "Merge query APIs into knowledge_facade.py without claiming completeness",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "id": "consol.engineer_check_registry",
+      "title": "Explicit ordered check registry for Stationary",
+      "type": "consolidation",
+      "risk": "low",
+      "statement": "Centralize check names and enable/disable flags",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "id": "upgrade.persist_kskb_on_init",
+      "title": "Load known_settled_export.json on DB init",
+      "type": "mutation",
+      "risk": "low",
+      "statement": "Persist promoted entries across processes",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "id": "upgrade.pipeline_knowledge_stage",
+      "title": "Optional pipeline stage knowledge_report",
+      "type": "evolution",
+      "risk": "low",
+      "statement": "Emit coverage report artifact each run",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "id": "upgrade.unit_tags_in_stationary",
+      "title": "Call unit_tags.stationary_unit_probe when unit_tags present",
+      "type": "evolution",
+      "risk": "low",
+      "statement": "Wire unit probe into stationary path",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "id": "consol.merge_ledgers_index_default",
+      "title": "ledger_index default root always artifacts",
+      "type": "consolidation",
+      "risk": "low",
+      "statement": "No behavior change beyond defaults already present",
+      "verdict": "PASS",
+      "allowed": true
+    },
+    {
+      "id": "upgrade.requirements_pin",
+      "title": "Refresh requirements.txt with optional sympy note",
+      "type": "evolution",
+      "risk": "low",
+      "statement": "Document optional deps",
+      "verdict": "PASS",
+      "allowed": true
+    }
+  ],
+  "rejected": [
+    {
+      "id": "reject.complete_oracle",
+      "title": "Become complete physics oracle",
+      "type": "mutation",
+      "risk": "critical",
+      "statement": "complete conclusive world physics theory of everything",
+      "claim": "complete conclusive world physics theory of everything",
+      "verdict": "BLOCKED",
+      "allowed": false
+    }
+  ]
+}

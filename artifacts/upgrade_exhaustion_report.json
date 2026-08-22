@@ -1,0 +1,31 @@
+{
+  "cycle2": {
+    "accepted": [],
+    "rejected": [
+      "reject.drop_double_pass",
+      "reject.live_trade"
+    ],
+    "noop": [
+      "dup.facade_again",
+      "upgrade.already_have_parallel",
+      "noop.done_unit_tags"
+    ]
+  },
+  "facade_stats": {
+    "n_settled": 21,
+    "n_formulas": 19,
+    "n_domains": 10,
+    "n_languages": 17,
+    "n_constants": 16,
+    "n_rag_docs": 13,
+    "n_open_problems": 12,
+    "completeness_claim_allowed": false
+  },
+  "adversarial": {
+    "ok": true,
+    "score": "5/5"
+  },
+  "consolidated_verdict": "PASS",
+  "exhaustion": "no further accepted structural upgrades under constraints",
+  "enabled_check_count": 19
+}

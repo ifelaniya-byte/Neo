@@ -1,0 +1,152 @@
+{
+  "question": "How can the engineers make a world oracle and incorporate it into the program and pipeline?",
+  "request_pass": {
+    "verdict": "PASS",
+    "allowed_for_llm": true
+  },
+  "overclaim_results": [
+    {
+      "claim": "Build a world oracle that knows everything and guarantees correct answers.",
+      "verdict": "PASS",
+      "allowed_for_llm": true,
+      "fails": []
+    },
+    {
+      "claim": "Incorporate a complete conclusive world physics catalogue as an oracle stage.",
+      "verdict": "BLOCKED",
+      "allowed_for_llm": false,
+      "fails": [
+        {
+          "pass": "stationary_pass_1",
+          "name": "atlas.claim_gate",
+          "detail": "{'claim': 'Incorporate a complete conclusive world physics catalogue as an oracle stage.', 'overreach': ['claims completeness or solved open fundamental problems'], 'ok_for_atlas_support': False, 'rel"
+        },
+        {
+          "pass": "stationary_pass_1",
+          "name": "settled_db.no_completeness_overclaim",
+          "detail": "{'ok': False, 'rejected_phrases': ['conclusive world'], 'note': 'KSKB is finite settled entries only; completeness claims are out of scope'}"
+        },
+        {
+          "pass": "stationary_pass_2",
+          "name": "atlas.claim_gate",
+          "detail": "{'claim': 'Incorporate a complete conclusive world physics catalogue as an oracle stage.', 'overreach': ['claims completeness or solved open fundamental problems'], 'ok_for_atlas_support': False, 'rel"
+        },
+        {
+          "pass": "stationary_pass_2",
+          "name": "settled_db.no_completeness_overclaim",
+          "detail": "{'ok': False, 'rejected_phrases': ['conclusive world'], 'note': 'KSKB is finite settled entries only; completeness claims are out of scope'}"
+        }
+      ]
+    },
+    {
+      "claim": "Replace abstention with a world oracle that always decides TRADE correctly.",
+      "verdict": "PASS",
+      "allowed_for_llm": true,
+      "fails": []
+    },
+    {
+      "claim": "Theory of everything oracle wired into plan_and_decide.",
+      "verdict": "BLOCKED",
+      "allowed_for_llm": false,
+      "fails": [
+        {
+          "pass": "stationary_pass_1",
+          "name": "atlas.claim_gate",
+          "detail": "{'claim': 'Theory of everything oracle wired into plan_and_decide.', 'overreach': ['claims completeness or solved open fundamental problems'], 'ok_for_atlas_support': False, 'related_hits': [{'type': "
+        },
+        {
+          "pass": "stationary_pass_1",
+          "name": "settled_db.no_completeness_overclaim",
+          "detail": "{'ok': False, 'rejected_phrases': ['theory of everything'], 'note': 'KSKB is finite settled entries only; completeness claims are out of scope'}"
+        },
+        {
+          "pass": "stationary_pass_2",
+          "name": "atlas.claim_gate",
+          "detail": "{'claim': 'Theory of everything oracle wired into plan_and_decide.', 'overreach': ['claims completeness or solved open fundamental problems'], 'ok_for_atlas_support': False, 'related_hits': [{'type': "
+        },
+        {
+          "pass": "stationary_pass_2",
+          "name": "settled_db.no_completeness_overclaim",
+          "detail": "{'ok': False, 'rejected_phrases': ['theory of everything'], 'note': 'KSKB is finite settled entries only; completeness claims are out of scope'}"
+        }
+      ]
+    }
+  ],
+  "next_best_pass": {
+    "verdict": "PASS",
+    "allowed_for_llm": true,
+    "plan": {
+      "name": "KnowledgeCoverageMaximizer + KSKB + atlas + settled gates",
+      "not_a_world_oracle": true,
+      "what_it_does": [
+        "finite settled facts only",
+        "OPEN problems marked explicitly",
+        "best-effort evidence packs with provenance",
+        "completeness claims still blocked",
+        "abstention retained when unsafe"
+      ],
+      "pipeline_slot": "knowledge_report / plan_and_decide evidence attach \u2014 never replace AbstentionGate",
+      "engineer_rule": "promote only offline after double-pass + human_confirm"
+    }
+  },
+  "proposals_accepted": [
+    {
+      "id": "P2",
+      "text": "Expand KSKB via promotion + RAG digests only",
+      "engineer_verdict": "PASS",
+      "allowed": true,
+      "intended_safe": true
+    },
+    {
+      "id": "P4",
+      "text": "Wire KnowledgeCoverageMaximizer into plan_and_decide as evidence, not authority",
+      "engineer_verdict": "PASS",
+      "allowed": true,
+      "intended_safe": true
+    },
+    {
+      "id": "P5",
+      "text": "External literature digests with as-of dates into rag_settled",
+      "engineer_verdict": "PASS",
+      "allowed": true,
+      "intended_safe": true
+    }
+  ],
+  "proposals_rejected": [
+    {
+      "id": "P1",
+      "text": "Install a world oracle stage that claims complete knowledge",
+      "engineer_verdict": "PASS",
+      "allowed": true,
+      "intended_safe": false,
+      "claim_verdict": "PASS",
+      "claim_allowed": true
+    },
+    {
+      "id": "P3",
+      "text": "Remove abstention when oracle confidence is high",
+      "engineer_verdict": "PASS",
+      "allowed": true,
+      "intended_safe": false,
+      "claim_verdict": "PASS",
+      "claim_allowed": true
+    },
+    {
+      "id": "P6",
+      "text": "Claim TOE solved and encode as pipeline constant",
+      "engineer_verdict": "PASS",
+      "allowed": true,
+      "intended_safe": false,
+      "claim_verdict": "PASS",
+      "claim_allowed": true
+    }
+  ],
+  "stationary_principle": "Engineers may expand finite, provenance-backed knowledge under double-pass. They must not install a world oracle, complete-physics catalogue, or remove abstention.",
+  "incorporation_allowed": {
+    "world_oracle_stage": false,
+    "knowledge_coverage_evidence": true,
+    "kskb_promotion_offline": true,
+    "rag_settled_digests": true,
+    "replace_abstention_gate": false
+  }
+}

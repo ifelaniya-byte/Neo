@@ -1,0 +1,23 @@
+{
+  "status": "failed",
+  "cuda_available": true,
+  "gpu_count": 2,
+  "devices": [
+    {
+      "index": 0,
+      "name": "NVIDIA A10",
+      "total_vram_mib": 22587
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA A10",
+      "total_vram_mib": 22587
+    }
+  ],
+  "elapsed_seconds": 13.478168964385986,
+  "stdout_tail": "Detected GPUs: 2\nIteration 1 (Scale: 1x)\n  -> Time: 1.5285s | SRO: 131,694,260/sec\nIteration 2 (Scale: 2x)\n  -> Time: 2.6818s | SRO: 300,621,175/sec\nIteration 3 (Scale: 4x)\n  -> Time: 5.3689s | SRO: 600,472,566/sec\nHALTING BOUNDARY TRIGGERED.\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/root/kaggle_omega_payload/omega_dual_gpu.py\", line 252, in <module>\n    df.to_csv(\n    ~~~~~~~~~^\n        \"/kaggle/working/omega_ledger.csv\",\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        index=False\n        ^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.14/site-packages/pandas/core/generic.py\", line 3976, in to_csv\n    return DataFrameRenderer(formatter).to_csv(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        path_or_buf,\n        ^^^^^^^^^^^^\n    ...<14 lines>...\n        storage_options=storage_options,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.14/site-packages/pandas/io/formats/format.py\", line 1025, in to_csv\n    csv_formatter.save()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/local/lib/python3.14/site-packages/pandas/io/formats/csvs.py\", line 251, in save\n    with get_handle(\n         ~~~~~~~~~~^\n        self.filepath_or_buffer,\n        ^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n        storage_options=self.storage_options,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ) as handles:\n    ^\n  File \"/usr/local/lib/python3.14/site-packages/pandas/io/common.py\", line 797, in get_handle\n    check_parent_directory(str(handle))\n    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.14/site-packages/pandas/io/common.py\", line 656, in check_parent_directory\n    raise OSError(rf\"Cannot save file into a non-existent directory: '{parent}'\")\nOSError: Cannot save file into a non-existent directory: '/kaggle/working'\n",
+  "return_code": 1,
+  "target_max_scale": 16,
+  "target_script": "kaggle_omega_payload/omega_dual_gpu.py"
+}

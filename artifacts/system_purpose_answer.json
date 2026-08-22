@@ -1,0 +1,67 @@
+{
+  "engineer_gate": {
+    "stationary": "PASS",
+    "double_pass": "PASS",
+    "allowed": true
+  },
+  "purpose": {
+    "primary": "Paper-only, time-causal DeFi / market research harness: generate or ingest events, build decision packets, label outcomes with full cost stack, walk-forward split, fit conservative baselines, plan with ABSTAIN-by-default, audit, and report \u2014 without live trading or silent online weight updates.",
+    "control_plane": "Stationary + NonStationary engineers run a mandatory double-pass on data and code before anything is cleared for LLM interpretation or further promotion.",
+    "knowledge_plane": "Finite settled facts, physics/math atlas (with OPEN gaps), constants, RAG digests, and coverage maximizer \u2014 for verification support, not a complete world oracle."
+  },
+  "does": [
+    "Synthetic market event generation (or adapters for real normalized events)",
+    "Time-causal feature / packet construction",
+    "Outcome labeling with net-PnL identity checks",
+    "Walk-forward splits",
+    "Empirical baseline + abstention gate (prefer ABSTAIN)",
+    "Double-pass verification (schema, causality, accounting, claims, etc.)",
+    "Adversarial / fuzz regression of the gates",
+    "Audits, reports, ledgers, optional merkle / knowledge report",
+    "Offline promotion of human-confirmed settled facts"
+  ],
+  "does_not": [
+    "Live trading or transaction signing",
+    "Guaranteed alpha / profitable strategy",
+    "Complete physics or all human knowledge",
+    "Unsupervised online model weight updates mid-replay"
+  ],
+  "hooks_up_with": {
+    "inputs": [
+      "SyntheticConfig / SyntheticMarketGenerator (built-in)",
+      "Normalized event streams (parquet/JSONL) via ingest adapters if provided",
+      "Schema registry (events/packets/labels)",
+      "Policy JSON (calibration thresholds)",
+      "Optional read-only chain observer (disabled live RPC by default)"
+    ],
+    "internal": [
+      "megacompact16.core \u2014 AMM, quote/execution/cost/outcome engines, baseline, audits",
+      "engineers \u2014 Stationary / NonStationary / DoublePassGate",
+      "UAIR \u2014 normalize/classify/route/execute/verify style runtime (research)",
+      "knowledge_facade \u2014 atlas + KSKB + constants + rag + coverage",
+      "smt_gate / interval_arith / typed_ir / causal_graph \u2014 pre-TRADE mechanical checks",
+      "promotion + ledgers \u2014 offline knowledge growth and provenance"
+    ],
+    "outputs": [
+      "artifacts/run_*/ data, splits, audits, reports, verification ledgers",
+      "LLM-cleared subjects only when allowed_for_llm=True",
+      "CLI / monolith distribution entrypoints"
+    ],
+    "optional_external": [
+      "SymPy / Z3 if installed (stronger math/SMT)",
+      "Lean/Coq via formal_bridge (unchecked until kernel accepts)",
+      "scikit-learn / FAISS / FastAPI if present (core degrades gracefully without them)"
+    ]
+  },
+  "knowledge_stats": {
+    "n_settled": 21,
+    "n_formulas": 19,
+    "n_domains": 10,
+    "n_languages": 17,
+    "n_constants": 16,
+    "n_rag_docs": 13,
+    "n_open_problems": 12,
+    "completeness_claim_allowed": false
+  },
+  "one_sentence": "It is a fail-closed research pipeline that turns market-like data into audited, time-causal decision experiments and only then may hand cleared artifacts to an LLM \u2014 hooked to local artifacts, optional readonly data feeds, and mechanical verifiers, not to live trading."
+}

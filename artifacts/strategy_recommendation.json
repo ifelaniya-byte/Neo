@@ -1,0 +1,62 @@
+{
+  "question": "Combine 2-script with full, keep separate, fix condensed manageability, or work speed on full?",
+  "options_engineer": {
+    "OPT_COMBINE": {
+      "label": "Combine 2-script condensed with full integrations into one hybrid deliverable",
+      "verdict": "PASS",
+      "allowed": true,
+      "maintainability": "weak unless combine means full tree + generated artifacts only"
+    },
+    "OPT_SEPARATE": {
+      "label": "Keep 2-script and full strictly separate",
+      "verdict": "PASS",
+      "allowed": true,
+      "maintainability": "good if full is source of truth and condensed is rebuilt"
+    },
+    "OPT_FIX_CONDENSED_A": {
+      "label": "Start from Fix A: full remains editable; condensed is build-only artifact",
+      "verdict": "PASS",
+      "allowed": true,
+      "maintainability": "strong"
+    },
+    "OPT_FIX_CONDENSED_B": {
+      "label": "Start from Fix B: reorganize into editable spine package + optional export",
+      "verdict": "PASS",
+      "allowed": true,
+      "maintainability": "strong"
+    },
+    "OPT_SPEED_FULL": {
+      "label": "Prioritize speed and other product work on full package only",
+      "verdict": "PASS",
+      "allowed": true,
+      "maintainability": "good for full; condensed debt remains if still primary"
+    }
+  },
+  "recommendation": {
+    "primary": "OPT_SEPARATE + OPT_FIX_CONDENSED_A",
+    "secondary": "OPT_SPEED_FULL",
+    "defer": "OPT_FIX_CONDENSED_B until after generator stabilizes",
+    "avoid_as_stated": "OPT_COMBINE without generated-only rule",
+    "rationale": [
+      "Full integrations is the maintainable source of truth (product, CI, schemas, pipeline).",
+      "Condensed 2-script is a distribution form \u2014 must not be the edit surface (Fix A).",
+      "Keeping them separate in role avoids confusing 'which file do I change?'",
+      "Combining is OK only as: one zip = full tree + generated condensed artifacts (not hand-merged code).",
+      "Speed work belongs on full (where adversarial was ~2x slower); gains then flow into regenerated condensed.",
+      "Fix B is valid later for packaging polish; not required to unblock maintainability."
+    ],
+    "order_of_work": [
+      "1. Declare full package canonical; condensed = build output only (Fix A policy)",
+      "2. Keep deliverables separate in role (or one zip with both, generated spine clearly marked GENERATED)",
+      "3. Invest speed/audit/CI improvements on full",
+      "4. Optional later: Fix B spine package layout"
+    ],
+    "not_a_world_oracle": true,
+    "no_live_trading": true,
+    "implementation": "recommendation only \u2014 not implemented"
+  },
+  "recommendation_verdict": {
+    "verdict": "PASS",
+    "allowed_for_llm": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_id": "OutcomeLabel",
+  "version": "1.0",
+  "required": [
+    "decision_id",
+    "action_id",
+    "net_pnl_usd",
+    "realized_output_usd",
+    "outcome_timestamp_ms",
+    "reverted"
+  ],
+  "properties": {
+    "decision_id": {"type": "string"},
+    "action_id": {"type": "string"},
+    "net_pnl_usd": {"type": "number"},
+    "realized_output_usd": {"type": "number"},
+    "input_cost_usd": {"type": "number"},
+    "gas_usd": {"type": "number"},
+    "protocol_fees_usd": {"type": "number"},
+    "borrow_fees_usd": {"type": "number"},
+    "bridge_fees_usd": {"type": "number"},
+    "slippage_cost_usd": {"type": "number"},
+    "revert_cost_usd": {"type": "number"},
+    "other_costs_usd": {"type": "number"},
+    "outcome_timestamp_ms": {"type": "integer"},
+    "reverted": {"type": "boolean"}
+  },
+  "rules": [
+    "net_pnl_usd ≈ realized_output_usd - sum(all cost fields) within tolerance"
+  ]
+}

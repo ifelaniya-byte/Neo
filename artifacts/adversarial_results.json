@@ -1,0 +1,48 @@
+{
+  "n_cases": 5,
+  "n_suite_pass": 5,
+  "n_suite_fail": 0,
+  "all_ok": true,
+  "results": [
+    {
+      "id": "leak_future_feature",
+      "expect_blocked": true,
+      "got_blocked": true,
+      "verdict": "BLOCKED",
+      "suite_ok": true,
+      "reason": "available < observed"
+    },
+    {
+      "id": "net_pnl_mismatch",
+      "expect_blocked": true,
+      "got_blocked": true,
+      "verdict": "BLOCKED",
+      "suite_ok": true,
+      "reason": "net_pnl identity broken"
+    },
+    {
+      "id": "nan_payload",
+      "expect_blocked": true,
+      "got_blocked": true,
+      "verdict": "BLOCKED",
+      "suite_ok": true,
+      "reason": "NaN not allowed"
+    },
+    {
+      "id": "completeness_overclaim",
+      "expect_blocked": true,
+      "got_blocked": true,
+      "verdict": "BLOCKED",
+      "suite_ok": true,
+      "reason": "completeness overclaim"
+    },
+    {
+      "id": "clean_event",
+      "expect_blocked": false,
+      "got_blocked": false,
+      "verdict": "PASS",
+      "suite_ok": true,
+      "reason": "valid causality"
+    }
+  ]
+}

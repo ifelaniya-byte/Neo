@@ -1,0 +1,51 @@
+{
+  "question": "How to fix hard-to-edit condensed distribution \u2014 two different fixes, no implementation",
+  "problem_verdict": {
+    "verdict": "PASS",
+    "allowed_for_llm": true
+  },
+  "fix_a": {
+    "id": "FIX_A_build_artifact",
+    "title": "Canonical multi-file package + automated condense as build step",
+    "summary": "Keep multi-file tree as the only place humans edit. Treat megacompact_condensed_spine.py / engine.py as generated artifacts from build_condense.py (like the existing build_monolith.py pattern). CI runs condense + adversarial + import smoke; never hand-edit the giants.",
+    "edit_surface": "multi-file modules only",
+    "distribution": "generated 1\u20132 scripts optional",
+    "risks": [
+      "build drift if CI skipped",
+      "generator complexity"
+    ],
+    "engineer_alignment": "preserves gates; improves provenance of distribution form",
+    "not_a_world_oracle": true,
+    "engineer_verdict": "PASS",
+    "allowed_for_llm": true
+  },
+  "fix_b": {
+    "id": "FIX_B_hybrid_spine_package",
+    "title": "Editable spine package (megacompact_spine/) + optional one-file export",
+    "summary": "Reorganize pure-stdlib modules into a small installable package megacompact_spine/ with normal files (engineers, knowledge, smt, \u2026). Humans edit the package. A thin export script can still emit one file for air-gapped drop, but day-to-day work is modular. Engine stays megacompact16 + pipeline as today (or a second package).",
+    "edit_surface": "megacompact_spine/*.py modules + megacompact16/pipeline",
+    "distribution": "pip-installable package primary; one-file export optional",
+    "risks": [
+      "packaging overhead",
+      "two mental models if export still used for edits"
+    ],
+    "engineer_alignment": "same gates; clearer ownership boundaries",
+    "not_a_world_oracle": true,
+    "engineer_verdict": "PASS",
+    "allowed_for_llm": true
+  },
+  "rejected": [
+    {
+      "id": "REJECT_hand_edit_giants",
+      "text": "Make the 6k-line condensed file the primary edit target",
+      "why": "recreates maintainability failure; giant diffs; collision risk"
+    },
+    {
+      "id": "REJECT_drop_double_pass",
+      "text": "Simplify by removing double-pass to make files smaller",
+      "why": "safety spine non-negotiable"
+    }
+  ],
+  "stationary_principle": "Distribution forms may be generated; humans should edit modular, double-pass-gated source. Do not implement either fix in this step.",
+  "implementation_status": "NOT_IMPLEMENTED_BY_REQUEST"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "mode": "omega",
+  "cuda_available": true,
+  "gpu_count": 1,
+  "devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "total_vram_mib": 14912
+    }
+  ],
+  "elapsed_seconds": 35.88292479515076,
+  "omega_stdout_tail": "================================================================================\n  INITIATING KAGGLE BRIDGE CONTROLLER (V15 - QUOTA-AWARE ROBUST CONTROLLER)\n================================================================================\n[+] Kaggle access token found.\n[+] Targeting Kaggle account: deemmany\n[+] Kernel ID: deemmany/omega-engine-dual-gpu-maximizer-20260822-002615\n[+] Kernel title: Omega Engine Dual Gpu Maximizer 20260822 002615\n[+] Kaggle CLI detected: Kaggle CLI 2.2.4\n\n[*] Phase 1: Building Cloud Payload...\n[+] Payload built successfully.\n    Metadata: kaggle_omega_payload/kernel-metadata.json\n    Script:   kaggle_omega_payload/omega_dual_gpu.py\n\n[*] Phase 2: Pushing to Kaggle via CLI...\n[+] Kaggle push command completed successfully.\n[+] Resolved actual kernel slug: deemmany/omega-engine-dual-gpu-maximizer-20260822-002615\n\n[+] Cloud execution submission confirmed.\n\n[*] Phase 3: Polling for cloud completion...\n    This may take several minutes.\n    -> Cloud Status: deemmany/omega-engine-dual-gpu-maximizer-20260822-002615 has status \"KernelWorkerStatus.QUEUED\"\n    -> Cloud Status: deemmany/omega-engine-dual-gpu-maximizer-20260822-002615 has status \"KernelWorkerStatus.RUNNING\"\n    -> Cloud Status: deemmany/omega-engine-dual-gpu-maximizer-20260822-002615 has status \"KernelWorkerStatus.COMPLETE\"\n\n[*] Phase 4: Extracting results...\n[+] SUCCESS: Ledger extracted to kaggle_extracted_ledgers/omega_ledger.csv\n\n================================================================================\n  CLOUD LEDGER RETRIEVED\n================================================================================\n\n",
+  "omega_stderr": "",
+  "return_code": 0,
+  "kaggle_setup": "SUCCESS: Token written AND target script path patched.",
+  "debug_token_preview": "KGAT_2c0c1***",
+  "patch_applied": true
+}

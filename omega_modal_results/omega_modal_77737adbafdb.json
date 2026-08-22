@@ -1,0 +1,49 @@
+{
+  "run_id": "77737adbafdb",
+  "timestamp_utc": "2026-08-21T23:52:41.595363+00:00",
+  "bridge_version": "1.0.0",
+  "local_elapsed_seconds": 13.3969,
+  "requested_gpu": "T4",
+  "local_system": {
+    "timestamp_utc": "2026-08-21T23:52:41.595406+00:00",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\AIAli\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "hostname": "AI",
+    "pid": 12904
+  },
+  "remote_result": {
+    "status": "passed",
+    "mode": "benchmark",
+    "cuda_available": true,
+    "gpu_count": 1,
+    "devices": [
+      {
+        "index": 0,
+        "name": "Tesla T4",
+        "total_vram_mib": 14912,
+        "multiprocessor_count": 40,
+        "compute_capability": "7.5"
+      }
+    ],
+    "gpu_results": [
+      {
+        "gpu_index": 0,
+        "name": "Tesla T4",
+        "matrix_size": 2048,
+        "iterations": 3,
+        "compute_seconds": 0.033886,
+        "approx_tflops": 1.521,
+        "checksum": -264.23856353759766,
+        "free_vram_before_mib": 14807,
+        "free_vram_after_mib": 14711,
+        "total_vram_mib": 14912,
+        "allocation_mib": 0
+      }
+    ],
+    "pytorch_version": "2.13.0+cu130",
+    "cuda_version": "13.0",
+    "nvidia_smi": "0, Tesla T4, 15360 MiB, 14910 MiB",
+    "elapsed_seconds": 0.5844
+  }
+}

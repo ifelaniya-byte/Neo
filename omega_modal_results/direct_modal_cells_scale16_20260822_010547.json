@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "cuda_available": true,
+  "gpu_count": 2,
+  "devices": [
+    {
+      "index": 0,
+      "name": "NVIDIA A10",
+      "total_vram_mib": 22587
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA A10",
+      "total_vram_mib": 22587
+    }
+  ],
+  "elapsed_seconds": 14.605056285858154,
+  "stdout_tail": "Detected GPUs: 2\nIteration 1 (Scale: 1x)\n  -> Time: 1.5736s | SRO: 127,466,694/sec\nIteration 2 (Scale: 2x)\n  -> Time: 2.9920s | SRO: 268,016,200/sec\nIteration 3 (Scale: 4x)\n  -> Time: 6.1229s | SRO: 523,845,638/sec\nHALTING BOUNDARY TRIGGERED.\nLEDGER SAVED TO CLOUD.\n",
+  "stderr": "",
+  "return_code": 0,
+  "target_max_scale": 16,
+  "patch_applied": true
+}

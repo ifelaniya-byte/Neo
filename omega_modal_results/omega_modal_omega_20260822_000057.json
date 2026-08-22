@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "mode": "omega",
+  "cuda_available": true,
+  "gpu_count": 1,
+  "devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "total_vram_mib": 14912
+    }
+  ],
+  "elapsed_seconds": 0.0843954086303711,
+  "omega_stdout_tail": "================================================================================\n  INITIATING KAGGLE BRIDGE CONTROLLER (V15 - QUOTA-AWARE ROBUST CONTROLLER)\n================================================================================\n\n[!] FATAL: Kaggle access token not found at:\n    ~\\.kaggle\\access_token\n",
+  "omega_stderr": "",
+  "return_code": 0,
+  "root_directory_listing": "_interface_v3.py\n-rw-r--r-- 1 root root  11519 Jan  1  1970 run_translator_interface_v4.py\n-rw-r--r-- 1 root root  12557 Jan  1  1970 run_translator_interface_v5.py\n-rw-r--r-- 1 root root  12318 Jan  1  1970 run_translator_interface_v6.py\n-rw-r--r-- 1 root root  12351 Jan  1  1970 run_translator_interface_v7.py\n-rw-r--r-- 1 root root  12885 Jan  1  1970 run_translator_interface_v8.py\n-rw-r--r-- 1 root root  13436 Jan  1  1970 run_translator_interface_v9.py\n-rw-r--r-- 1 root root   9952 Jan  1  1970 run_triphas_discovery.py\n-rw-r--r-- 1 root root  10358 Jan  1  1970 run_turing_omega_gauntlet.py\n-rw-r--r-- 1 root root  10347 Jan  1  1970 run_ultimate_synthesis.py\n-rw-r--r-- 1 root root   7485 Jan  1  1970 run_universal_expansion.py\n-rw-r--r-- 1 root root   5707 Jan  1  1970 run_upgrade_loop.py\n-rw-r--r-- 1 root root   1415 Jan  1  1970 sandbox.py\ndrwxr-xr-x 1 root root   4096 Jan  1  1970 schema_registry\ndrwxr-xr-x 1 root root   4096 Jan  1  1970 schemas\n-rw-r--r-- 1 root root  16015 Jan  1  1970 self_revamp_engineer.py\n-rw-r--r-- 1 root root   8431 Jan  1  1970 signed_ledger.py\n-rw-r--r-- 1 root root   2593 Jan  1  1970 smt_gate.py\n-rw-r--r-- 1 root root   6368 Jan  1  1970 test_coverage_evidence_line.py\n-rw-r--r-- 1 root root   2001 Jan  1  1970 test_semantic_governor.py\ndrwxr-xr-x 1 root root   4096 Jan  1  1970 tools\n-rw-r--r-- 1 root root   1769 Jan  1  1970 typed_ir.py\ndrwxr-xr-x 1 root root   4096 Jan  1  1970 uair\n-rw-r--r-- 1 root root   1606 Jan  1  1970 unit_tags.py\n"
+}

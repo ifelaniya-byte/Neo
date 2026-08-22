@@ -1,0 +1,14 @@
+{
+  "run_dir": "artifacts\\run_scaled",
+  "n_events": 12093,
+  "n_packets": 119,
+  "n_labels": 357,
+  "n_decisions": 0,
+  "engineer": {
+    "events": "40/40",
+    "packets": "40/40",
+    "labels": "40/40",
+    "decisions": "0/0"
+  },
+  "audits_passed": "5/5"
+}

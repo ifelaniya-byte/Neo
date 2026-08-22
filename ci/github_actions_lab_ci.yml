@@ -1,0 +1,30 @@
+# Drop into .github/workflows/lab_ci.yml for PR gates
+name: megacompact-lab-ci
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+jobs:
+  simulation-assurance:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install minimal deps
+        run: |
+          pip install numpy pandas pydantic pyyaml 2>/dev/null || true
+      - name: Lab CI (adversarial + independent audit + overclaim probe)
+        run: |
+          cd megacompact_uair_pipeline 2>/dev/null || cd .
+          python ci/lab_ci.py --run-dir artifacts/run_lab_ci
+      - name: Upload CI report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lab-ci-report
+          path: "**/artifacts/run_lab_ci/lab_ci_report.json"

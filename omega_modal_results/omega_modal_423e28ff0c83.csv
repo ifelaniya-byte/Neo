@@ -1,0 +1,2 @@
+run_id,timestamp_utc,mode,status,gpu_count,gpu_index,gpu_name,matrix_size,iterations,compute_seconds,approx_tflops,total_vram_mib,free_vram_before_mib,free_vram_after_mib,allocation_mib
+423e28ff0c83,2026-08-21T23:40:24.349156+00:00,smoke,passed,1,,,,,0.3565,,,,,

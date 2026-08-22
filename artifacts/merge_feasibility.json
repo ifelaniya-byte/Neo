@@ -1,0 +1,157 @@
+{
+  "stationary": "PASS",
+  "double_pass": "PASS",
+  "allowed_to_discuss": true,
+  "n_py_files": 31,
+  "total_py_bytes": 336503,
+  "files": [
+    {
+      "path": "adversarial_suite.py",
+      "bytes": 3739
+    },
+    {
+      "path": "atlas.py",
+      "bytes": 26251
+    },
+    {
+      "path": "bit_exact_replay.py",
+      "bytes": 1582
+    },
+    {
+      "path": "causal_graph.py",
+      "bytes": 2640
+    },
+    {
+      "path": "chain_observer_ro.py",
+      "bytes": 1631
+    },
+    {
+      "path": "check_registry.py",
+      "bytes": 977
+    },
+    {
+      "path": "constants_db.py",
+      "bytes": 3367
+    },
+    {
+      "path": "differential_audit.py",
+      "bytes": 1335
+    },
+    {
+      "path": "engineers.py",
+      "bytes": 35760
+    },
+    {
+      "path": "formal_bridge.py",
+      "bytes": 1902
+    },
+    {
+      "path": "gate_fuzzer.py",
+      "bytes": 2047
+    },
+    {
+      "path": "interval_arith.py",
+      "bytes": 1610
+    },
+    {
+      "path": "knowledge_coverage.py",
+      "bytes": 2172
+    },
+    {
+      "path": "knowledge_facade.py",
+      "bytes": 1860
+    },
+    {
+      "path": "known_settled_db.py",
+      "bytes": 14478
+    },
+    {
+      "path": "ledger_index.py",
+      "bytes": 2230
+    },
+    {
+      "path": "megacompact16/core.py",
+      "bytes": 138825
+    },
+    {
+      "path": "pipeline.py",
+      "bytes": 32307
+    },
+    {
+      "path": "promotion.py",
+      "bytes": 3229
+    },
+    {
+      "path": "rag_settled/__init__.py",
+      "bytes": 3638
+    },
+    {
+      "path": "run_all.py",
+      "bytes": 6428
+    },
+    {
+      "path": "sandbox.py",
+      "bytes": 1415
+    },
+    {
+      "path": "schema_registry/__init__.py",
+      "bytes": 786
+    },
+    {
+      "path": "smt_gate.py",
+      "bytes": 2593
+    },
+    {
+      "path": "typed_ir.py",
+      "bytes": 1769
+    },
+    {
+      "path": "uair/__init__.py",
+      "bytes": 904
+    },
+    {
+      "path": "uair/contracts.py",
+      "bytes": 7195
+    },
+    {
+      "path": "uair/layers.py",
+      "bytes": 16325
+    },
+    {
+      "path": "uair/orchestrator.py",
+      "bytes": 11329
+    },
+    {
+      "path": "uair/test_uair.py",
+      "bytes": 4573
+    },
+    {
+      "path": "unit_tags.py",
+      "bytes": 1606
+    }
+  ],
+  "verdict": {
+    "possible": true,
+    "recommended_as_only_form": false,
+    "recommended_form": "hybrid_core_plus_thin_cli OR condensed package",
+    "reasons_for": [
+      "Single file is distributable and simple to run",
+      "Can preserve double-pass and knowledge modules in one namespace",
+      "Easier one-path engineer audit of full text"
+    ],
+    "reasons_against_pure_monolith_only": [
+      "Harder maintenance and testing as size grows past ~50-150k LOC",
+      "Import cycles and name collisions risk",
+      "Optional deps (sympy, z3) harder to isolate",
+      "AST/engineer timeouts on multi-100k-char source already seen on core.py",
+      "UAIR and megacompact16 already large; full merge amplifies edit risk"
+    ],
+    "lean_muscle_strategy": [
+      "1) Concatenate pure-python modules into monolith with section banners",
+      "2) Drop duplicate exports and dead helpers",
+      "3) Keep data JSON (schemas, policies, rag corpus) external or embedded as strings",
+      "4) Retain package form as canonical; generate monolith as build artifact",
+      "5) Run adversarial_suite + double-pass on monolith after emit"
+    ]
+  }
+}

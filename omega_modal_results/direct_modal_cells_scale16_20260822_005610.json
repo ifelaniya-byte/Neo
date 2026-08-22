@@ -1,0 +1,23 @@
+{
+  "status": "failed",
+  "cuda_available": true,
+  "gpu_count": 2,
+  "devices": [
+    {
+      "index": 0,
+      "name": "NVIDIA A10",
+      "total_vram_mib": 22587
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA A10",
+      "total_vram_mib": 22587
+    }
+  ],
+  "elapsed_seconds": 0.019928932189941406,
+  "stdout_tail": "",
+  "stderr": "python: can't open file '/root/omega_dual_gpu.py': [Errno 2] No such file or directory\n",
+  "return_code": 2,
+  "target_max_scale": 16,
+  "target_script": "omega_dual_gpu.py"
+}

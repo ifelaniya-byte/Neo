@@ -1,0 +1,5 @@
+OBLIGATION audit_net_pnl_identity
+STATUS: unchecked
+FORMAL:
+Net PnL identity: gross - sum(costs) == net for labeled outcomes
+NOTE: Run external kernel; do not treat as proven until kernel accepts.

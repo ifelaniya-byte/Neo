@@ -1,0 +1,50 @@
+{
+  "signed_ledger.py": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "promotion.py": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "independent_audit.py": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "adapters/historical.py": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "bit_exact_replay.py": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "PRODUCT.md": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "megacompact16/core.py": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "formal_bridge.py": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "smt_gate.py": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "interval_arith.py": {
+    "verdict": "PASS",
+    "allowed": true
+  },
+  "product_claim": {
+    "verdict": "BLOCKED",
+    "allowed": false
+  },
+  "overclaim": {
+    "verdict": "BLOCKED",
+    "allowed": false
+  }
+}

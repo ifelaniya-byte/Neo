@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2026-08-20T03:19:02.931536+00:00",
+  "backtest_summary": {},
+  "stress_summary": {},
+  "audit_summary": {
+    "feature_timing": true,
+    "block_timing": true,
+    "label_separation": true,
+    "split_integrity": true,
+    "net_pnl": true
+  },
+  "all_audits_passed": true
+}

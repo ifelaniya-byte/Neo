@@ -1,0 +1,14 @@
+{
+  "plan": {
+    "subject": "full_toolset_local_artifacts_mechanical_verifiers",
+    "statement": "Brainstorm, plan, and implement a full tool-set for local artifacts and mechanical verifiers. Unify: artifact store helpers, ledger index, merkle, bit-exact compare, adversarial, fuzz, SMT, interval, typed IR, causal graph, sandbox, schema validate, unit tags, knowledge facade probes. No live trading. No completeness oracle. Double-pass mandatory on the tool-set itself.",
+    "deliverables": [
+      "tools/__init__.py facade",
+      "tools/artifacts.py",
+      "tools/verifiers.py",
+      "tools/cli_tools.py",
+      "wire thin entry toolset command"
+    ]
+  },
+  "cleared": true
+}

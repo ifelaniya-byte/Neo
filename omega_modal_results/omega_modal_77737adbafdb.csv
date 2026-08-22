@@ -1,0 +1,2 @@
+run_id,timestamp_utc,mode,status,gpu_count,gpu_index,gpu_name,matrix_size,iterations,compute_seconds,approx_tflops,total_vram_mib,free_vram_before_mib,free_vram_after_mib,allocation_mib
+77737adbafdb,2026-08-21T23:52:41.595363+00:00,benchmark,passed,1,0,Tesla T4,2048,3,0.033886,1.521,14912,14807,14711,0

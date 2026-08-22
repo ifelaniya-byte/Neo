@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "mode": "omega",
+  "cuda_available": true,
+  "gpu_count": 1,
+  "devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "total_vram_mib": 14912
+    }
+  ],
+  "elapsed_seconds": 0.07416772842407227,
+  "omega_stdout_tail": "================================================================================\n  INITIATING KAGGLE BRIDGE CONTROLLER (V15 - QUOTA-AWARE ROBUST CONTROLLER)\n================================================================================\n\n[!] FATAL: Kaggle access token not found at:\n    ~\\.kaggle\\access_token\n",
+  "omega_stderr": "",
+  "return_code": 0,
+  "kaggle_setup": "SUCCESS: Token written to ALL required paths.",
+  "debug_token_preview": "KGAT_2c0c1***",
+  "files_created": [
+    "/root/.kaggle/access_token",
+    "/root/.kaggle\\access_token"
+  ]
+}

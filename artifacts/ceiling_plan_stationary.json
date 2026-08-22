@@ -1,0 +1,56 @@
+{
+  "stationary": "PASS",
+  "double_pass": "PASS",
+  "allowed": true,
+  "completeness_ok": true,
+  "cleared_for_execution": true,
+  "plan": {
+    "subject": "ceiling_next_implementation_plan",
+    "claim": false,
+    "steps": [
+      {
+        "id": 1,
+        "action": "promote_human_confirm_candidates_to_kskb",
+        "risk": "low"
+      },
+      {
+        "id": 2,
+        "action": "expand_rag_settled_licensed_digests",
+        "risk": "low"
+      },
+      {
+        "id": 3,
+        "action": "fit_regime_calibration_from_paper_proxy",
+        "risk": "medium"
+      },
+      {
+        "id": 4,
+        "action": "add_unit_tags_helper_for_feature_payloads",
+        "risk": "low"
+      },
+      {
+        "id": 5,
+        "action": "scale_synthetic_config_defaults_same_gates",
+        "risk": "low"
+      },
+      {
+        "id": 6,
+        "action": "adversarial_suite_and_module_engineer_pass",
+        "risk": "low"
+      },
+      {
+        "id": 7,
+        "action": "zip_package",
+        "risk": "low"
+      }
+    ],
+    "constraints": [
+      "double_pass_mandatory",
+      "no_completeness_oracle",
+      "no_live_trading",
+      "no_online_weight_updates",
+      "promotion_only_with_human_confirm_source"
+    ],
+    "statement": "Implement ceiling-next items under existing engineer gates only."
+  }
+}

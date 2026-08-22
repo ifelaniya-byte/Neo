@@ -1,0 +1,5 @@
+{"event_id": "hist_0", "event_timestamp_ms": 1700000000000, "available_timestamp_ms": 1700000000500, "event_type": "quote", "chain_id": 42161, "mid_usd": 100.0, "bid_usd": 99.9, "ask_usd": 100.1, "gas_gwei": 0.05}
+{"event_id": "hist_1", "event_timestamp_ms": 1700000012000, "available_timestamp_ms": 1700000012500, "event_type": "quote", "chain_id": 42161, "mid_usd": 100.1, "bid_usd": 100.0, "ask_usd": 100.19999999999999, "gas_gwei": 0.05}
+{"event_id": "hist_2", "event_timestamp_ms": 1700000024000, "available_timestamp_ms": 1700000024500, "event_type": "quote", "chain_id": 42161, "mid_usd": 100.2, "bid_usd": 100.10000000000001, "ask_usd": 100.3, "gas_gwei": 0.05}
+{"event_id": "hist_3", "event_timestamp_ms": 1700000036000, "available_timestamp_ms": 1700000036500, "event_type": "quote", "chain_id": 42161, "mid_usd": 100.3, "bid_usd": 100.2, "ask_usd": 100.39999999999999, "gas_gwei": 0.05}
+{"event_id": "hist_4", "event_timestamp_ms": 1700000048000, "available_timestamp_ms": 1700000048500, "event_type": "quote", "chain_id": 42161, "mid_usd": 100.4, "bid_usd": 100.30000000000001, "ask_usd": 100.5, "gas_gwei": 0.05}

@@ -1,0 +1,14 @@
+{
+  "cleared": true,
+  "plan": {
+    "subject": "lean_muscle_execution",
+    "statement": "Execute lean muscle: (1) keep condensed multi-file package canonical; (2) generate one-file monolith artifact; (3) optional core_runtime+thin CLI hybrid; merge pure-python modules, externalize bulky data, double-pass and adversarial on result. No completeness oracle, no live trading, double-pass mandatory.",
+    "steps": [
+      "build_monolith_generator",
+      "generate_monolith",
+      "write_thin_cli",
+      "adversarial_and_double_pass",
+      "zip"
+    ]
+  }
+}

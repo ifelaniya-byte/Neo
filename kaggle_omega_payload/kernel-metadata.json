@@ -1,0 +1,14 @@
+{
+  "id": "deemmany/omega-engine-dual-gpu-maximizer-20260821-192736",
+  "title": "Omega Engine Dual Gpu Maximizer 20260821 192736",
+  "code_file": "omega_dual_gpu.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "false",
+  "enable_gpu": "true",
+  "enable_internet": "false",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

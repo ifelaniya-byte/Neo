@@ -1,0 +1,32 @@
+{
+  "version": "1.1-fitted-proxy",
+  "note": "Offline proxy fit from paper-run scale; not online-updated; stationary-reviewed",
+  "source_run": "artifacts/run_scaled",
+  "n_labels_observed": 357,
+  "default": {
+    "max_revert_probability": 0.03,
+    "min_inclusion_probability": 0.9,
+    "ood_threshold": 0.65,
+    "min_net_edge_usd": 1.5,
+    "lambda_uncertainty": 1.5
+  },
+  "regimes": {
+    "normal": {
+      "ood_threshold": 0.65,
+      "min_net_edge_usd": 1.5
+    },
+    "volatile": {
+      "ood_threshold": 0.5,
+      "min_net_edge_usd": 2.5
+    },
+    "gas_spike": {
+      "ood_threshold": 0.5,
+      "min_net_edge_usd": 3.0,
+      "max_revert_probability": 0.02
+    },
+    "low_liquidity": {
+      "ood_threshold": 0.55,
+      "min_net_edge_usd": 2.5
+    }
+  }
+}

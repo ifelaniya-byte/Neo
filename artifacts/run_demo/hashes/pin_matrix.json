@@ -1,0 +1,9 @@
+{
+  "python": "3.12.3",
+  "platform": "linux",
+  "machine": "x86_64",
+  "implementation": "CPython",
+  "hash_seed": "unset",
+  "hash_seed_note": "PYTHONHASHSEED=0 recommended for stable hashing",
+  "timezone": "UTC"
+}

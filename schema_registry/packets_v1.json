@@ -1,0 +1,15 @@
+{
+  "schema_id": "DecisionPacket",
+  "version": "1.0",
+  "required": ["decision_id", "as_of", "action_candidates"],
+  "properties": {
+    "decision_id": {"type": "string"},
+    "as_of": {"type": "object"},
+    "action_candidates": {"type": "array"},
+    "constraints": {"type": "object"},
+    "provenance": {"type": "object"}
+  },
+  "rules": [
+    "as_of must include decision_timestamp_ms or block_number when used for causality audits"
+  ]
+}

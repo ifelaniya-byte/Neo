@@ -1,0 +1,26 @@
+{
+  "schema_id": "NormalizedEvent",
+  "version": "1.0",
+  "required": [
+    "event_id",
+    "event_timestamp_ms",
+    "observed_timestamp_ms",
+    "available_timestamp_ms",
+    "event_type",
+    "entity_id",
+    "chain_id"
+  ],
+  "properties": {
+    "event_id": {"type": "string"},
+    "event_timestamp_ms": {"type": "integer", "minimum": 0},
+    "observed_timestamp_ms": {"type": "integer", "minimum": 0},
+    "available_timestamp_ms": {"type": "integer", "minimum": 0},
+    "event_type": {"type": "string"},
+    "entity_id": {"type": "string"},
+    "chain_id": {"type": "integer"},
+    "payload": {"type": "object"}
+  },
+  "rules": [
+    "available_timestamp_ms >= observed_timestamp_ms"
+  ]
+}
